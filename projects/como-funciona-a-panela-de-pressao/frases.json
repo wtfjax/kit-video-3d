@@ -1,0 +1,152 @@
+[
+ {
+  "n": 1,
+  "texto": "Feijão leva umas três horas pra cozinhar numa panela comum.",
+  "inicio": 0,
+  "fim": 3.413
+ },
+ {
+  "n": 2,
+  "texto": "Então como a panela de pressão faz isso em meia hora?",
+  "inicio": 4.017,
+  "fim": 6.885
+ },
+ {
+  "n": 3,
+  "texto": "Você coloca o feijão na água e liga o fogo.",
+  "inicio": 7.581,
+  "fim": 10.298
+ },
+ {
+  "n": 4,
+  "texto": "Mas a água ferve a cem graus e não passa disso.",
+  "inicio": 10.681,
+  "fim": 14.187
+ },
+ {
+  "n": 5,
+  "texto": "O vapor escapa e leva o calor embora.",
+  "inicio": 14.698,
+  "fim": 17.554
+ },
+ {
+  "n": 6,
+  "texto": "Então você fecha a panela com uma tampa bem justa.",
+  "inicio": 17.937,
+  "fim": 20.979
+ },
+ {
+  "n": 7,
+  "texto": "Mas o vapor vaza pelas beiradas.",
+  "inicio": 21.676,
+  "fim": 23.707
+ },
+ {
+  "n": 8,
+  "texto": "Então você coloca um anel de borracha na tampa.",
+  "inicio": 24.311,
+  "fim": 26.842
+ },
+ {
+  "n": 9,
+  "texto": "Esse é o anel de vedação.",
+  "inicio": 27.283,
+  "fim": 29.06
+ },
+ {
+  "n": 10,
+  "texto": "Agora o vapor fica preso e aperta a água.",
+  "inicio": 29.443,
+  "fim": 32.612
+ },
+ {
+  "n": 11,
+  "texto": "E água apertada só ferve mais quente, perto de cento e vinte graus.",
+  "inicio": 32.937,
+  "fim": 37.198
+ },
+ {
+  "n": 12,
+  "texto": "É esse calor a mais que amolece o feijão rápido.",
+  "inicio": 37.895,
+  "fim": 40.577
+ },
+ {
+  "n": 13,
+  "texto": "Mas o vapor continua chegando, e a pressão sobe sem parar, até a tampa voar.",
+  "inicio": 41.018,
+  "fim": 45.917
+ },
+ {
+  "n": 14,
+  "texto": "Então você faz um furinho na tampa e coloca um peso em cima.",
+  "inicio": 46.614,
+  "fim": 50.445
+ },
+ {
+  "n": 15,
+  "texto": "Quando a pressão passa do ponto, o vapor levanta o peso e escapa.",
+  "inicio": 50.886,
+  "fim": 54.985
+ },
+ {
+  "n": 16,
+  "texto": "É por isso que ela chia e o pino dança.",
+  "inicio": 55.193,
+  "fim": 57.62
+ },
+ {
+  "n": 17,
+  "texto": "Essa é a válvula de pressão.",
+  "inicio": 58.003,
+  "fim": 59.524
+ },
+ {
+  "n": 18,
+  "texto": "Mas uma casca de feijão pode entupir esse furinho.",
+  "inicio": 59.965,
+  "fim": 63.065
+ },
+ {
+  "n": 19,
+  "texto": "Então você coloca uma segunda saída, com uma peça que se solta quando a pressão fica perigosa.",
+  "inicio": 63.448,
+  "fim": 69.242
+ },
+ {
+  "n": 20,
+  "texto": "Essa é a válvula de segurança.",
+  "inicio": 69.683,
+  "fim": 71.819
+ },
+ {
+  "n": 21,
+  "texto": "E o mais estranho: em La Paz, na Bolívia, a água ferve a menos de noventa graus.",
+  "inicio": 72.26,
+  "fim": 77.938
+ },
+ {
+  "n": 22,
+  "texto": "Lá, sem panela de pressão, o feijão demora muito mais pra cozinhar.",
+  "inicio": 78.449,
+  "fim": 82.756
+ },
+ {
+  "n": 23,
+  "texto": "Pronto, você construiu uma panela de pressão.",
+  "inicio": 83.452,
+  "fim": 86.018
+ },
+ {
+  "n": 24,
+  "texto": "Na sua casa, ela chia ou apita?",
+  "inicio": 86.622,
+  "fim": 88.712
+ },
+ {
+  "n": 25,
+  "texto": "Comente aí.",
+  "inicio": 88.921,
+  "fim": 89.908
+ }
+]

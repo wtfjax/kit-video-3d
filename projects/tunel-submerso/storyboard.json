@@ -1,0 +1,5310 @@
+{
+ "versao": 1,
+ "titulo": "Túnel submerso",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30
+ },
+ "duracao": 78.3,
+ "audio": "narracao.wav",
+ "palavras": "palavras.json",
+ "legendas": {
+  "ativo": true,
+  "palavrasPorBloco": 1
+ },
+ "ambiente": {
+  "horario": "dia",
+  "chao": "areia",
+  "nuvens": true
+ },
+ "cenas": [
+  {
+   "inicio": 0,
+   "fim": 3.8,
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "mar",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -16
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       40,
+       0.4,
+       14
+      ],
+      "cor": "#3aa0e8"
+     }
+    },
+    {
+     "id": "esc",
+     "asset": "escavadeira",
+     "pos": [
+      -3.5,
+      0,
+      -1
+     ],
+     "giro": 0,
+     "params": {
+      "ciclo": 2.4,
+      "fase": 0
+     }
+    },
+    {
+     "id": "monte",
+     "asset": "monte",
+     "variante": "areia",
+     "pos": [
+      -8.5,
+      0,
+      -1
+     ],
+     "etapa": [
+      [
+       0,
+       0.2
+      ],
+      [
+       3.6,
+       1
+      ]
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.4,
+      0,
+      4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 0,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "talk",
+       "de": 0,
+       "ate": 3.8,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      },
+      {
+       "clip": "point",
+       "de": 2.7,
+       "ate": 3.8,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": {
+      "ancora": "esc",
+      "desloca": [
+       0,
+       0.4,
+       3.2
+      ]
+     },
+     "taxa": 12
+    }
+   ],
+   "camera": {
+    "tipo": "enquadrar",
+    "alvo": "guia",
+    "plano": "medio",
+    "angulo": 25,
+    "elevacao": 8,
+    "aproxima": 0.9
+   },
+   "textos": [
+    {
+     "texto": "TÚNEL NO FUNDO DO MAR?",
+     "de": 0.2,
+     "ate": 3.7,
+     "estilo": "titulo"
+    }
+   ]
+  },
+  {
+   "inicio": 3.8,
+   "fim": 6.65,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "fundoBuraco",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       8,
+       0.3,
+       5
+      ],
+      "cor": "#8a5a34"
+     }
+    },
+    {
+     "id": "paredeA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       8,
+       1.6,
+       1
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "paredeB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       8,
+       1.6,
+       1
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "paredeC",
+     "asset": "forma",
+     "pos": [
+      -4.5,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1,
+       1.6,
+       7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "aguaBuraco",
+     "asset": "forma",
+     "pos": [
+      0,
+      -1.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7.6,
+       1.3,
+       5
+      ],
+      "cor": "#3aa0e8"
+     },
+     "opacidade": 0.7,
+     "anim": {
+      "pos": [
+       [
+        3.8,
+        [
+         0,
+         -1.3,
+         0
+        ]
+       ],
+       [
+        6.4,
+        [
+         0,
+         0.1,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "mar2",
+     "asset": "forma",
+     "pos": [
+      10.5,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       8,
+       1.2,
+       8
+      ],
+      "cor": "#3aa0e8"
+     },
+     "opacidade": 0.8
+    }
+   ],
+   "personagens": [
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      -1,
+      0,
+      6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 3.8,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 4.5,
+       "ate": 6.6,
+       "expressao": "worried"
+      },
+      {
+       "clip": "talk",
+       "de": 3.8,
+       "ate": 6.6,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      7,
+      1.2,
+      0
+     ],
+     "destino": [
+      1,
+      0.4,
+      0
+     ],
+     "taxa": 55,
+     "de": 3.9,
+     "ate": 6.6,
+     "espalha": 1.2,
+     "arco": 0.8
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     5,
+     8,
+     13
+    ],
+    "olha": [
+     0,
+     0.3,
+     0
+    ],
+    "fov": 45
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 4.6,
+     "ate": 6.6,
+     "zoom": 1.08
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.5,
+      0.42
+     ],
+     "tamanho": 0.2,
+     "de": 4.8,
+     "ate": 6.6
+    }
+   ]
+  },
+  {
+   "inicio": 6.65,
+   "fim": 13,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "industrial"
+   },
+   "objetos": [
+    {
+     "id": "gui",
+     "asset": "guindaste",
+     "pos": [
+      -9,
+      0,
+      -4
+     ],
+     "params": {
+      "height": 14,
+      "jib": 12
+     }
+    },
+    {
+     "id": "base",
+     "asset": "forma",
+     "pos": [
+      3,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       10,
+       0.4,
+       6
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "bloco1",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "aparece": 7.2
+    },
+    {
+     "id": "bloco2",
+     "asset": "forma",
+     "pos": [
+      7.4,
+      0.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "aparece": 9.6
+    },
+    {
+     "id": "bloco3",
+     "asset": "forma",
+     "pos": [
+      14.8,
+      0.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd"
+     },
+     "aparece": 11.4
+    },
+    {
+     "id": "cam",
+     "asset": "betoneira",
+     "pos": [
+      -3,
+      0,
+      6
+     ],
+     "giro": 0
+    }
+   ],
+   "personagens": [
+    {
+     "id": "serv",
+     "preset": "servente",
+     "pos": [
+      -6,
+      0,
+      3
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 6.65,
+       "alvo": "bloco1"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 6.65,
+       "ate": 13
+      }
+     ]
+    },
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      4,
+      0,
+      6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 6.65,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "talk",
+       "de": 6.65,
+       "ate": 13,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      },
+      {
+       "clip": "point",
+       "de": 8,
+       "ate": 10,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": [
+      0,
+      2.5,
+      0
+     ],
+     "taxa": 10
+    },
+    {
+     "material": "concreto",
+     "origem": {
+      "ancora": "cam",
+      "desloca": [
+       0,
+       2.6,
+       4.6
+      ]
+     },
+     "destino": [
+      0,
+      1.8,
+      0.5
+     ],
+     "taxa": 30,
+     "de": 7.4,
+     "ate": 9.4
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      10,
+      7,
+      24
+     ],
+     "olha": [
+      5,
+      1.4,
+      0
+     ]
+    },
+    "para": {
+     "pos": [
+      4,
+      5,
+      18
+     ],
+     "olha": [
+      6,
+      1.4,
+      0
+     ]
+    }
+   },
+   "textos": [
+    {
+     "texto": "PEDAÇOS GIGANTES",
+     "de": 8,
+     "ate": 12.4,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 13,
+   "fim": 17.55,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "industrial"
+   },
+   "objetos": [
+    {
+     "id": "bloco",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 1.4
+      }
+     }
+    },
+    {
+     "id": "gui",
+     "asset": "guindaste",
+     "pos": [
+      -9,
+      0,
+      -4
+     ],
+     "params": {
+      "height": 14,
+      "jib": 12
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "serv",
+     "preset": "servente",
+     "pos": [
+      -5,
+      0,
+      2.5
+     ],
+     "giro": -90,
+     "movimentos": [
+      {
+       "de": 13.4,
+       "ate": 15,
+       "para": [
+        -4.2,
+        2.5
+       ],
+       "clip": "push"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "push",
+       "de": 15,
+       "ate": 17.5,
+       "expressao": "worried"
+      }
+     ]
+    },
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      4.5,
+      0,
+      5
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 13,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 16.3,
+       "ate": 17.5
+      },
+      {
+       "clip": "talk",
+       "de": 13,
+       "ate": 17.5,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": [
+      -3.6,
+      0.3,
+      2
+     ],
+     "taxa": 16,
+     "de": 15,
+     "ate": 17.5
+    }
+   ],
+   "camera": {
+    "tipo": "enquadrar",
+    "alvo": "bloco",
+    "plano": "geral",
+    "angulo": 25,
+    "elevacao": 12,
+    "aproxima": 0.9
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "MILHARES DE TONELADAS",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#e0533d",
+     "de": 13.6,
+     "ate": 17.4
+    },
+    {
+     "tipo": "icone",
+     "icone": "interrogacao",
+     "ancora": "guia",
+     "alturaRel": 1.3,
+     "dx": 0.16,
+     "de": 16.4,
+     "ate": 17.5,
+     "tamanho": 0.16,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 17.55,
+   "fim": 24,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      -3.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#3aa0e8"
+     },
+     "opacidade": 0.42,
+     "anim": {
+      "pos": [
+       [
+        20.6,
+        [
+         0,
+         -3.3,
+         0
+        ]
+       ],
+       [
+        23.2,
+        [
+         0,
+         0,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        17.55,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ],
+       [
+        20.6,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ],
+       [
+        23.2,
+        [
+         0,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        17.55,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        20.6,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        23.2,
+        [
+         -3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        17.55,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        20.6,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        23.2,
+        [
+         3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      -3,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 17.55,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 18.4,
+       "ate": 20.4,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "cheer",
+       "de": 22.8,
+       "ate": 24
+      },
+      {
+       "clip": "talk",
+       "de": 17.55,
+       "ate": 22.6,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      -17,
+      0.6,
+      -2
+     ],
+     "destino": [
+      -6,
+      0.3,
+      0
+     ],
+     "taxa": 40,
+     "de": 20.6,
+     "ate": 23,
+     "espalha": 2
+    },
+    {
+     "material": "bolha",
+     "origem": [
+      0,
+      0.6,
+      3
+     ],
+     "taxa": 8,
+     "de": 22.5,
+     "ate": 24
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      9,
+      3.2,
+      22
+     ],
+     "olha": [
+      0,
+      1.4,
+      0
+     ]
+    },
+    "para": {
+     "pos": [
+      5,
+      3.2,
+      15
+     ],
+     "olha": [
+      0,
+      1.6,
+      0
+     ]
+    }
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "PONTAS FECHADAS",
+     "pos": [
+      0.5,
+      0.33
+     ],
+     "ponto": "#e0533d",
+     "de": 19,
+     "ate": 21.5
+    },
+    {
+     "tipo": "etiqueta",
+     "texto": "TUBO OCO = FLUTUA",
+     "pos": [
+      0.5,
+      0.33
+     ],
+     "ponto": "#3aa0e8",
+     "de": 21.8,
+     "ate": 24
+    }
+   ]
+  },
+  {
+   "inicio": 24,
+   "fim": 28.5,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      9,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        24,
+        [
+         9,
+         1.7,
+         0
+        ]
+       ],
+       [
+        28.5,
+        [
+         9,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      5.4,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        24,
+        [
+         5.4,
+         1.7,
+         0
+        ]
+       ],
+       [
+        28.5,
+        [
+         5.4,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      12.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        24,
+        [
+         12.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        28.5,
+        [
+         12.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.08,
+       "freq": 0.6
+      }
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      4,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 24,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 24.3,
+       "ate": 26,
+       "expressao": "surprised"
+      },
+      {
+       "clip": "point",
+       "de": 26.4,
+       "ate": 28.4,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 24,
+       "ate": 28.4,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "bolha",
+     "origem": [
+      9,
+      1.7,
+      2.6
+     ],
+     "taxa": 6
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1,
+     4.8,
+     33
+    ],
+    "olha": [
+     0,
+     1.4,
+     0
+    ],
+    "fov": 45
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "esquerda",
+     "pos": [
+      0.55,
+      0.45
+     ],
+     "tamanho": 0.2,
+     "de": 26.2,
+     "ate": 28.4,
+     "pulsa": true
+    },
+    {
+     "tipo": "etiqueta",
+     "texto": "VALA NO FUNDO",
+     "pos": [
+      0.3,
+      0.6
+     ],
+     "ponto": "#d9b878",
+     "de": 25.8,
+     "ate": 28.4
+    }
+   ]
+  },
+  {
+   "inicio": 28.5,
+   "fim": 35.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      14,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        28.5,
+        [
+         14,
+         1.7,
+         0
+        ]
+       ],
+       [
+        34.6,
+        [
+         0,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.06,
+       "freq": 0.5
+      }
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      10.4,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        28.5,
+        [
+         10.4,
+         1.7,
+         0
+        ]
+       ],
+       [
+        34.6,
+        [
+         -3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.06,
+       "freq": 0.5
+      }
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      17.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        28.5,
+        [
+         17.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        34.6,
+        [
+         3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.06,
+       "freq": 0.5
+      }
+     }
+    },
+    {
+     "id": "reboc",
+     "asset": "forma",
+     "pos": [
+      8.5,
+      3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3,
+       1.1,
+       1.6
+      ],
+      "cor": "#d9473a"
+     },
+     "anim": {
+      "pos": [
+       [
+        28.5,
+        [
+         8.5,
+         3,
+         0
+        ]
+       ],
+       [
+        34.6,
+        [
+         -5.5,
+         3,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      8.5,
+      4.1,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       1,
+       1.2
+      ],
+      "cor": "#ffffff"
+     },
+     "anim": {
+      "pos": [
+       [
+        28.5,
+        [
+         8.5,
+         4.1,
+         0
+        ]
+       ],
+       [
+        34.6,
+        [
+         -5.5,
+         4.1,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      -3,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 28.5,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 29,
+       "ate": 34.6,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 28.5,
+       "ate": 34.6,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      8.5,
+      3.7,
+      1.5
+     ],
+     "taxa": 10
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -2,
+     4.4,
+     32
+    ],
+    "olha": [
+     -1,
+     1.8,
+     0
+    ],
+    "fov": 45
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "REBOCADOR",
+     "pos": [
+      0.65,
+      0.34
+     ],
+     "ponto": "#d9473a",
+     "de": 29,
+     "ate": 32
+    }
+   ]
+  },
+  {
+   "inicio": 35.15,
+   "fim": 38.55,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        35.15,
+        [
+         0,
+         1.7,
+         0
+        ]
+       ],
+       [
+        38.55,
+        [
+         0,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.1,
+       "freq": 0.7
+      }
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        35.15,
+        [
+         -3.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        38.55,
+        [
+         -3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.1,
+       "freq": 0.7
+      }
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        35.15,
+        [
+         3.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        38.55,
+        [
+         3.6,
+         1.7,
+         0
+        ]
+       ]
+      ],
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.1,
+       "freq": 0.7
+      }
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 35.15,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "think",
+       "de": 35.2,
+       "ate": 38.5
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4,
+     3.2,
+     20
+    ],
+    "olha": [
+     -2,
+     1.6,
+     0
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "interrogacao",
+     "pos": [
+      0.6,
+      0.4
+     ],
+     "tamanho": 0.22,
+     "de": 36.8,
+     "ate": 38.5,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 38.55,
+   "fim": 41.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        38.55,
+        [
+         0,
+         1.7,
+         0
+        ]
+       ],
+       [
+        41.2,
+        [
+         0,
+         1.15,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        38.55,
+        [
+         -3.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        41.2,
+        [
+         -3.6,
+         1.15,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      1.7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        38.55,
+        [
+         3.6,
+         1.7,
+         0
+        ]
+       ],
+       [
+        41.2,
+        [
+         3.6,
+         1.15,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "mang",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "pontos": [
+       [
+        0,
+        7,
+        0
+       ],
+       [
+        0,
+        3.5,
+        0
+       ]
+      ],
+      "raio": 0.2,
+      "cor": "#3d8ee0"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      -2,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 38.55,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 38.8,
+       "ate": 41.1,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 38.55,
+       "ate": 41.1,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      0,
+      7,
+      0
+     ],
+     "destino": [
+      0,
+      3,
+      0
+     ],
+     "taxa": 55,
+     "de": 38.7,
+     "ate": 41.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3,
+     3.2,
+     14
+    ],
+    "olha": [
+     0,
+     2.4,
+     0
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "ÁGUA DE LASTRO",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#3aa0e8",
+     "de": 39,
+     "ate": 41.1
+    }
+   ]
+  },
+  {
+   "inicio": 41.2,
+   "fim": 46.4,
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.15,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        41.2,
+        [
+         0,
+         1.15,
+         0
+        ]
+       ],
+       [
+        45.8,
+        [
+         0.35,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      1.15,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        41.2,
+        [
+         -3.6,
+         1.15,
+         0
+        ]
+       ],
+       [
+        45.8,
+        [
+         -3.25,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      1.15,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        41.2,
+        [
+         3.6,
+         1.15,
+         0
+        ]
+       ],
+       [
+        45.8,
+        [
+         3.95,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "bolha",
+     "origem": [
+      0,
+      1.2,
+      3
+     ],
+     "taxa": 12,
+     "de": 41.4,
+     "ate": 45.8
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -2,
+     4,
+     28
+    ],
+    "olha": [
+     -3,
+     1.4,
+     0
+    ],
+    "fov": 45
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "baixo",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "tamanho": 0.2,
+     "de": 41.6,
+     "ate": 45.6,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 46.4,
+   "fim": 50.5,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0.35,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        46.4,
+        [
+         0.35,
+         0.5,
+         0
+        ]
+       ],
+       [
+        50.5,
+        [
+         0.35,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.25,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        46.4,
+        [
+         -3.25,
+         0.5,
+         0
+        ]
+       ],
+       [
+        50.5,
+        [
+         -3.25,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.95,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        46.4,
+        [
+         3.95,
+         0.5,
+         0
+        ]
+       ],
+       [
+        50.5,
+        [
+         3.95,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 46.4,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 46.6,
+       "ate": 48.8,
+       "expressao": "worried"
+      },
+      {
+       "clip": "talk",
+       "de": 49.4,
+       "ate": 50.4,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      -3.4,
+      3.4,
+      0
+     ],
+     "destino": [
+      -3.35,
+      0.7,
+      0
+     ],
+     "taxa": 20,
+     "de": 46.8,
+     "ate": 50.3,
+     "dispersao": 0.1,
+     "espalha": 0.1
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -3,
+     3.2,
+     11
+    ],
+    "olha": [
+     -3.2,
+     1.3,
+     0
+    ],
+    "fov": 38
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.5,
+      0.32
+     ],
+     "tamanho": 0.2,
+     "de": 46.8,
+     "ate": 50.4,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 50.5,
+   "fim": 53.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0.35,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        50.5,
+        [
+         0.35,
+         0.5,
+         0
+        ]
+       ],
+       [
+        52.8,
+        [
+         0.35,
+         0.5,
+         0
+        ]
+       ],
+       [
+        53.8,
+        [
+         0.05,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.25,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        50.5,
+        [
+         -3.25,
+         0.5,
+         0
+        ]
+       ],
+       [
+        52.8,
+        [
+         -3.25,
+         0.5,
+         0
+        ]
+       ],
+       [
+        53.8,
+        [
+         -3.5500000000000003,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.95,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        50.5,
+        [
+         3.95,
+         0.5,
+         0
+        ]
+       ],
+       [
+        52.8,
+        [
+         3.95,
+         0.5,
+         0
+        ]
+       ],
+       [
+        53.8,
+        [
+         3.65,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "bolha",
+     "origem": [
+      3.8,
+      1.5,
+      2
+     ],
+     "taxa": 10
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4,
+     3.2,
+     15
+    ],
+    "olha": [
+     0,
+     1.4,
+     0
+    ],
+    "fov": 40
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "esquerda",
+     "pos": [
+      0.75,
+      0.42
+     ],
+     "tamanho": 0.2,
+     "pulsa": true,
+     "de": 50.8,
+     "ate": 53.7
+    },
+    {
+     "tipo": "seta",
+     "direcao": "esquerda",
+     "pos": [
+      0.75,
+      0.52
+     ],
+     "tamanho": 0.2,
+     "pulsa": true,
+     "de": 51.1,
+     "ate": 53.7
+    }
+   ],
+   "textos": [
+    {
+     "texto": "A PRESSÃO FECHA A JUNTA",
+     "de": 50.7,
+     "ate": 53.7,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 53.8,
+   "fim": 58.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0.05,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        53.8,
+        [
+         0.05,
+         0.5,
+         0
+        ]
+       ],
+       [
+        54.8,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ],
+       [
+        58.8,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.5500000000000003,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        53.8,
+        [
+         -3.5500000000000003,
+         0.5,
+         0
+        ]
+       ],
+       [
+        54.8,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        58.8,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.65,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        53.8,
+        [
+         3.65,
+         0.5,
+         0
+        ]
+       ],
+       [
+        54.8,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        58.8,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "borracha",
+     "asset": "forma",
+     "pos": [
+      -3.5,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.35,
+       1.9,
+       3.5
+      ],
+      "cor": "#222226"
+     },
+     "aparece": 55
+    }
+   ],
+   "personagens": [
+    {
+     "id": "eng",
+     "preset": "engenheira",
+     "pos": [
+      -3.5,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 53.8,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 54.2,
+       "ate": 56.6,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "cheer",
+       "de": 57.2,
+       "ate": 58.8
+      },
+      {
+       "clip": "talk",
+       "de": 54,
+       "ate": 56.6,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -3,
+     3.2,
+     12
+    ],
+    "olha": [
+     -3.4,
+     1.4,
+     0
+    ],
+    "fov": 38
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "BORRACHA APERTADA",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#222226",
+     "de": 55.2,
+     "ate": 57.1
+    },
+    {
+     "tipo": "icone",
+     "icone": "v",
+     "pos": [
+      0.5,
+      0.42
+     ],
+     "tamanho": 0.2,
+     "de": 57.2,
+     "ate": 58.7
+    }
+   ],
+   "textos": [
+    {
+     "texto": "NEM UMA GOTA",
+     "de": 57.2,
+     "ate": 58.7,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 58.8,
+   "fim": 64,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        58.8,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ],
+       [
+        64,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     },
+     "opacidade": 0.6
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        58.8,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        64,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        58.8,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        64,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "aguaDentro",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.55,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       6.4,
+       1.7,
+       3.2
+      ],
+      "cor": "#3d8ee0"
+     },
+     "some": 63.3,
+     "opacidade": 0.85
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "pontos": [
+       [
+        0,
+        1.5,
+        0
+       ],
+       [
+        0,
+        5.5,
+        0
+       ],
+       [
+        5,
+        5.5,
+        0
+       ],
+       [
+        5,
+        5.5,
+        3
+       ]
+      ],
+      "raio": 0.2,
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "bomba",
+     "asset": "forma",
+     "pos": [
+      0,
+      3.4,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       1.4,
+       1.3,
+       1.4
+      ],
+      "cor": "#f2c94c"
+     },
+     "apoiada": true
+    }
+   ],
+   "personagens": [
+    {
+     "id": "serv",
+     "preset": "servente",
+     "pos": [
+      3,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 58.8,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 60,
+       "ate": 62,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      0,
+      0,
+      0
+     ],
+     "caminho": [
+      [
+       0,
+       1.5,
+       0
+      ],
+      [
+       0,
+       5.5,
+       0
+      ],
+      [
+       5,
+       5.5,
+       0
+      ],
+      [
+       5,
+       5.5,
+       3
+      ]
+     ],
+     "taxa": 35,
+     "velocidade": 3,
+     "de": 59.6,
+     "ate": 63.3
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3,
+     3.2,
+     22
+    ],
+    "olha": [
+     1,
+     2.5,
+     0
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "BOMBEIA PRA FORA",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 60.6,
+     "ate": 63.8
+    }
+   ]
+  },
+  {
+   "inicio": 64,
+   "fim": 67.9,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "anim": {
+      "pos": [
+       [
+        64,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ],
+       [
+        67.9,
+        [
+         0,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     },
+     "opacidade": 0.45
+    },
+    {
+     "id": "tuboL",
+     "asset": "forma",
+     "pos": [
+      -3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        64,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        67.9,
+        [
+         -3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     },
+     "some": 65.4
+    },
+    {
+     "id": "tuboR",
+     "asset": "forma",
+     "pos": [
+      3.6,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "anim": {
+      "pos": [
+       [
+        64,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ],
+       [
+        67.9,
+        [
+         3.6,
+         0.5,
+         0
+        ]
+       ]
+      ]
+     },
+     "some": 65.4
+    },
+    {
+     "id": "tampaA",
+     "asset": "forma",
+     "pos": [
+      -10.8,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       2,
+       3.6
+      ],
+      "cor": "#e0533d"
+     },
+     "some": 65.4
+    }
+   ],
+   "personagens": [
+    {
+     "id": "serv",
+     "preset": "servente",
+     "pos": [
+      3,
+      0.5,
+      0
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 65.4,
+       "ate": 67.8,
+       "para": [
+        -6,
+        0
+       ],
+       "clip": "walk"
+      }
+     ],
+     "acoes": []
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1,
+     3.2,
+     20
+    ],
+    "olha": [
+     -2,
+     1.4,
+     0
+    ],
+    "fov": 40
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "TÚNEL SECO",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#3fa94f",
+     "de": 64.8,
+     "ate": 67.8
+    }
+   ]
+  },
+  {
+   "inicio": 67.9,
+   "fim": 70.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "navio",
+     "asset": "forma",
+     "pos": [
+      10,
+      3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.1,
+       1.6
+      ],
+      "cor": "#d9473a"
+     },
+     "movimentos": [
+      {
+       "de": 68,
+       "ate": 70.3,
+       "para": [
+        -2,
+        0
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "bolha",
+     "origem": [
+      0,
+      2.6,
+      2
+     ],
+     "taxa": 10
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 67.9,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 68.3,
+       "ate": 70.3,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 67.9,
+       "ate": 70.3,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4,
+     3.6,
+     24
+    ],
+    "olha": [
+     -2,
+     1.4,
+     0
+    ],
+    "fov": 42
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 68.2,
+     "ate": 70.3,
+     "zoom": 1.06
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.5,
+      0.36
+     ],
+     "tamanho": 0.2,
+     "de": 68.4,
+     "ate": 70.3,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 70.4,
+   "fim": 73.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     }
+    },
+    {
+     "id": "m1",
+     "asset": "monte",
+     "params": {
+      "material": "pedra",
+      "raio": 3.2
+     },
+     "pos": [
+      -6,
+      2.5,
+      0
+     ],
+     "etapa": [
+      [
+       70.6,
+       0.05
+      ],
+      [
+       73.2,
+       1
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "asset": "monte",
+     "variante": "terra",
+     "pos": [
+      0,
+      2.5,
+      0
+     ],
+     "etapa": [
+      [
+       70.8,
+       0.05
+      ],
+      [
+       73.3,
+       1
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "asset": "monte",
+     "params": {
+      "material": "pedra",
+      "raio": 3.2
+     },
+     "pos": [
+      5,
+      0.5,
+      0
+     ],
+     "etapa": [
+      [
+       71,
+       0.05
+      ],
+      [
+       73.3,
+       1
+      ]
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "serv",
+     "preset": "servente",
+     "pos": [
+      5,
+      1,
+      9.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 70.4,
+       "alvo": "m2"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "dig",
+       "de": 70.4,
+       "ate": 73.4
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "pedra",
+     "origem": [
+      -6,
+      8,
+      0
+     ],
+     "destino": [
+      -6,
+      3,
+      0
+     ],
+     "taxa": 40,
+     "de": 70.6,
+     "ate": 73.1,
+     "espalha": 1.5
+    },
+    {
+     "material": "terra",
+     "origem": [
+      0,
+      8,
+      0
+     ],
+     "destino": [
+      0,
+      3,
+      0
+     ],
+     "taxa": 40,
+     "de": 70.8,
+     "ate": 73.2,
+     "espalha": 1.5
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0,
+     4.8,
+     30
+    ],
+    "olha": [
+     -2,
+     1.8,
+     0
+    ],
+    "fov": 45
+   },
+   "textos": [
+    {
+     "texto": "PEDRAS E TERRA",
+     "de": 70.6,
+     "ate": 73.3,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 73.45,
+   "fim": 78.3,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "litoral"
+   },
+   "objetos": [
+    {
+     "id": "leito",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       0.5,
+       10
+      ],
+      "cor": "#e3c98f"
+     }
+    },
+    {
+     "id": "margemA",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "margemB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      4.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       1.5,
+       3.2
+      ],
+      "cor": "#d9b878"
+     }
+    },
+    {
+     "id": "agua",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       34,
+       3.4,
+       11
+      ],
+      "cor": "#2f8fd8"
+     },
+     "opacidade": 0.5
+    },
+    {
+     "id": "cais",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      9.4
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       14,
+       1,
+       3.4
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "segA",
+     "asset": "forma",
+     "pos": [
+      -7.2,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "opacidade": 0.4
+    },
+    {
+     "id": "tubo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       7,
+       2,
+       3.6
+      ],
+      "cor": "#aab2bd",
+      "brilho": false
+     },
+     "opacidade": 0.4
+    },
+    {
+     "id": "m1",
+     "asset": "monte",
+     "params": {
+      "material": "pedra",
+      "raio": 3.2
+     },
+     "pos": [
+      -6,
+      2.5,
+      0
+     ]
+    },
+    {
+     "id": "m2",
+     "asset": "monte",
+     "variante": "terra",
+     "pos": [
+      0,
+      2.5,
+      0
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_hatch",
+     "variante": "vermelho",
+     "pos": [
+      -13,
+      0.55,
+      0.9
+     ],
+     "movimentos": [
+      {
+       "de": 73.6,
+       "ate": 78.1,
+       "para": [
+        8,
+        0.9
+       ]
+      }
+     ]
+    },
+    {
+     "id": "carro2",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      8,
+      0.55,
+      -0.9
+     ],
+     "movimentos": [
+      {
+       "de": 74.4,
+       "ate": 78.2,
+       "para": [
+        -13,
+        -0.9
+       ]
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1,
+     3.2,
+     24
+    ],
+    "olha": [
+     -2,
+     1.6,
+     0
+    ],
+    "fov": 42
+   },
+   "textos": [
+    {
+     "texto": "VOCÊ ATRAVESSARIA ESSE TÚNEL?",
+     "de": 74.4,
+     "ate": 78.2,
+     "estilo": "pergunta"
+    }
+   ]
+  }
+ ]
+}

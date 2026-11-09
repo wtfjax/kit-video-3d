@@ -1,0 +1,152 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer acender uma cidade inteira com a água de um rio.",
+  "inicio": 0,
+  "fim": 2.984
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta colocar uma roda d'água na correnteza.",
+  "inicio": 3.564,
+  "fim": 6.2
+ },
+ {
+  "n": 3,
+  "texto": "Mas o rio é lento, e a roda mal gira!",
+  "inicio": 7.105,
+  "fim": 9.195
+ },
+ {
+  "n": 4,
+  "texto": "Então você fecha o rio com uma parede gigante de concreto.",
+  "inicio": 9.857,
+  "fim": 12.922
+ },
+ {
+  "n": 5,
+  "texto": "A água sobe e forma um lago.",
+  "inicio": 13.7,
+  "fim": 15.593
+ },
+ {
+  "n": 6,
+  "texto": "Essa é a barragem.",
+  "inicio": 15.906,
+  "fim": 17.056
+ },
+ {
+  "n": 7,
+  "texto": "Mas água parada não faz nada.",
+  "inicio": 17.833,
+  "fim": 19.877
+ },
+ {
+  "n": 8,
+  "texto": "Então você abre um cano enorme lá embaixo, e a água desce com muita pressão.",
+  "inicio": 20.237,
+  "fim": 24.672
+ },
+ {
+  "n": 9,
+  "texto": "Esse é o conduto forçado.",
+  "inicio": 25.252,
+  "fim": 26.796
+ },
+ {
+  "n": 10,
+  "texto": "Ela bate em pás curvas e faz um eixo girar.",
+  "inicio": 26.936,
+  "fim": 29.699
+ },
+ {
+  "n": 11,
+  "texto": "Essa é a turbina.",
+  "inicio": 30.117,
+  "fim": 31.452
+ },
+ {
+  "n": 12,
+  "texto": "Mas girar não acende lâmpada.",
+  "inicio": 31.812,
+  "fim": 33.635
+ },
+ {
+  "n": 13,
+  "texto": "Então você liga o eixo num gerador: ímãs girando dentro de bobinas de cobre fazem a corrente andar.",
+  "inicio": 33.832,
+  "fim": 40.392
+ },
+ {
+  "n": 14,
+  "texto": "Esse é o gerador.",
+  "inicio": 40.705,
+  "fim": 41.82
+ },
+ {
+  "n": 15,
+  "texto": "Mas na época de chuva, o lago enche demais e pode passar por cima da barragem!",
+  "inicio": 42.133,
+  "fim": 46.882
+ },
+ {
+  "n": 16,
+  "texto": "Então você faz comportas que soltam o excesso por uma rampa.",
+  "inicio": 47.241,
+  "fim": 50.76
+ },
+ {
+  "n": 17,
+  "texto": "Esse é o vertedouro.",
+  "inicio": 51.247,
+  "fim": 52.547
+ },
+ {
+  "n": 18,
+  "texto": "Mas a energia nasce no meio do mato, longe da cidade.",
+  "inicio": 53.128,
+  "fim": 56.321
+ },
+ {
+  "n": 19,
+  "texto": "Então você aumenta a tensão e manda por cabos em torres altas.",
+  "inicio": 56.634,
+  "fim": 61.29
+ },
+ {
+  "n": 20,
+  "texto": "Essas são as linhas de transmissão.",
+  "inicio": 61.87,
+  "fim": 63.867
+ },
+ {
+  "n": 21,
+  "texto": "E o mais impressionante: no Brasil, mais da metade da energia vem da água!",
+  "inicio": 64.099,
+  "fim": 68.674
+ },
+ {
+  "n": 22,
+  "texto": "Pronto!",
+  "inicio": 69.161,
+  "fim": 69.614
+ },
+ {
+  "n": 23,
+  "texto": "Você construiu uma usina hidrelétrica.",
+  "inicio": 70.032,
+  "fim": 72.11
+ },
+ {
+  "n": 24,
+  "texto": "Você já viu uma barragem dessas de perto?",
+  "inicio": 72.772,
+  "fim": 74.943
+ },
+ {
+  "n": 25,
+  "texto": "Comente sim ou não!",
+  "inicio": 75.082,
+  "fim": 76.394
+ }
+]

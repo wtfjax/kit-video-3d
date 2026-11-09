@@ -1,0 +1,134 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer tirar energia do vento.",
+  "inicio": 0,
+  "fim": 1.985
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta um cata-vento de fazenda, com várias pás largas.",
+  "inicio": 2.252,
+  "fim": 5.724
+ },
+ {
+  "n": 3,
+  "texto": "Mas ele gira devagar e quase não gera nada!",
+  "inicio": 6.084,
+  "fim": 8.522
+ },
+ {
+  "n": 4,
+  "texto": "Então você usa três pás compridas e finas, com formato de asa de avião.",
+  "inicio": 9.183,
+  "fim": 13.363
+ },
+ {
+  "n": 5,
+  "texto": "O vento passa e puxa a pá, como puxa uma asa pra cima.",
+  "inicio": 14.141,
+  "fim": 17.253
+ },
+ {
+  "n": 6,
+  "texto": "Essas são as pás.",
+  "inicio": 17.566,
+  "fim": 18.982
+ },
+ {
+  "n": 7,
+  "texto": "Mas a pá dá umas quinze voltas por minuto, e o gerador precisa de mais de mil.",
+  "inicio": 19.296,
+  "fim": 24.021
+ },
+ {
+  "n": 8,
+  "texto": "Então você coloca engrenagens que multiplicam a rotação.",
+  "inicio": 24.335,
+  "fim": 27.678
+ },
+ {
+  "n": 9,
+  "texto": "Essa é a caixa multiplicadora.",
+  "inicio": 27.992,
+  "fim": 29.815
+ },
+ {
+  "n": 10,
+  "texto": "Mas o vento muda de direção o tempo todo.",
+  "inicio": 30.047,
+  "fim": 32.427
+ },
+ {
+  "n": 11,
+  "texto": "Então um sensor no topo sente o vento, e um motor vira a cabeça da turbina de frente pra ele.",
+  "inicio": 32.787,
+  "fim": 38.487
+ },
+ {
+  "n": 12,
+  "texto": "Esse é o sistema de giro.",
+  "inicio": 39.068,
+  "fim": 40.333
+ },
+ {
+  "n": 13,
+  "texto": "Mas perto do chão, o vento é fraco e cheio de redemoinho.",
+  "inicio": 40.53,
+  "fim": 43.932
+ },
+ {
+  "n": 14,
+  "texto": "Então você sobe tudo numa torre da altura de um prédio de trinta andares.",
+  "inicio": 44.594,
+  "fim": 48.692
+ },
+ {
+  "n": 15,
+  "texto": "Mas numa tempestade, o vento forte pode arrebentar as pás!",
+  "inicio": 49.354,
+  "fim": 53.325
+ },
+ {
+  "n": 16,
+  "texto": "Então você gira cada pá de lado, pra ela cortar o vento em vez de ser empurrada, e a turbina quase para.",
+  "inicio": 53.638,
+  "fim": 60.639
+ },
+ {
+  "n": 17,
+  "texto": "Esse é o controle de passo.",
+  "inicio": 61.301,
+  "fim": 62.857
+ },
+ {
+  "n": 18,
+  "texto": "E o mais impressionante: a ponta da pá passa de trezentos quilômetros por hora!",
+  "inicio": 63.124,
+  "fim": 68.29
+ },
+ {
+  "n": 19,
+  "texto": "Pronto!",
+  "inicio": 68.604,
+  "fim": 69.149
+ },
+ {
+  "n": 20,
+  "texto": "Você construiu uma turbina eólica.",
+  "inicio": 69.463,
+  "fim": 71.831
+ },
+ {
+  "n": 21,
+  "texto": "Você já viu uma dessas de perto?",
+  "inicio": 72.063,
+  "fim": 73.886
+ },
+ {
+  "n": 22,
+  "texto": "Comente sim ou não!",
+  "inicio": 74.548,
+  "fim": 76.208
+ }
+]

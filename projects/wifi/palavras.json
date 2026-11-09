@@ -1,0 +1,1117 @@
+[
+ {
+  "palavra": "Você",
+  "inicio": 0,
+  "fim": 0.244
+ },
+ {
+  "palavra": "quer",
+  "inicio": 0.313,
+  "fim": 0.441
+ },
+ {
+  "palavra": "mandar",
+  "inicio": 0.499,
+  "fim": 0.824
+ },
+ {
+  "palavra": "um",
+  "inicio": 0.882,
+  "fim": 0.929
+ },
+ {
+  "palavra": "vídeo",
+  "inicio": 0.987,
+  "fim": 1.207
+ },
+ {
+  "palavra": "do",
+  "inicio": 1.254,
+  "fim": 1.312
+ },
+ {
+  "palavra": "seu",
+  "inicio": 1.358,
+  "fim": 1.498
+ },
+ {
+  "palavra": "quarto",
+  "inicio": 1.556,
+  "fim": 1.892
+ },
+ {
+  "palavra": "até",
+  "inicio": 1.927,
+  "fim": 2.09
+ },
+ {
+  "palavra": "a",
+  "inicio": 2.136,
+  "fim": 2.159
+ },
+ {
+  "palavra": "sala,",
+  "inicio": 2.218,
+  "fim": 2.67
+ },
+ {
+  "palavra": "sem",
+  "inicio": 2.786,
+  "fim": 3.007
+ },
+ {
+  "palavra": "fio",
+  "inicio": 3.1,
+  "fim": 3.309
+ },
+ {
+  "palavra": "nenhum.",
+  "inicio": 3.379,
+  "fim": 3.913
+ },
+ {
+  "palavra": "Você",
+  "inicio": 4.69,
+  "fim": 4.923
+ },
+ {
+  "palavra": "tenta",
+  "inicio": 4.981,
+  "fim": 5.19
+ },
+ {
+  "palavra": "mandar",
+  "inicio": 5.224,
+  "fim": 5.492
+ },
+ {
+  "palavra": "os",
+  "inicio": 5.526,
+  "fim": 5.608
+ },
+ {
+  "palavra": "dados",
+  "inicio": 5.666,
+  "fim": 6.014
+ },
+ {
+  "palavra": "com",
+  "inicio": 6.072,
+  "fim": 6.211
+ },
+ {
+  "palavra": "som.",
+  "inicio": 6.327,
+  "fim": 6.734
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 7.512,
+  "fim": 7.721
+ },
+ {
+  "palavra": "o",
+  "inicio": 7.814,
+  "fim": 7.837
+ },
+ {
+  "palavra": "som",
+  "inicio": 7.918,
+  "fim": 8.115
+ },
+ {
+  "palavra": "é",
+  "inicio": 8.197,
+  "fim": 8.22
+ },
+ {
+  "palavra": "lento,",
+  "inicio": 8.29,
+  "fim": 8.835
+ },
+ {
+  "palavra": "e",
+  "inicio": 9.149,
+  "fim": 9.265
+ },
+ {
+  "palavra": "a",
+  "inicio": 9.323,
+  "fim": 9.358
+ },
+ {
+  "palavra": "parede",
+  "inicio": 9.416,
+  "fim": 9.752
+ },
+ {
+  "palavra": "abafa",
+  "inicio": 9.787,
+  "fim": 10.124
+ },
+ {
+  "palavra": "tudo!",
+  "inicio": 10.182,
+  "fim": 10.635
+ },
+ {
+  "palavra": "Então",
+  "inicio": 11.691,
+  "fim": 12.086
+ },
+ {
+  "palavra": "você",
+  "inicio": 12.121,
+  "fim": 12.33
+ },
+ {
+  "palavra": "usa",
+  "inicio": 12.411,
+  "fim": 12.585
+ },
+ {
+  "palavra": "ondas",
+  "inicio": 12.632,
+  "fim": 12.922
+ },
+ {
+  "palavra": "de",
+  "inicio": 12.968,
+  "fim": 13.05
+ },
+ {
+  "palavra": "rádio.",
+  "inicio": 13.119,
+  "fim": 13.607
+ },
+ {
+  "palavra": "Elas",
+  "inicio": 14.269,
+  "fim": 14.571
+ },
+ {
+  "palavra": "voam",
+  "inicio": 14.663,
+  "fim": 14.896
+ },
+ {
+  "palavra": "na",
+  "inicio": 14.93,
+  "fim": 15
+ },
+ {
+  "palavra": "velocidade",
+  "inicio": 15.047,
+  "fim": 15.581
+ },
+ {
+  "palavra": "da",
+  "inicio": 15.639,
+  "fim": 15.72
+ },
+ {
+  "palavra": "luz",
+  "inicio": 15.766,
+  "fim": 15.999
+ },
+ {
+  "palavra": "e",
+  "inicio": 16.045,
+  "fim": 16.068
+ },
+ {
+  "palavra": "atravessam",
+  "inicio": 16.103,
+  "fim": 16.625
+ },
+ {
+  "palavra": "parede.",
+  "inicio": 16.672,
+  "fim": 17.183
+ },
+ {
+  "palavra": "Um",
+  "inicio": 17.845,
+  "fim": 18.019
+ },
+ {
+  "palavra": "fio",
+  "inicio": 18.1,
+  "fim": 18.356
+ },
+ {
+  "palavra": "de",
+  "inicio": 18.39,
+  "fim": 18.46
+ },
+ {
+  "palavra": "metal",
+  "inicio": 18.507,
+  "fim": 18.843
+ },
+ {
+  "palavra": "faz",
+  "inicio": 18.901,
+  "fim": 19.052
+ },
+ {
+  "palavra": "os",
+  "inicio": 19.11,
+  "fim": 19.192
+ },
+ {
+  "palavra": "elétrons",
+  "inicio": 19.261,
+  "fim": 19.714
+ },
+ {
+  "palavra": "balançarem",
+  "inicio": 19.772,
+  "fim": 20.306
+ },
+ {
+  "palavra": "bilhões",
+  "inicio": 20.376,
+  "fim": 20.887
+ },
+ {
+  "palavra": "de",
+  "inicio": 20.921,
+  "fim": 20.991
+ },
+ {
+  "palavra": "vezes",
+  "inicio": 21.061,
+  "fim": 21.339
+ },
+ {
+  "palavra": "por",
+  "inicio": 21.397,
+  "fim": 21.514
+ },
+ {
+  "palavra": "segundo,",
+  "inicio": 21.572,
+  "fim": 22.233
+ },
+ {
+  "palavra": "e",
+  "inicio": 22.466,
+  "fim": 22.605
+ },
+ {
+  "palavra": "a",
+  "inicio": 22.686,
+  "fim": 22.721
+ },
+ {
+  "palavra": "onda",
+  "inicio": 22.779,
+  "fim": 23.023
+ },
+ {
+  "palavra": "sai",
+  "inicio": 23.081,
+  "fim": 23.267
+ },
+ {
+  "palavra": "voando.",
+  "inicio": 23.325,
+  "fim": 23.975
+ },
+ {
+  "palavra": "Essa",
+  "inicio": 24.462,
+  "fim": 24.799
+ },
+ {
+  "palavra": "é",
+  "inicio": 24.846,
+  "fim": 24.892
+ },
+ {
+  "palavra": "a",
+  "inicio": 24.915,
+  "fim": 24.95
+ },
+ {
+  "palavra": "antena.",
+  "inicio": 24.997,
+  "fim": 25.635
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 26.053,
+  "fim": 26.239
+ },
+ {
+  "palavra": "uma",
+  "inicio": 26.297,
+  "fim": 26.425
+ },
+ {
+  "palavra": "onda",
+  "inicio": 26.471,
+  "fim": 26.657
+ },
+ {
+  "palavra": "sozinha",
+  "inicio": 26.715,
+  "fim": 27.284
+ },
+ {
+  "palavra": "não",
+  "inicio": 27.516,
+  "fim": 27.702
+ },
+ {
+  "palavra": "carrega",
+  "inicio": 27.725,
+  "fim": 28.05
+ },
+ {
+  "palavra": "informação",
+  "inicio": 28.073,
+  "fim": 28.642
+ },
+ {
+  "palavra": "nenhuma.",
+  "inicio": 28.7,
+  "fim": 29.269
+ },
+ {
+  "palavra": "Então",
+  "inicio": 29.931,
+  "fim": 30.244
+ },
+ {
+  "palavra": "você",
+  "inicio": 30.279,
+  "fim": 30.465
+ },
+ {
+  "palavra": "muda",
+  "inicio": 30.534,
+  "fim": 30.801
+ },
+ {
+  "palavra": "a",
+  "inicio": 30.825,
+  "fim": 30.848
+ },
+ {
+  "palavra": "onda",
+  "inicio": 30.894,
+  "fim": 31.138
+ },
+ {
+  "palavra": "o",
+  "inicio": 31.185,
+  "fim": 31.208
+ },
+ {
+  "palavra": "tempo",
+  "inicio": 31.278,
+  "fim": 31.579
+ },
+ {
+  "palavra": "todo:",
+  "inicio": 31.626,
+  "fim": 32.032
+ },
+ {
+  "palavra": "um",
+  "inicio": 32.346,
+  "fim": 32.45
+ },
+ {
+  "palavra": "pouco",
+  "inicio": 32.497,
+  "fim": 32.74
+ },
+ {
+  "palavra": "mais",
+  "inicio": 32.787,
+  "fim": 32.938
+ },
+ {
+  "palavra": "forte,",
+  "inicio": 32.996,
+  "fim": 33.553
+ },
+ {
+  "palavra": "um",
+  "inicio": 33.716,
+  "fim": 33.808
+ },
+ {
+  "palavra": "pouco",
+  "inicio": 33.866,
+  "fim": 34.087
+ },
+ {
+  "palavra": "atrasada.",
+  "inicio": 34.11,
+  "fim": 34.806
+ },
+ {
+  "palavra": "Cada",
+  "inicio": 35.468,
+  "fim": 35.735
+ },
+ {
+  "palavra": "mudança",
+  "inicio": 35.782,
+  "fim": 36.269
+ },
+ {
+  "palavra": "vira",
+  "inicio": 36.327,
+  "fim": 36.536
+ },
+ {
+  "palavra": "zero",
+  "inicio": 36.629,
+  "fim": 36.966
+ },
+ {
+  "palavra": "ou",
+  "inicio": 37.082,
+  "fim": 37.256
+ },
+ {
+  "palavra": "um.",
+  "inicio": 37.337,
+  "fim": 37.651
+ },
+ {
+  "palavra": "Essa",
+  "inicio": 38.069,
+  "fim": 38.394
+ },
+ {
+  "palavra": "é",
+  "inicio": 38.475,
+  "fim": 38.51
+ },
+ {
+  "palavra": "a",
+  "inicio": 38.533,
+  "fim": 38.556
+ },
+ {
+  "palavra": "modulação.",
+  "inicio": 38.603,
+  "fim": 39.358
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 39.776,
+  "fim": 39.938
+ },
+ {
+  "palavra": "o",
+  "inicio": 40.008,
+  "fim": 40.031
+ },
+ {
+  "palavra": "vizinho",
+  "inicio": 40.077,
+  "fim": 40.472
+ },
+ {
+  "palavra": "também",
+  "inicio": 40.542,
+  "fim": 40.878
+ },
+ {
+  "palavra": "tem",
+  "inicio": 40.925,
+  "fim": 41.041
+ },
+ {
+  "palavra": "roteador,",
+  "inicio": 41.099,
+  "fim": 41.819
+ },
+ {
+  "palavra": "e",
+  "inicio": 41.981,
+  "fim": 42.098
+ },
+ {
+  "palavra": "as",
+  "inicio": 42.156,
+  "fim": 42.248
+ },
+ {
+  "palavra": "ondas",
+  "inicio": 42.341,
+  "fim": 42.597
+ },
+ {
+  "palavra": "se",
+  "inicio": 42.632,
+  "fim": 42.713
+ },
+ {
+  "palavra": "embaralham!",
+  "inicio": 42.736,
+  "fim": 43.56
+ },
+ {
+  "palavra": "Então",
+  "inicio": 44.222,
+  "fim": 44.594
+ },
+ {
+  "palavra": "você",
+  "inicio": 44.64,
+  "fim": 44.837
+ },
+ {
+  "palavra": "divide",
+  "inicio": 44.919,
+  "fim": 45.29
+ },
+ {
+  "palavra": "o",
+  "inicio": 45.325,
+  "fim": 45.36
+ },
+ {
+  "palavra": "ar",
+  "inicio": 45.441,
+  "fim": 45.522
+ },
+ {
+  "palavra": "em",
+  "inicio": 45.557,
+  "fim": 45.615
+ },
+ {
+  "palavra": "faixas,",
+  "inicio": 45.685,
+  "fim": 46.196
+ },
+ {
+  "palavra": "como",
+  "inicio": 46.231,
+  "fim": 46.405
+ },
+ {
+  "palavra": "pistas",
+  "inicio": 46.463,
+  "fim": 46.858
+ },
+ {
+  "palavra": "numa",
+  "inicio": 46.904,
+  "fim": 47.043
+ },
+ {
+  "palavra": "estrada.",
+  "inicio": 47.078,
+  "fim": 47.705
+ },
+ {
+  "palavra": "Esses",
+  "inicio": 48.019,
+  "fim": 48.39
+ },
+ {
+  "palavra": "são",
+  "inicio": 48.413,
+  "fim": 48.587
+ },
+ {
+  "palavra": "os",
+  "inicio": 48.611,
+  "fim": 48.692
+ },
+ {
+  "palavra": "canais.",
+  "inicio": 48.773,
+  "fim": 49.516
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 50.004,
+  "fim": 50.201
+ },
+ {
+  "palavra": "a",
+  "inicio": 50.294,
+  "fim": 50.317
+ },
+ {
+  "palavra": "onda",
+  "inicio": 50.387,
+  "fim": 50.619
+ },
+ {
+  "palavra": "bate",
+  "inicio": 50.677,
+  "fim": 50.956
+ },
+ {
+  "palavra": "na",
+  "inicio": 50.991,
+  "fim": 51.061
+ },
+ {
+  "palavra": "parede,",
+  "inicio": 51.107,
+  "fim": 51.63
+ },
+ {
+  "palavra": "quica,",
+  "inicio": 51.897,
+  "fim": 52.373
+ },
+ {
+  "palavra": "e",
+  "inicio": 52.57,
+  "fim": 52.709
+ },
+ {
+  "palavra": "chega",
+  "inicio": 52.767,
+  "fim": 53.023
+ },
+ {
+  "palavra": "duas",
+  "inicio": 53.069,
+  "fim": 53.313
+ },
+ {
+  "palavra": "vezes,",
+  "inicio": 53.383,
+  "fim": 53.72
+ },
+ {
+  "palavra": "atrasada!",
+  "inicio": 53.789,
+  "fim": 54.474
+ },
+ {
+  "palavra": "Então",
+  "inicio": 54.962,
+  "fim": 55.322
+ },
+ {
+  "palavra": "o",
+  "inicio": 55.403,
+  "fim": 55.461
+ },
+ {
+  "palavra": "roteador",
+  "inicio": 55.519,
+  "fim": 56.007
+ },
+ {
+  "palavra": "usa",
+  "inicio": 56.065,
+  "fim": 56.227
+ },
+ {
+  "palavra": "várias",
+  "inicio": 56.309,
+  "fim": 56.61
+ },
+ {
+  "palavra": "antenas",
+  "inicio": 56.668,
+  "fim": 57.156
+ },
+ {
+  "palavra": "e",
+  "inicio": 57.295,
+  "fim": 57.435
+ },
+ {
+  "palavra": "mira",
+  "inicio": 57.504,
+  "fim": 57.737
+ },
+ {
+  "palavra": "o",
+  "inicio": 57.783,
+  "fim": 57.818
+ },
+ {
+  "palavra": "sinal",
+  "inicio": 57.864,
+  "fim": 58.096
+ },
+ {
+  "palavra": "direto",
+  "inicio": 58.155,
+  "fim": 58.468
+ },
+ {
+  "palavra": "no",
+  "inicio": 58.514,
+  "fim": 58.572
+ },
+ {
+  "palavra": "seu",
+  "inicio": 58.619,
+  "fim": 58.793
+ },
+ {
+  "palavra": "celular.",
+  "inicio": 58.828,
+  "fim": 59.443
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 59.861,
+  "fim": 60.151
+ },
+ {
+  "palavra": "é",
+  "inicio": 60.209,
+  "fim": 60.256
+ },
+ {
+  "palavra": "o",
+  "inicio": 60.326,
+  "fim": 60.36
+ },
+ {
+  "palavra": "beamforming.",
+  "inicio": 60.442,
+  "fim": 61.243
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 61.73,
+  "fim": 61.986
+ },
+ {
+  "palavra": "qualquer",
+  "inicio": 62.055,
+  "fim": 62.369
+ },
+ {
+  "palavra": "um",
+  "inicio": 62.427,
+  "fim": 62.473
+ },
+ {
+  "palavra": "na",
+  "inicio": 62.508,
+  "fim": 62.578
+ },
+ {
+  "palavra": "rua",
+  "inicio": 62.624,
+  "fim": 62.822
+ },
+ {
+  "palavra": "pode",
+  "inicio": 62.868,
+  "fim": 63.066
+ },
+ {
+  "palavra": "escutar",
+  "inicio": 63.089,
+  "fim": 63.425
+ },
+ {
+  "palavra": "essas",
+  "inicio": 63.46,
+  "fim": 63.692
+ },
+ {
+  "palavra": "ondas!",
+  "inicio": 63.809,
+  "fim": 64.238
+ },
+ {
+  "palavra": "Então",
+  "inicio": 64.47,
+  "fim": 64.83
+ },
+ {
+  "palavra": "você",
+  "inicio": 64.865,
+  "fim": 65.086
+ },
+ {
+  "palavra": "embaralha",
+  "inicio": 65.144,
+  "fim": 65.597
+ },
+ {
+  "palavra": "tudo",
+  "inicio": 65.678,
+  "fim": 65.933
+ },
+ {
+  "palavra": "com",
+  "inicio": 65.968,
+  "fim": 66.084
+ },
+ {
+  "palavra": "uma",
+  "inicio": 66.119,
+  "fim": 66.27
+ },
+ {
+  "palavra": "senha.",
+  "inicio": 66.328,
+  "fim": 66.746
+ },
+ {
+  "palavra": "Só",
+  "inicio": 67.234,
+  "fim": 67.396
+ },
+ {
+  "palavra": "quem",
+  "inicio": 67.443,
+  "fim": 67.559
+ },
+ {
+  "palavra": "tem",
+  "inicio": 67.617,
+  "fim": 67.744
+ },
+ {
+  "palavra": "a",
+  "inicio": 67.803,
+  "fim": 67.837
+ },
+ {
+  "palavra": "chave",
+  "inicio": 67.895,
+  "fim": 68.151
+ },
+ {
+  "palavra": "entende.",
+  "inicio": 68.174,
+  "fim": 68.755
+ },
+ {
+  "palavra": "Essa",
+  "inicio": 69.114,
+  "fim": 69.405
+ },
+ {
+  "palavra": "é",
+  "inicio": 69.474,
+  "fim": 69.498
+ },
+ {
+  "palavra": "a",
+  "inicio": 69.532,
+  "fim": 69.556
+ },
+ {
+  "palavra": "criptografia.",
+  "inicio": 69.59,
+  "fim": 70.554
+ },
+ {
+  "palavra": "E",
+  "inicio": 70.972,
+  "fim": 71.053
+ },
+ {
+  "palavra": "o",
+  "inicio": 71.111,
+  "fim": 71.135
+ },
+ {
+  "palavra": "mais",
+  "inicio": 71.181,
+  "fim": 71.378
+ },
+ {
+  "palavra": "estranho:",
+  "inicio": 71.436,
+  "fim": 71.982
+ },
+ {
+  "palavra": "o",
+  "inicio": 72.214,
+  "fim": 72.272
+ },
+ {
+  "palavra": "micro-ondas",
+  "inicio": 72.33,
+  "fim": 72.923
+ },
+ {
+  "palavra": "da",
+  "inicio": 72.969,
+  "fim": 73.039
+ },
+ {
+  "palavra": "sua",
+  "inicio": 73.085,
+  "fim": 73.213
+ },
+ {
+  "palavra": "cozinha",
+  "inicio": 73.248,
+  "fim": 73.758
+ },
+ {
+  "palavra": "usa",
+  "inicio": 73.956,
+  "fim": 74.211
+ },
+ {
+  "palavra": "quase",
+  "inicio": 74.292,
+  "fim": 74.641
+ },
+ {
+  "palavra": "a",
+  "inicio": 74.687,
+  "fim": 74.71
+ },
+ {
+  "palavra": "mesma",
+  "inicio": 74.803,
+  "fim": 75.07
+ },
+ {
+  "palavra": "frequência.",
+  "inicio": 75.105,
+  "fim": 75.732
+ },
+ {
+  "palavra": "Por",
+  "inicio": 75.999,
+  "fim": 76.22
+ },
+ {
+  "palavra": "isso",
+  "inicio": 76.266,
+  "fim": 76.394
+ },
+ {
+  "palavra": "ele",
+  "inicio": 76.417,
+  "fim": 76.522
+ },
+ {
+  "palavra": "pode",
+  "inicio": 76.556,
+  "fim": 76.777
+ },
+ {
+  "palavra": "derrubar",
+  "inicio": 76.823,
+  "fim": 77.23
+ },
+ {
+  "palavra": "o",
+  "inicio": 77.276,
+  "fim": 77.299
+ },
+ {
+  "palavra": "seu",
+  "inicio": 77.358,
+  "fim": 77.52
+ },
+ {
+  "palavra": "Wi-Fi.",
+  "inicio": 77.601,
+  "fim": 78.205
+ },
+ {
+  "palavra": "Pronto!",
+  "inicio": 78.786,
+  "fim": 79.354
+ },
+ {
+  "palavra": "Você",
+  "inicio": 79.587,
+  "fim": 79.796
+ },
+ {
+  "palavra": "construiu",
+  "inicio": 79.865,
+  "fim": 80.446
+ },
+ {
+  "palavra": "o",
+  "inicio": 80.608,
+  "fim": 80.632
+ },
+ {
+  "palavra": "Wi-Fi.",
+  "inicio": 80.701,
+  "fim": 81.282
+ },
+ {
+  "palavra": "O",
+  "inicio": 81.642,
+  "fim": 81.711
+ },
+ {
+  "palavra": "seu",
+  "inicio": 81.769,
+  "fim": 81.92
+ },
+ {
+  "palavra": "Wi-Fi",
+  "inicio": 81.955,
+  "fim": 82.257
+ },
+ {
+  "palavra": "já",
+  "inicio": 82.303,
+  "fim": 82.385
+ },
+ {
+  "palavra": "caiu",
+  "inicio": 82.431,
+  "fim": 82.663
+ },
+ {
+  "palavra": "quando",
+  "inicio": 82.71,
+  "fim": 82.895
+ },
+ {
+  "palavra": "ligaram",
+  "inicio": 82.93,
+  "fim": 83.221
+ },
+ {
+  "palavra": "o",
+  "inicio": 83.244,
+  "fim": 83.267
+ },
+ {
+  "palavra": "micro-ondas?",
+  "inicio": 83.302,
+  "fim": 84.056
+ },
+ {
+  "palavra": "Comente",
+  "inicio": 84.219,
+  "fim": 84.637
+ },
+ {
+  "palavra": "sim",
+  "inicio": 84.707,
+  "fim": 84.916
+ },
+ {
+  "palavra": "ou",
+  "inicio": 84.985,
+  "fim": 85.067
+ },
+ {
+  "palavra": "não!",
+  "inicio": 85.136,
+  "fim": 85.635
+ }
+]

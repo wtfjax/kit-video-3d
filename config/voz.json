@@ -1,0 +1,9 @@
+{
+  "provedor": "elevenlabs",
+  "elevenlabs": {
+    "voiceId": "TX3LPaxmHKxFdv7VOQHJ",
+    "estabilidade": 0.3,
+    "estilo": 0.45,
+    "velocidade": 1.05
+  }
+}

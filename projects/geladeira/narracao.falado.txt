@@ -1,0 +1,15 @@
+Você quer deixar a comida gelada num calor de quarenta graus.
+Você tenta encher uma caixa de gelo. Mas o gelo derrete, e você tem que comprar mais todo dia!
+Então você usa um truque: líquido que evapora rouba calor, igual álcool na mão deixa a pele gelada.
+Você passa um gás especial por canos dentro da geladeira. Ele evapora e puxa o calor da comida. Esse é o evaporador.
+Mas agora o gás está morno, e não puxa mais nada.
+Então você aperta ele com uma bomba. Esse é o compressor.
+Mas o gás apertado fica muito quente!
+Então você passa ele numa grade atrás da geladeira, e o calor vai pro ar da cozinha. Ele esfria e vira líquido de novo. Esse é o condensador.
+Mas líquido apertado não evapora.
+Então você força ele por um cano fininho. A pressão cai de repente, e ele evapora gelado de novo. Esse é o tubo capilar.
+Mas se ficar ligado sempre, congela tudo!
+Então um sensor desliga o compressor quando chega no frio certo. Esse é o termostato.
+E é por isso que atrás da geladeira é quente: ela não cria frio. Ela tira o calor de dentro e joga pra fora.
+Pronto! Você construiu uma geladeira.
+Você já abriu a geladeira só pra se refrescar? Comente sim ou não!

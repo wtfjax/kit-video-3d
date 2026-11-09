@@ -1,0 +1,10 @@
+{
+  "provedor": "elevenlabs",
+  "audio": "narracao.wav",
+  "duracao": 77.84,
+  "palavras": 219,
+  "frases": 26,
+  "voz": "enviada pelo criador",
+  "coberturaTempos": 1,
+  "observacao": "tempos estimados por sílabas e pausas do áudio (sem Whisper)"
+}

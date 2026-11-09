@@ -1,0 +1,15 @@
+Você quer guardar energia dentro de um celular fininho.
+Você tenta uma pilha comum. Mas ela é pesada e acaba em poucas horas! O metal dela guarda pouca energia por grama.
+Então você usa lítio, o metal mais leve que existe.
+De um lado você põe grafite, do outro um óxido de metal. Os íons de lítio viajam de um pro outro. Esses são os eletrodos.
+Mas se os dois lados se encostam, dá curto, e a bateria pega fogo!
+Então você separa os dois com um plástico cheio de furinhos, mais fino que um fio de cabelo. Esse é o separador.
+Mas os íons precisam de um caminho pra nadar.
+Então você encharca tudo num líquido especial. Esse é o eletrólito.
+Mas uma camada só guarda pouquíssima energia.
+Então você enrola as folhas como um rocambole, e cabe muito mais na caixinha.
+Mas se você carrega rápido demais, o lítio vira agulhas de metal que furam o separador!
+Então você coloca um chip que controla a carga e corta na hora certa. Esse é o circuito de proteção.
+E é por isso que a bateria velha incha: o líquido vira gás lá dentro.
+Pronto! Você construiu uma bateria de celular.
+Você deixa o celular carregando a noite toda? Comente sim ou não!

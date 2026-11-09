@@ -1,0 +1,15 @@
+Você quer mandar um vídeo do seu quarto até a sala, sem fio nenhum.
+Você tenta mandar os dados com som. Mas o som é lento, e a parede abafa tudo!
+Então você usa ondas de rádio. Elas voam na velocidade da luz e atravessam parede.
+Um fio de metal faz os elétrons balançarem bilhões de vezes por segundo, e a onda sai voando. Essa é a antena.
+Mas uma onda sozinha não carrega informação nenhuma.
+Então você muda a onda o tempo todo: um pouco mais forte, um pouco atrasada. Cada mudança vira zero ou um. Essa é a modulação.
+Mas o vizinho também tem roteador, e as ondas se embaralham!
+Então você divide o ar em faixas, como pistas numa estrada. Esses são os canais.
+Mas a onda bate na parede, quica, e chega duas vezes, atrasada!
+Então o roteador usa várias antenas e mira o sinal direto no seu celular. Esse é o beamforming.
+Mas qualquer um na rua pode escutar essas ondas!
+Então você embaralha tudo com uma senha. Só quem tem a chave entende. Essa é a criptografia.
+E o mais estranho: o micro-ondas da sua cozinha usa quase a mesma frequência. Por isso ele pode derrubar o seu Wi-Fi.
+Pronto! Você construiu o Wi-Fi.
+O seu Wi-Fi já caiu quando ligaram o micro-ondas? Comente sim ou não!

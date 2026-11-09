@@ -1,0 +1,14 @@
+Você quer tirar energia do vento.
+Você tenta um cata-vento de fazenda, com várias pás largas. Mas ele gira devagar e quase não gera nada!
+Então você usa três pás compridas e finas, com formato de asa de avião. O vento passa e puxa a pá, como puxa uma asa pra cima. Essas são as pás.
+Mas a pá dá umas quinze voltas por minuto, e o gerador precisa de mais de mil.
+Então você coloca engrenagens que multiplicam a rotação. Essa é a caixa multiplicadora.
+Mas o vento muda de direção o tempo todo.
+Então um sensor no topo sente o vento, e um motor vira a cabeça da turbina de frente pra ele. Esse é o sistema de giro.
+Mas perto do chão, o vento é fraco e cheio de redemoinho.
+Então você sobe tudo numa torre da altura de um prédio de trinta andares.
+Mas numa tempestade, o vento forte pode arrebentar as pás!
+Então você gira cada pá de lado, pra ela cortar o vento em vez de ser empurrada, e a turbina quase para. Esse é o controle de passo.
+E o mais impressionante: a ponta da pá passa de trezentos quilômetros por hora!
+Pronto! Você construiu uma turbina eólica.
+Você já viu uma dessas de perto? Comente sim ou não!

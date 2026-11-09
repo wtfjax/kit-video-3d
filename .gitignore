@@ -1,0 +1,10 @@
+node_modules/
+.env
+.voz/
+dist/
+projects/*/render/
+projects/_teste-voz/
+*.log
+.DS_Store
+*.bak*
+engine/player.js.bak*

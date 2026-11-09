@@ -1,0 +1,152 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer esquentar comida em dois minutos.",
+  "inicio": 0,
+  "fim": 2.322
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta fogo forte.",
+  "inicio": 2.485,
+  "fim": 4.168
+ },
+ {
+  "n": 3,
+  "texto": "Mas ele queima por fora, e o meio continua gelado!",
+  "inicio": 4.365,
+  "fim": 7.175
+ },
+ {
+  "n": 4,
+  "texto": "O calor demora pra entrar.",
+  "inicio": 7.755,
+  "fim": 9.451
+ },
+ {
+  "n": 5,
+  "texto": "Então você usa ondas invisíveis, que entram alguns centímetros na comida e sacodem as moléculas de água.",
+  "inicio": 9.764,
+  "fim": 16.358
+ },
+ {
+  "n": 6,
+  "texto": "Elas se esfregam e esquentam por dentro.",
+  "inicio": 16.672,
+  "fim": 18.912
+ },
+ {
+  "n": 7,
+  "texto": "Quem faz essas ondas é um tubo com ímãs e um fio aquecido.",
+  "inicio": 19.145,
+  "fim": 23.22
+ },
+ {
+  "n": 8,
+  "texto": "Esse é o magnetron.",
+  "inicio": 23.452,
+  "fim": 24.601
+ },
+ {
+  "n": 9,
+  "texto": "Mas a onda sai pra todo lado e escaparia pela cozinha!",
+  "inicio": 25.263,
+  "fim": 28.224
+ },
+ {
+  "n": 10,
+  "texto": "Então você prende tudo numa caixa de metal.",
+  "inicio": 28.885,
+  "fim": 31.207
+ },
+ {
+  "n": 11,
+  "texto": "A onda bate e volta, igual bolinha numa caixa.",
+  "inicio": 31.625,
+  "fim": 34.504
+ },
+ {
+  "n": 12,
+  "texto": "Essa é a cavidade.",
+  "inicio": 34.737,
+  "fim": 35.828
+ },
+ {
+  "n": 13,
+  "texto": "Mas você precisa ver a comida.",
+  "inicio": 36.188,
+  "fim": 38.208
+ },
+ {
+  "n": 14,
+  "texto": "Então você põe na porta uma tela de metal com furinhos menores que a onda.",
+  "inicio": 38.522,
+  "fim": 42.539
+ },
+ {
+  "n": 15,
+  "texto": "A luz passa, a onda não.",
+  "inicio": 43.316,
+  "fim": 45.162
+ },
+ {
+  "n": 16,
+  "texto": "Essa é a grade da porta.",
+  "inicio": 45.743,
+  "fim": 47.298
+ },
+ {
+  "n": 17,
+  "texto": "Mas as ondas se somam em alguns pontos e se anulam em outros.",
+  "inicio": 47.612,
+  "fim": 51.431
+ },
+ {
+  "n": 18,
+  "texto": "A comida fica quente num lado e gelada no outro!",
+  "inicio": 51.791,
+  "fim": 54.462
+ },
+ {
+  "n": 19,
+  "texto": "Então você faz o prato girar, e cada pedaço passa pelos pontos quentes.",
+  "inicio": 54.88,
+  "fim": 59.198
+ },
+ {
+  "n": 20,
+  "texto": "Esse é o prato giratório.",
+  "inicio": 59.976,
+  "fim": 61.52
+ },
+ {
+  "n": 21,
+  "texto": "E o mais estranho: o micro-ondas foi descoberto quando um chocolate derreteu no bolso de um engenheiro que trabalhava com radar.",
+  "inicio": 61.834,
+  "fim": 69.102
+ },
+ {
+  "n": 22,
+  "texto": "Pronto!",
+  "inicio": 69.88,
+  "fim": 70.46
+ },
+ {
+  "n": 23,
+  "texto": "Você construiu um micro-ondas.",
+  "inicio": 70.774,
+  "fim": 72.527
+ },
+ {
+  "n": 24,
+  "texto": "Você já colocou metal no micro-ondas sem querer?",
+  "inicio": 72.724,
+  "fim": 74.907
+ },
+ {
+  "n": 25,
+  "texto": "Comente sim ou não!",
+  "inicio": 75.22,
+  "fim": 76.672
+ }
+]

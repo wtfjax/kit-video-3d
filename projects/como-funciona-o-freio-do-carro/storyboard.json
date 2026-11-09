@@ -1,0 +1,6456 @@
+{
+ "versao": 1,
+ "titulo": "Como funciona o freio do carro",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30
+ },
+ "duracao": 95.2,
+ "audio": "narracao.mp3",
+ "palavras": "palavras.json",
+ "legendas": {
+  "ativo": true,
+  "palavrasPorBloco": 1
+ },
+ "ambiente": {
+  "fundo": "interior",
+  "chao": "piso",
+  "horario": "dia"
+ },
+ "cenas": [
+  {
+   "inicio": 0,
+   "fim": 4.6,
+   "transicao": "corte",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -45,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 0,
+       "ate": 4.6,
+       "para": [
+        12,
+        1.7
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": {
+      "ancora": "carro",
+      "desloca": [
+       0,
+       0.2,
+       -2.2
+      ]
+     },
+     "taxa": 12,
+     "tamanho": 0.2
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3,
+      0.2,
+      5.5
+     ],
+     "giro": -90,
+     "viraPara": [
+      {
+       "em": 0.5,
+       "alvo": "carro"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 2.5,
+       "ate": 4.6
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     9,
+     1.4,
+     10
+    ],
+    "olha": [
+     -2,
+     1,
+     1.7
+    ],
+    "fov": 46
+   },
+   "textos": [
+    {
+     "texto": "100 KM/H. 1 TONELADA. SÓ O SEU PÉ.",
+     "de": 0.1,
+     "ate": 4.5,
+     "estilo": "titulo"
+    }
+   ]
+  },
+  {
+   "inicio": 4.6,
+   "fim": 9.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      0,
+      0.06,
+      1.7
+     ],
+     "giro": 90
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.9,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "acoes": [
+      {
+       "clip": "push",
+       "de": 4.8,
+       "ate": 9.2,
+       "expressao": "angry"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -3,
+     1.6,
+     7.5
+    ],
+    "olha": [
+     -1.2,
+     0.9,
+     1.7
+    ],
+    "fov": 44
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.75,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 6.5,
+     "ate": 9
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": [
+      -3,
+      0.1,
+      1.7
+     ],
+     "taxa": 6,
+     "tamanho": 0.08,
+     "de": 5,
+     "ate": 9
+    }
+   ]
+  },
+  {
+   "inicio": 9.2,
+   "fim": 13.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 9.6
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     },
+     "aparece": 9.6
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -4,
+      0,
+      1
+     ],
+     "giro": 70,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 9.8,
+       "ate": 12
+      },
+      {
+       "clip": "point",
+       "de": 12.1,
+       "ate": 13.45,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1.6,
+     1.8,
+     2.8
+    ],
+    "olha": [
+     -2.7,
+     0.9,
+     0.1
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "esquerda",
+     "pos": [
+      0.5,
+      0.42
+     ],
+     "tamanho": 0.13,
+     "pulsa": true,
+     "de": 11.5,
+     "ate": 13.3
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      -3,
+      1.15,
+      0.45
+     ],
+     "taxa": 15,
+     "tamanho": 0.03,
+     "de": 9.8,
+     "ate": 11.5
+    }
+   ]
+  },
+  {
+   "inicio": 13.45,
+   "fim": 16.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -18,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 13.45,
+       "ate": 16.2,
+       "para": [
+        14,
+        1.7
+       ]
+      }
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0.2,
+      5.5
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 13.5,
+       "alvo": "carro"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 13.7,
+       "ate": 16.2,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2,
+     0.6,
+     6.5
+    ],
+    "olha": [
+     0,
+     0.4,
+     1.7
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 16.2,
+   "fim": 18.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     },
+     "aparece": 16.3
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     },
+     "aparece": 16.8
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.6,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 16.4,
+       "ate": 18.45,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 30,
+     "velocidade": 3,
+     "tamanho": 0.05,
+     "de": 17.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.2,
+     2.6,
+     7.8
+    ],
+    "olha": [
+     0,
+     1,
+     -0.3
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 18.45,
+   "fim": 23.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 1.2
+      }
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 1.2
+      }
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.6,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "push",
+       "de": 18.6,
+       "ate": 23.15
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 45,
+     "velocidade": 5,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      -1.6,
+      1.9,
+      3.2
+     ],
+     "olha": [
+      -2.4,
+      1,
+      0
+     ]
+    },
+    "para": {
+     "pos": [
+      2.2,
+      2.2,
+      3.4
+     ],
+     "olha": [
+      1.4,
+      1.3,
+      -0.5
+     ]
+    },
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "direita",
+     "pos": [
+      0.5,
+      0.4
+     ],
+     "tamanho": 0.13,
+     "pulsa": true,
+     "de": 19.5,
+     "ate": 23
+    }
+   ]
+  },
+  {
+   "inicio": 23.15,
+   "fim": 25.3,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.6,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 23.2,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "nod",
+       "de": 23.3,
+       "ate": 25.3,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 30,
+     "velocidade": 3,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.2,
+     2.6,
+     7.8
+    ],
+    "olha": [
+     0,
+     1,
+     -0.3
+    ],
+    "fov": 50
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "fluido de freio",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9a441",
+     "de": 23.4,
+     "ate": 25.2
+    }
+   ]
+  },
+  {
+   "inicio": 25.3,
+   "fim": 30.95,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 1.2
+      }
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 1.2
+      }
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 25.8
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 26,
+       "ate": 30.95,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 45,
+     "velocidade": 5,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.8,
+     2.4,
+     3.4
+    ],
+    "olha": [
+     2,
+     1.6,
+     -0.6
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "baixo",
+     "pos": [
+      0.48,
+      0.38
+     ],
+     "tamanho": 0.14,
+     "pulsa": true,
+     "de": 27.5,
+     "ate": 30.8
+    }
+   ]
+  },
+  {
+   "inicio": 30.95,
+   "fim": 32.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     },
+     "anim": {
+      "pulsa": 0.05
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "acoes": [
+      {
+       "clip": "nod",
+       "de": 31,
+       "ate": 32.6
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 30,
+     "velocidade": 3,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.2,
+     3
+    ],
+    "olha": [
+     2.4,
+     1.6,
+     -0.6
+    ],
+    "fov": 40
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "cilindro",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 31.2,
+     "ate": 32.5
+    }
+   ]
+  },
+  {
+   "inicio": 32.6,
+   "fim": 34.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "viraPara": [
+      {
+       "em": 32.7,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 32.7,
+       "ate": 34.15
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 15,
+     "velocidade": 3,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.2,
+     2.6,
+     7.8
+    ],
+    "olha": [
+     0,
+     1,
+     -0.3
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 34.15,
+   "fim": 40.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 160,
+      "dentes": 48
+     },
+     "aparece": 34.6
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 37
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 37
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 34.8,
+       "ate": 37.8
+      },
+      {
+       "clip": "point",
+       "de": 38,
+       "ate": 40.6,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 30,
+     "velocidade": 3,
+     "tamanho": 0.05,
+     "de": 38
+    },
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 30,
+     "dispersao": 0.15,
+     "tamanho": 0.03,
+     "de": 38.5
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.6,
+     1.8,
+     3
+    ],
+    "olha": [
+     2.3,
+     1.2,
+     -0.6
+    ],
+    "fov": 42
+   }
+  },
+  {
+   "inicio": 40.6,
+   "fim": 42.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 90,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 3
+      }
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 3
+      }
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "viraPara": [
+      {
+       "em": 40.7,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "nod",
+       "de": 40.8,
+       "ate": 42.8,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 30,
+     "dispersao": 0.15,
+     "tamanho": 0.03
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.9,
+     2.3,
+     1.4
+    ],
+    "olha": [
+     2.4,
+     1.55,
+     -0.6
+    ],
+    "fov": 38
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "pastilhas",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#2f3338",
+     "de": 40.8,
+     "ate": 42.7
+    }
+   ]
+  },
+  {
+   "inicio": 42.8,
+   "fim": 46.9,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 60,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 43,
+       "ate": 46.9,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 45,
+     "dispersao": 0.15,
+     "tamanho": 0.03
+    },
+    {
+     "material": "vapor",
+     "origem": [
+      2.4,
+      1.6,
+      -0.6
+     ],
+     "taxa": 12,
+     "subida": 0.8,
+     "tamanho": 0.08,
+     "de": 44
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.6,
+     1.8,
+     3
+    ],
+    "olha": [
+     2.3,
+     1.2,
+     -0.6
+    ],
+    "fov": 42
+   }
+  },
+  {
+   "inicio": 46.9,
+   "fim": 51,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 40,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "viraPara": [
+      {
+       "em": 47,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 47.2,
+       "ate": 51,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 35,
+     "dispersao": 0.15,
+     "tamanho": 0.03
+    },
+    {
+     "material": "fogo",
+     "origem": [
+      2.4,
+      1.3,
+      -0.35
+     ],
+     "taxa": 18,
+     "dispersao": 0.25,
+     "tamanho": 0.05,
+     "vida": 0.3,
+     "subida": 0.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4.2,
+     1.6,
+     3.4
+    ],
+    "olha": [
+     2.6,
+     1.2,
+     -0.4
+    ],
+    "fov": 44
+   },
+   "textos": [
+    {
+     "texto": "MAIS DE 300 °C",
+     "de": 47.6,
+     "ate": 50.8,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 51,
+   "fim": 54.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "vermelha",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 40,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      0.9
+     ],
+     "giro": 35,
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 51.2,
+       "ate": 54.4,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 60,
+     "dispersao": 0.15,
+     "tamanho": 0.03
+    },
+    {
+     "material": "fogo",
+     "origem": [
+      2.4,
+      1,
+      -0.35
+     ],
+     "taxa": 30,
+     "dispersao": 0.5,
+     "tamanho": 0.05,
+     "vida": 0.3,
+     "subida": 0.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.6,
+     1.3,
+     2.4
+    ],
+    "olha": [
+     2.4,
+     1.1,
+     -0.6
+    ],
+    "fov": 44
+   },
+   "efeitos": [
+    {
+     "tipo": "zoom",
+     "de": 51,
+     "ate": 54.3,
+     "para": 1.15
+    }
+   ]
+  },
+  {
+   "inicio": 54.4,
+   "fim": 60.05,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -26,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 54.4,
+       "ate": 59.5,
+       "para": [
+        6,
+        1.7
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cone",
+     "asset": "cone",
+     "pos": [
+      8,
+      0.06,
+      1.7
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      4,
+      0.2,
+      5.5
+     ],
+     "giro": -90,
+     "viraPara": [
+      {
+       "em": 54.6,
+       "alvo": "carro"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 56.5,
+       "ate": 60.05,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fumaca",
+     "origem": {
+      "ancora": "carro",
+      "desloca": [
+       0,
+       0.2,
+       -1.4
+      ]
+     },
+     "taxa": 22,
+     "tamanho": 0.18,
+     "de": 55.5,
+     "ate": 59.5
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     12,
+     2.2,
+     10
+    ],
+    "olha": [
+     0,
+     0.8,
+     1.7
+    ],
+    "fov": 46
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 56,
+     "ate": 60,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.25,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 57,
+     "ate": 59.9
+    }
+   ]
+  },
+  {
+   "inicio": 60.05,
+   "fim": 64.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 80,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "sensor",
+     "asset": "forma",
+     "pos": [
+      3.35,
+      0.9,
+      -0.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       0.18,
+       0.18
+      ],
+      "cor": "#3d6fb6"
+     },
+     "aparece": 60.4
+    },
+    {
+     "id": "fios",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        3.35,
+        0.9,
+        -0.6
+       ],
+       [
+        3.35,
+        0.3,
+        -1.2
+       ],
+       [
+        0.75,
+        0.3,
+        -1.2
+       ]
+      ],
+      "raio": 0.025,
+      "cor": "#2f3338"
+     },
+     "aparece": 61.2
+    },
+    {
+     "id": "caixaabs",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.2
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.7,
+       0.6,
+       0.5
+      ],
+      "cor": "#3d6fb6"
+     },
+     "aparece": 62.4
+    },
+    {
+     "id": "motorabs",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.15,
+     "pos": [
+      0.4,
+      0.6,
+      -0.93
+     ],
+     "params": {
+      "velocidade": 200
+     },
+     "aparece": 62.4
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.6,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 60.4,
+       "ate": 64.2,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "eletricidade",
+     "caminho": [
+      [
+       3.35,
+       0.9,
+       -0.6
+      ],
+      [
+       3.35,
+       0.3,
+       -1.2
+      ],
+      [
+       0.75,
+       0.3,
+       -1.2
+      ]
+     ],
+     "taxa": 20,
+     "velocidade": 2.5,
+     "tamanho": 0.035,
+     "de": 61.4
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.2,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     1.6,
+     0.8,
+     -0.8
+    ],
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 64.2,
+   "fim": 68.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 80,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "sensor",
+     "asset": "forma",
+     "pos": [
+      3.35,
+      0.9,
+      -0.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       0.18,
+       0.18
+      ],
+      "cor": "#3d6fb6"
+     }
+    },
+    {
+     "id": "fios",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        3.35,
+        0.9,
+        -0.6
+       ],
+       [
+        3.35,
+        0.3,
+        -1.2
+       ],
+       [
+        0.75,
+        0.3,
+        -1.2
+       ]
+      ],
+      "raio": 0.025,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caixaabs",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.2
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.7,
+       0.6,
+       0.5
+      ],
+      "cor": "#3d6fb6"
+     }
+    },
+    {
+     "id": "motorabs",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.15,
+     "pos": [
+      0.4,
+      0.6,
+      -0.93
+     ],
+     "params": {
+      "velocidade": 300
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.6,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 64.3,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 64.5,
+       "ate": 68.2,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "eletricidade",
+     "caminho": [
+      [
+       3.35,
+       0.9,
+       -0.6
+      ],
+      [
+       3.35,
+       0.3,
+       -1.2
+      ],
+      [
+       0.75,
+       0.3,
+       -1.2
+      ]
+     ],
+     "taxa": 25,
+     "velocidade": 3,
+     "tamanho": 0.035
+    },
+    {
+     "material": "fagulha",
+     "origem": [
+      2.4,
+      1.2,
+      -0.3
+     ],
+     "taxa": 20,
+     "dispersao": 0.15,
+     "tamanho": 0.03
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.6,
+     1.8,
+     3
+    ],
+    "olha": [
+     2.3,
+     1.2,
+     -0.6
+    ],
+    "fov": 42
+   },
+   "textos": [
+    {
+     "texto": "15 VEZES POR SEGUNDO",
+     "de": 65.6,
+     "ate": 68,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 68.2,
+   "fim": 70.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.04,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 80,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "z",
+       "amp": 0.02,
+       "freq": 15
+      }
+     }
+    },
+    {
+     "id": "sensor",
+     "asset": "forma",
+     "pos": [
+      3.35,
+      0.9,
+      -0.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       0.18,
+       0.18
+      ],
+      "cor": "#3d6fb6"
+     }
+    },
+    {
+     "id": "fios",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        3.35,
+        0.9,
+        -0.6
+       ],
+       [
+        3.35,
+        0.3,
+        -1.2
+       ],
+       [
+        0.75,
+        0.3,
+        -1.2
+       ]
+      ],
+      "raio": 0.025,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caixaabs",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.2
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.7,
+       0.6,
+       0.5
+      ],
+      "cor": "#3d6fb6"
+     }
+    },
+    {
+     "id": "motorabs",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.15,
+     "pos": [
+      0.4,
+      0.6,
+      -0.93
+     ],
+     "params": {
+      "velocidade": 300
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -4,
+      0,
+      1
+     ],
+     "giro": 70,
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 68.3,
+       "ate": 70.6
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 40,
+     "velocidade": 3,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1.6,
+     1.8,
+     2.8
+    ],
+    "olha": [
+     -2.7,
+     0.9,
+     0.1
+    ],
+    "fov": 42
+   },
+   "efeitos": [
+    {
+     "tipo": "tremor",
+     "de": 68.3,
+     "ate": 70.5,
+     "intensidade": 0.3
+    }
+   ]
+  },
+  {
+   "inicio": 70.6,
+   "fim": 72.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -14,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 70.6,
+       "ate": 71.6,
+       "para": [
+        -4,
+        1.7
+       ]
+      },
+      {
+       "de": 71.6,
+       "ate": 72.4,
+       "para": [
+        2,
+        -1.4
+       ]
+      }
+     ]
+    },
+    {
+     "id": "cone",
+     "asset": "cone",
+     "pos": [
+      4,
+      0.06,
+      1.7
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      6,
+      0.2,
+      5.5
+     ],
+     "giro": -90,
+     "viraPara": [
+      {
+       "em": 70.7,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 70.7,
+       "ate": 72.4,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     10,
+     3,
+     11
+    ],
+    "olha": [
+     0,
+     0.6,
+     1
+    ],
+    "fov": 48
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "ABS",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#3d6fb6",
+     "de": 70.8,
+     "ate": 72.3
+    }
+   ]
+  },
+  {
+   "inicio": 72.4,
+   "fim": 76.9,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "nublado"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1,
+      0,
+      1.6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 72.5,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 72.7,
+       "ate": 76.9,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      -2.2,
+      2.6,
+      0.8
+     ],
+     "destino": [
+      -2.2,
+      1.1,
+      0
+     ],
+     "taxa": 14,
+     "tamanho": 0.07
+    },
+    {
+     "material": "bolha",
+     "origem": [
+      -2.2,
+      0.95,
+      0
+     ],
+     "taxa": 8,
+     "dispersao": 0.3,
+     "tamanho": 0.04
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1.4,
+     1.8,
+     3
+    ],
+    "olha": [
+     -2.2,
+     1.1,
+     0
+    ],
+    "fov": 42
+   }
+  },
+  {
+   "inicio": 76.9,
+   "fim": 83,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "nublado"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "disco",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.42,
+     "pos": [
+      2.4,
+      1,
+      -0.6
+     ],
+     "params": {
+      "velocidade": 120,
+      "dentes": 48
+     }
+    },
+    {
+     "id": "pinca",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.2,
+      -0.6
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.55,
+       0.7
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "past0",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.82
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "past1",
+     "asset": "forma",
+     "pos": [
+      2.4,
+      1.25,
+      -0.38
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.42,
+       0.38,
+       0.07
+      ],
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -4,
+      0,
+      1
+     ],
+     "giro": 70,
+     "acoes": [
+      {
+       "clip": "push",
+       "de": 77,
+       "ate": 80
+      },
+      {
+       "clip": "surprised",
+       "de": 80.2,
+       "ate": 83,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "bolha",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 25,
+     "velocidade": 1.5,
+     "tamanho": 0.06
+    },
+    {
+     "material": "vapor",
+     "origem": [
+      0.4,
+      1.1,
+      -0.3
+     ],
+     "taxa": 8,
+     "tamanho": 0.07
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.2,
+     2.6,
+     7.8
+    ],
+    "olha": [
+     0,
+     1,
+     -0.3
+    ],
+    "fov": 50
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 78,
+     "ate": 82.9,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "pulsa": true,
+     "de": 78.2,
+     "ate": 82.8
+    }
+   ]
+  },
+  {
+   "inicio": 83,
+   "fim": 86.1,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "banc",
+     "asset": "forma",
+     "pos": [
+      -4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.9,
+       0.7
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pneus",
+     "asset": "forma",
+     "pos": [
+      4.6,
+      0,
+      -1.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.9,
+       0.9,
+       0.9
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cx",
+     "asset": "caixa_madeira",
+     "pos": [
+      -4.4,
+      0,
+      0.6
+     ]
+    },
+    {
+     "id": "haste",
+     "asset": "forma",
+     "pos": [
+      -3,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.18,
+       1.2,
+       0.18
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "pedal",
+     "asset": "forma",
+     "pos": [
+      -3,
+      1.1,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.55,
+       0.12,
+       0.45
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "mestre",
+     "asset": "forma",
+     "pos": [
+      -2.2,
+      0.85,
+      0
+     ],
+     "opacidade": 0.5,
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.9,
+       0.38,
+       0.38
+      ],
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "cano",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "opacidade": 0.45,
+     "params": {
+      "pontos": [
+       [
+        -1.75,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        0
+       ],
+       [
+        0.4,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.04,
+        -0.6
+       ],
+       [
+        1.6,
+        1.5,
+        -0.6
+       ],
+       [
+        2.1,
+        1.5,
+        -0.6
+       ]
+      ],
+      "raio": 0.07,
+      "cor": "#d9a441"
+     }
+    },
+    {
+     "id": "frasco",
+     "asset": "forma",
+     "pos": [
+      -2,
+      1.3,
+      0.4
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.45,
+       0.25
+      ],
+      "cor": "#d9a441"
+     },
+     "aparece": 83.2
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -3.6,
+      0,
+      0.9
+     ],
+     "giro": 70,
+     "acoes": [
+      {
+       "clip": "crouch",
+       "de": 83.3,
+       "ate": 86.1
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      -2.05,
+      1.55,
+      0.3
+     ],
+     "destino": [
+      -2.2,
+      1.05,
+      0
+     ],
+     "taxa": 30,
+     "tamanho": 0.04,
+     "de": 83.6
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -1.75,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       0
+      ],
+      [
+       0.4,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.04,
+       -0.6
+      ],
+      [
+       1.6,
+       1.5,
+       -0.6
+      ],
+      [
+       2.1,
+       1.5,
+       -0.6
+      ]
+     ],
+     "taxa": 30,
+     "velocidade": 3,
+     "tamanho": 0.05,
+     "de": 84.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -0.6,
+     2.2,
+     3.2
+    ],
+    "olha": [
+     -2,
+     1.1,
+     0.1
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "a cada 2 anos",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9a441",
+     "de": 84,
+     "ate": 86
+    }
+   ]
+  },
+  {
+   "inicio": 86.1,
+   "fim": 89,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -20,
+      0.06,
+      1.7
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 86.1,
+       "ate": 88.6,
+       "para": [
+        0,
+        1.7
+       ]
+      }
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3,
+      0.2,
+      5.2
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 86.2,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 86.3,
+       "ate": 89,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     5,
+     1.8,
+     12
+    ],
+    "olha": [
+     1,
+     1,
+     2.5
+    ],
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 89,
+   "fim": 95.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "rua",
+     "asset": "rua_reta",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "giro": 90,
+     "params": {
+      "length": 90
+     }
+    },
+    {
+     "id": "c1",
+     "asset": "casa_simples",
+     "variante": "amarela",
+     "pos": [
+      -8,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "c2",
+     "asset": "sobrado",
+     "variante": "salmao",
+     "pos": [
+      4,
+      0,
+      -9
+     ]
+    },
+    {
+     "id": "arv",
+     "asset": "arvore_redonda",
+     "pos": [
+      -2,
+      0.2,
+      -5.8
+     ],
+     "params": {
+      "seed": 3
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "poste_luz",
+     "pos": [
+      10,
+      0.2,
+      -5
+     ]
+    },
+    {
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      0,
+      0.06,
+      1.7
+     ],
+     "giro": 90
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.5,
+      0.2,
+      4.6
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 89.1,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 89.2,
+       "ate": 91.5
+      },
+      {
+       "clip": "point",
+       "de": 91.7,
+       "ate": 95.2,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 89,
+       "ate": 95.2,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fumaca",
+     "origem": {
+      "ancora": "carro",
+      "desloca": [
+       0,
+       0.3,
+       -2.3
+      ]
+     },
+     "taxa": 4,
+     "tamanho": 0.12
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.2,
+     1.7,
+     9.2
+    ],
+    "olha": [
+     1.3,
+     1.5,
+     3.5
+    ],
+    "fov": 44
+   },
+   "textos": [
+    {
+     "texto": "O SEU PEDAL JÁ TREMEU?",
+     "de": 89.1,
+     "ate": 95.2,
+     "estilo": "pergunta"
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "sim ou não?",
+     "pos": [
+      0.5,
+      0.27
+     ],
+     "ponto": "#ffd60a",
+     "de": 93,
+     "ate": 95
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "som": "carro",
+   "de": 0,
+   "ate": 4.4,
+   "volume": 0.12
+  },
+  {
+   "som": "erro",
+   "de": 6.8,
+   "volume": 0.12
+  },
+  {
+   "som": "martelo",
+   "de": 9.9,
+   "volume": 0.12
+  },
+  {
+   "som": "agua",
+   "de": 19.2,
+   "ate": 21,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 23.4,
+   "volume": 0.15
+  },
+  {
+   "som": "martelo",
+   "de": 35,
+   "volume": 0.1
+  },
+  {
+   "som": "sucesso",
+   "de": 40.8,
+   "volume": 0.15
+  },
+  {
+   "som": "fogo",
+   "de": 43.4,
+   "ate": 45.4,
+   "volume": 0.1
+  },
+  {
+   "som": "alerta",
+   "de": 55.6,
+   "ate": 57.6,
+   "volume": 0.08
+  },
+  {
+   "som": "erro",
+   "de": 58.2,
+   "volume": 0.12
+  },
+  {
+   "som": "eletrico",
+   "de": 61.4,
+   "ate": 62.6,
+   "volume": 0.08
+  },
+  {
+   "som": "bomba",
+   "de": 64.3,
+   "ate": 66.6,
+   "volume": 0.1
+  },
+  {
+   "som": "sucesso",
+   "de": 70.8,
+   "volume": 0.15
+  },
+  {
+   "som": "alerta",
+   "de": 79,
+   "ate": 81,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 87.1,
+   "volume": 0.2
+  }
+ ]
+}

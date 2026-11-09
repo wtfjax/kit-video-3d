@@ -1,0 +1,146 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer subir vinte andares sem escada.",
+  "inicio": 0,
+  "fim": 2.264
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta puxar uma cabine com um motor e uma corda.",
+  "inicio": 2.577,
+  "fim": 5.41
+ },
+ {
+  "n": 3,
+  "texto": "Mas o motor tem que levantar o peso inteiro, e gasta energia demais!",
+  "inicio": 5.77,
+  "fim": 9.764
+ },
+ {
+  "n": 4,
+  "texto": "Então você pendura do outro lado do cabo um peso que equilibra a cabine.",
+  "inicio": 10.344,
+  "fim": 14.663
+ },
+ {
+  "n": 5,
+  "texto": "O motor só vence a diferença.",
+  "inicio": 15.081,
+  "fim": 16.857
+ },
+ {
+  "n": 6,
+  "texto": "Esse é o contrapeso.",
+  "inicio": 17.171,
+  "fim": 18.343
+ },
+ {
+  "n": 7,
+  "texto": "O cabo passa por uma roda com sulcos lá no topo, e o atrito puxa tudo.",
+  "inicio": 18.761,
+  "fim": 23.649
+ },
+ {
+  "n": 8,
+  "texto": "Essa é a polia de tração.",
+  "inicio": 24.555,
+  "fim": 26.25
+ },
+ {
+  "n": 9,
+  "texto": "Mas e se o cabo arrebentar?",
+  "inicio": 26.61,
+  "fim": 28.2
+ },
+ {
+  "n": 10,
+  "texto": "Então você coloca garras nas laterais.",
+  "inicio": 28.688,
+  "fim": 30.836
+ },
+ {
+  "n": 11,
+  "texto": "Se a cabine desce rápido demais, elas apertam os trilhos e travam tudo.",
+  "inicio": 31.254,
+  "fim": 35.724
+ },
+ {
+  "n": 12,
+  "texto": "Esse é o freio de segurança.",
+  "inicio": 36.304,
+  "fim": 38.069
+ },
+ {
+  "n": 13,
+  "texto": "Mas a porta poderia abrir entre dois andares!",
+  "inicio": 38.649,
+  "fim": 41.331
+ },
+ {
+  "n": 14,
+  "texto": "Então a porta do andar só destrava quando a cabine está ali.",
+  "inicio": 41.819,
+  "fim": 45.65
+ },
+ {
+  "n": 15,
+  "texto": "Essa é a trava da porta.",
+  "inicio": 46.01,
+  "fim": 47.739
+ },
+ {
+  "n": 16,
+  "texto": "Mas a cabine pode passar do ponto e bater lá embaixo.",
+  "inicio": 48.157,
+  "fim": 50.967
+ },
+ {
+  "n": 17,
+  "texto": "Então você coloca molas gigantes no fundo do poço.",
+  "inicio": 51.455,
+  "fim": 54.717
+ },
+ {
+  "n": 18,
+  "texto": "Esses são os amortecedores.",
+  "inicio": 55.298,
+  "fim": 57.039
+ },
+ {
+  "n": 19,
+  "texto": "E o mais estranho: elevador quase nunca tem um cabo só.",
+  "inicio": 57.701,
+  "fim": 61.486
+ },
+ {
+  "n": 20,
+  "texto": "São vários, e cada um sozinho já aguentaria a cabine.",
+  "inicio": 61.718,
+  "fim": 65.154
+ },
+ {
+  "n": 21,
+  "texto": "Pronto!",
+  "inicio": 65.352,
+  "fim": 65.955
+ },
+ {
+  "n": 22,
+  "texto": "Você construiu um elevador.",
+  "inicio": 66.269,
+  "fim": 67.883
+ },
+ {
+  "n": 23,
+  "texto": "Você tem medo de elevador?",
+  "inicio": 68.463,
+  "fim": 69.891
+ },
+ {
+  "n": 24,
+  "texto": "Comente sim ou não!",
+  "inicio": 70.309,
+  "fim": 71.934
+ }
+]

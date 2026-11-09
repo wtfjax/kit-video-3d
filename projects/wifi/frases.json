@@ -1,0 +1,164 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer mandar um vídeo do seu quarto até a sala, sem fio nenhum.",
+  "inicio": 0,
+  "fim": 3.913
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta mandar os dados com som.",
+  "inicio": 4.69,
+  "fim": 6.734
+ },
+ {
+  "n": 3,
+  "texto": "Mas o som é lento, e a parede abafa tudo!",
+  "inicio": 7.512,
+  "fim": 10.635
+ },
+ {
+  "n": 4,
+  "texto": "Então você usa ondas de rádio.",
+  "inicio": 11.691,
+  "fim": 13.607
+ },
+ {
+  "n": 5,
+  "texto": "Elas voam na velocidade da luz e atravessam parede.",
+  "inicio": 14.269,
+  "fim": 17.183
+ },
+ {
+  "n": 6,
+  "texto": "Um fio de metal faz os elétrons balançarem bilhões de vezes por segundo, e a onda sai voando.",
+  "inicio": 17.845,
+  "fim": 23.975
+ },
+ {
+  "n": 7,
+  "texto": "Essa é a antena.",
+  "inicio": 24.462,
+  "fim": 25.635
+ },
+ {
+  "n": 8,
+  "texto": "Mas uma onda sozinha não carrega informação nenhuma.",
+  "inicio": 26.053,
+  "fim": 29.269
+ },
+ {
+  "n": 9,
+  "texto": "Então você muda a onda o tempo todo: um pouco mais forte, um pouco atrasada.",
+  "inicio": 29.931,
+  "fim": 34.806
+ },
+ {
+  "n": 10,
+  "texto": "Cada mudança vira zero ou um.",
+  "inicio": 35.468,
+  "fim": 37.651
+ },
+ {
+  "n": 11,
+  "texto": "Essa é a modulação.",
+  "inicio": 38.069,
+  "fim": 39.358
+ },
+ {
+  "n": 12,
+  "texto": "Mas o vizinho também tem roteador, e as ondas se embaralham!",
+  "inicio": 39.776,
+  "fim": 43.56
+ },
+ {
+  "n": 13,
+  "texto": "Então você divide o ar em faixas, como pistas numa estrada.",
+  "inicio": 44.222,
+  "fim": 47.705
+ },
+ {
+  "n": 14,
+  "texto": "Esses são os canais.",
+  "inicio": 48.019,
+  "fim": 49.516
+ },
+ {
+  "n": 15,
+  "texto": "Mas a onda bate na parede, quica, e chega duas vezes, atrasada!",
+  "inicio": 50.004,
+  "fim": 54.474
+ },
+ {
+  "n": 16,
+  "texto": "Então o roteador usa várias antenas e mira o sinal direto no seu celular.",
+  "inicio": 54.962,
+  "fim": 59.443
+ },
+ {
+  "n": 17,
+  "texto": "Esse é o beamforming.",
+  "inicio": 59.861,
+  "fim": 61.243
+ },
+ {
+  "n": 18,
+  "texto": "Mas qualquer um na rua pode escutar essas ondas!",
+  "inicio": 61.73,
+  "fim": 64.238
+ },
+ {
+  "n": 19,
+  "texto": "Então você embaralha tudo com uma senha.",
+  "inicio": 64.47,
+  "fim": 66.746
+ },
+ {
+  "n": 20,
+  "texto": "Só quem tem a chave entende.",
+  "inicio": 67.234,
+  "fim": 68.755
+ },
+ {
+  "n": 21,
+  "texto": "Essa é a criptografia.",
+  "inicio": 69.114,
+  "fim": 70.554
+ },
+ {
+  "n": 22,
+  "texto": "E o mais estranho: o micro-ondas da sua cozinha usa quase a mesma frequência.",
+  "inicio": 70.972,
+  "fim": 75.732
+ },
+ {
+  "n": 23,
+  "texto": "Por isso ele pode derrubar o seu Wi-Fi.",
+  "inicio": 75.999,
+  "fim": 78.205
+ },
+ {
+  "n": 24,
+  "texto": "Pronto!",
+  "inicio": 78.786,
+  "fim": 79.354
+ },
+ {
+  "n": 25,
+  "texto": "Você construiu o Wi-Fi.",
+  "inicio": 79.587,
+  "fim": 81.282
+ },
+ {
+  "n": 26,
+  "texto": "O seu Wi-Fi já caiu quando ligaram o micro-ondas?",
+  "inicio": 81.642,
+  "fim": 84.056
+ },
+ {
+  "n": 27,
+  "texto": "Comente sim ou não!",
+  "inicio": 84.219,
+  "fim": 85.635
+ }
+]

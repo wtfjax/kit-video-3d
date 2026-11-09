@@ -1,0 +1,57 @@
+# Renderiza na nuvem os projetos listados em fila-render.txt (um por linha).
+# Roda sozinho quando a fila muda; também dá para rodar à mão em Actions > "Renderizar vídeos" > Run workflow.
+# Os vídeos ficam em Actions > (execução) > Artifacts.
+name: Renderizar vídeos
+on:
+  push:
+    paths: ['fila-render.txt']
+  workflow_dispatch:
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    outputs:
+      projetos: ${{ steps.l.outputs.projetos }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: echo "projetos=$(grep -v '^\s*#' fila-render.txt | sed 's/\s*$//' | grep -v '^$' | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: listar
+    if: needs.listar.outputs.projetos != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        projeto: ${{ fromJson(needs.listar.outputs.projetos) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: ffmpeg e fonte das legendas
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          sudo apt-get install -y -qq fonts-montserrat || echo "fonte Montserrat indisponível; usando a padrão"
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
+      - name: Renderizar vídeo
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tools/render.mjs "projects/${{ matrix.projeto }}"
+      - name: Capa
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tools/render.mjs "projects/${{ matrix.projeto }}" --capa 1.5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.projeto }}
+          path: |
+            projects/${{ matrix.projeto }}/render/video.mp4
+            projects/${{ matrix.projeto }}/render/capa.png
+            projects/${{ matrix.projeto }}/postagem.md
+          retention-days: 30

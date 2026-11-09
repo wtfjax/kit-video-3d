@@ -1,0 +1,158 @@
+[
+ {
+  "n": 1,
+  "texto": "Como construir um túnel no fundo do mar?",
+  "inicio": 0.2,
+  "fim": 1.98
+ },
+ {
+  "n": 2,
+  "texto": "Você pensa em cavar.",
+  "inicio": 2.7,
+  "fim": 3.5
+ },
+ {
+  "n": 3,
+  "texto": "Mas debaixo d'água, o mar vai invadindo o buraco.",
+  "inicio": 4.12,
+  "fim": 6.26
+ },
+ {
+  "n": 4,
+  "texto": "Então você faz o contrário: constrói o túnel em pedaços gigantes, num estaleiro seco, longe do mar.",
+  "inicio": 7.03,
+  "fim": 12.55
+ },
+ {
+  "n": 5,
+  "texto": "Mas esses pedaços pesam milhares de toneladas.",
+  "inicio": 13.49,
+  "fim": 15.91
+ },
+ {
+  "n": 6,
+  "texto": "Como levar isso até lá?",
+  "inicio": 16.42,
+  "fim": 17.15
+ },
+ {
+  "n": 7,
+  "texto": "Então você fecha as pontas de cada pedaço.",
+  "inicio": 17.94,
+  "fim": 19.94
+ },
+ {
+  "n": 8,
+  "texto": "Aí ele vira um tubo oco, e o concreto flutua como um navio.",
+  "inicio": 20.49,
+  "fim": 23.53
+ },
+ {
+  "n": 9,
+  "texto": "Mas e agora?",
+  "inicio": 24.4,
+  "fim": 25.82
+ },
+ {
+  "n": 10,
+  "texto": "Ele precisa chegar no lugar certo, no meio do mar.",
+  "inicio": 25.82,
+  "fim": 28.11
+ },
+ {
+  "n": 11,
+  "texto": "Então você reboca cada pedaço, bem devagar, até o local, onde já existe uma vala cavada no fundo.",
+  "inicio": 28.85,
+  "fim": 34.74
+ },
+ {
+  "n": 12,
+  "texto": "Mas ele está boiando.",
+  "inicio": 35.58,
+  "fim": 36.93
+ },
+ {
+  "n": 13,
+  "texto": "Como fazer afundar?",
+  "inicio": 37.37,
+  "fim": 38.16
+ },
+ {
+  "n": 14,
+  "texto": "Então você enche o pedaço de água.",
+  "inicio": 38.92,
+  "fim": 40.92
+ },
+ {
+  "n": 15,
+  "texto": "Ele fica pesado e desce, aos poucos, até encostar no pedaço anterior.",
+  "inicio": 41.47,
+  "fim": 45.98
+ },
+ {
+  "n": 16,
+  "texto": "Mas ficou uma fresta entre os dois.",
+  "inicio": 46.87,
+  "fim": 48.77
+ },
+ {
+  "n": 17,
+  "texto": "O mar vai entrar?",
+  "inicio": 49.44,
+  "fim": 50.01
+ },
+ {
+  "n": 18,
+  "texto": "Então você deixa a própria pressão da água resolver.",
+  "inicio": 50.95,
+  "fim": 53.64
+ },
+ {
+  "n": 19,
+  "texto": "Ela empurra os pedaços e aperta uma borracha na junta.",
+  "inicio": 54.01,
+  "fim": 56.54
+ },
+ {
+  "n": 20,
+  "texto": "Não passa nem uma gota.",
+  "inicio": 57.18,
+  "fim": 58.35
+ },
+ {
+  "n": 21,
+  "texto": "Mas ainda tem água dentro do túnel.",
+  "inicio": 59.34,
+  "fim": 61.34
+ },
+ {
+  "n": 22,
+  "texto": "Então você bombeia tudo pra fora.",
+  "inicio": 61.76,
+  "fim": 63.62
+ },
+ {
+  "n": 23,
+  "texto": "O túnel fica seco, e as paredes das pontas são removidas.",
+  "inicio": 64.28,
+  "fim": 67.49
+ },
+ {
+  "n": 24,
+  "texto": "Mas ele está exposto no fundo do mar.",
+  "inicio": 68.32,
+  "fim": 70.04
+ },
+ {
+  "n": 25,
+  "texto": "Então você cobre tudo com pedras e terra.",
+  "inicio": 70.84,
+  "fim": 73.1
+ },
+ {
+  "n": 26,
+  "texto": "E quem passa de carro lá dentro nem imagina que aquilo já foi um barco gigante.",
+  "inicio": 73.78,
+  "fim": 77.59
+ }
+]

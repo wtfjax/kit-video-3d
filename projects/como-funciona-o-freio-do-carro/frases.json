@@ -1,0 +1,158 @@
+[
+ {
+  "n": 1,
+  "texto": "Você está a cem por hora e precisa parar um carro de uma tonelada com a ponta do pé!",
+  "inicio": 0,
+  "fim": 4.214
+ },
+ {
+  "n": 2,
+  "texto": "Só que a sua perna sozinha não tem força nem pra empurrar ele parado.",
+  "inicio": 4.992,
+  "fim": 8.951
+ },
+ {
+  "n": 3,
+  "texto": "Então você liga o pedal numa alavanca, que multiplica o seu empurrão.",
+  "inicio": 9.369,
+  "fim": 13.328
+ },
+ {
+  "n": 4,
+  "texto": "Mas a roda está lá longe, e girando!",
+  "inicio": 13.642,
+  "fim": 16.022
+ },
+ {
+  "n": 5,
+  "texto": "Então você enche um cano com óleo.",
+  "inicio": 16.382,
+  "fim": 18.019
+ },
+ {
+  "n": 6,
+  "texto": "Óleo não se espreme: o que você empurra de um lado, sai do outro na hora.",
+  "inicio": 18.925,
+  "fim": 22.895
+ },
+ {
+  "n": 7,
+  "texto": "Esse é o fluido de freio.",
+  "inicio": 23.383,
+  "fim": 24.962
+ },
+ {
+  "n": 8,
+  "texto": "Lá na roda, o óleo empurra um pistão bem maior, e a força cresce de novo.",
+  "inicio": 25.624,
+  "fim": 30.721
+ },
+ {
+  "n": 9,
+  "texto": "Esse é o cilindro.",
+  "inicio": 31.208,
+  "fim": 32.474
+ },
+ {
+  "n": 10,
+  "texto": "Mas empurrar o quê?",
+  "inicio": 32.671,
+  "fim": 33.879
+ },
+ {
+  "n": 11,
+  "texto": "Então você prende na roda um disco de aço, e o pistão aperta duas pastilhas contra ele, igual uma pinça.",
+  "inicio": 34.366,
+  "fim": 40.461
+ },
+ {
+  "n": 12,
+  "texto": "Essas são as pastilhas.",
+  "inicio": 40.729,
+  "fim": 42.377
+ },
+ {
+  "n": 13,
+  "texto": "O atrito transforma toda a velocidade em calor.",
+  "inicio": 43.155,
+  "fim": 46.475
+ },
+ {
+  "n": 14,
+  "texto": "Numa freada forte, o disco passa de trezentos graus!",
+  "inicio": 47.253,
+  "fim": 50.678
+ },
+ {
+  "n": 15,
+  "texto": "Em carro de corrida, ele chega a ficar vermelho!",
+  "inicio": 51.34,
+  "fim": 54.103
+ },
+ {
+  "n": 16,
+  "texto": "Mas se você pisa com tudo, a roda trava, e o carro escorrega reto, sem obedecer o volante!",
+  "inicio": 54.683,
+  "fim": 59.931
+ },
+ {
+  "n": 17,
+  "texto": "Então você coloca um sensor que vê a roda parando, e um motorzinho que solta e aperta o freio sozinho, até quinze vezes por segundo.",
+  "inicio": 60.245,
+  "fim": 67.919
+ },
+ {
+  "n": 18,
+  "texto": "É aquela tremedeira no pedal.",
+  "inicio": 68.5,
+  "fim": 70.404
+ },
+ {
+  "n": 19,
+  "texto": "Esse é o ABS.",
+  "inicio": 70.822,
+  "fim": 72.273
+ },
+ {
+  "n": 20,
+  "texto": "E o mais perigoso: o fluido de freio puxa a umidade do ar.",
+  "inicio": 72.54,
+  "fim": 76.731
+ },
+ {
+  "n": 21,
+  "texto": "Com o tempo, ele ferve dentro do cano, vira bolha, e o pedal afunda até o chão!",
+  "inicio": 77.149,
+  "fim": 82.675
+ },
+ {
+  "n": 22,
+  "texto": "Por isso tem que trocar o fluido a cada dois anos.",
+  "inicio": 83.163,
+  "fim": 85.926
+ },
+ {
+  "n": 23,
+  "texto": "Pronto!",
+  "inicio": 86.286,
+  "fim": 86.785
+ },
+ {
+  "n": 24,
+  "texto": "Você construiu um freio.",
+  "inicio": 87.052,
+  "fim": 88.376
+ },
+ {
+  "n": 25,
+  "texto": "No seu carro, o pedal já tremeu numa freada forte?",
+  "inicio": 89.281,
+  "fim": 92.59
+ },
+ {
+  "n": 26,
+  "texto": "Comente sim ou não!",
+  "inicio": 92.95,
+  "fim": 94.691
+ }
+]

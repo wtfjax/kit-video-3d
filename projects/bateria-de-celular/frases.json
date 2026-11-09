@@ -1,0 +1,146 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer guardar energia dentro de um celular fininho.",
+  "inicio": 0,
+  "fim": 2.926
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta uma pilha comum.",
+  "inicio": 3.704,
+  "fim": 5.294
+ },
+ {
+  "n": 3,
+  "texto": "Mas ela é pesada e acaba em poucas horas!",
+  "inicio": 5.608,
+  "fim": 8.406
+ },
+ {
+  "n": 4,
+  "texto": "O metal dela guarda pouca energia por grama.",
+  "inicio": 9.311,
+  "fim": 11.97
+ },
+ {
+  "n": 5,
+  "texto": "Então você usa lítio, o metal mais leve que existe.",
+  "inicio": 12.202,
+  "fim": 15.43
+ },
+ {
+  "n": 6,
+  "texto": "De um lado você põe grafite, do outro um óxido de metal.",
+  "inicio": 15.743,
+  "fim": 19.435
+ },
+ {
+  "n": 7,
+  "texto": "Os íons de lítio viajam de um pro outro.",
+  "inicio": 20.492,
+  "fim": 23.104
+ },
+ {
+  "n": 8,
+  "texto": "Esses são os eletrodos.",
+  "inicio": 23.464,
+  "fim": 24.985
+ },
+ {
+  "n": 9,
+  "texto": "Mas se os dois lados se encostam, dá curto, e a bateria pega fogo!",
+  "inicio": 25.298,
+  "fim": 29.756
+ },
+ {
+  "n": 10,
+  "texto": "Então você separa os dois com um plástico cheio de furinhos, mais fino que um fio de cabelo.",
+  "inicio": 30.174,
+  "fim": 35.132
+ },
+ {
+  "n": 11,
+  "texto": "Esse é o separador.",
+  "inicio": 35.399,
+  "fim": 36.85
+ },
+ {
+  "n": 12,
+  "texto": "Mas os íons precisam de um caminho pra nadar.",
+  "inicio": 37.431,
+  "fim": 40.229
+ },
+ {
+  "n": 13,
+  "texto": "Então você encharca tudo num líquido especial.",
+  "inicio": 40.426,
+  "fim": 43.155
+ },
+ {
+  "n": 14,
+  "texto": "Esse é o eletrólito.",
+  "inicio": 43.468,
+  "fim": 44.699
+ },
+ {
+  "n": 15,
+  "texto": "Mas uma camada só guarda pouquíssima energia.",
+  "inicio": 45.059,
+  "fim": 47.613
+ },
+ {
+  "n": 16,
+  "texto": "Então você enrola as folhas como um rocambole, e cabe muito mais na caixinha.",
+  "inicio": 47.973,
+  "fim": 52.477
+ },
+ {
+  "n": 17,
+  "texto": "Mas se você carrega rápido demais, o lítio vira agulhas de metal que furam o separador!",
+  "inicio": 52.895,
+  "fim": 58.143
+ },
+ {
+  "n": 18,
+  "texto": "Então você coloca um chip que controla a carga e corta na hora certa.",
+  "inicio": 58.457,
+  "fim": 62.787
+ },
+ {
+  "n": 19,
+  "texto": "Esse é o circuito de proteção.",
+  "inicio": 63.147,
+  "fim": 65.051
+ },
+ {
+  "n": 20,
+  "texto": "E é por isso que a bateria velha incha: o líquido vira gás lá dentro.",
+  "inicio": 65.283,
+  "fim": 69.521
+ },
+ {
+  "n": 21,
+  "texto": "Pronto!",
+  "inicio": 69.683,
+  "fim": 70.159
+ },
+ {
+  "n": 22,
+  "texto": "Você construiu uma bateria de celular.",
+  "inicio": 70.577,
+  "fim": 72.446
+ },
+ {
+  "n": 23,
+  "texto": "Você deixa o celular carregando a noite toda?",
+  "inicio": 72.528,
+  "fim": 74.885
+ },
+ {
+  "n": 24,
+  "texto": "Comente sim ou não!",
+  "inicio": 75.117,
+  "fim": 76.812
+ }
+]

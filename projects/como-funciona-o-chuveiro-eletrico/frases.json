@@ -1,0 +1,146 @@
+[
+ {
+  "n": 1,
+  "texto": "Fora da América Latina, quase ninguém conhece o chuveiro elétrico.",
+  "inicio": 0,
+  "fim": 3.785
+ },
+ {
+  "n": 2,
+  "texto": "Aqui, ele está em quase toda casa.",
+  "inicio": 4.029,
+  "fim": 6.327
+ },
+ {
+  "n": 3,
+  "texto": "Você quer um banho quente.",
+  "inicio": 6.931,
+  "fim": 8.231
+ },
+ {
+  "n": 4,
+  "texto": "Mas esquentar água no fogão e jogar com balde demora uma eternidade.",
+  "inicio": 9.044,
+  "fim": 14.489
+ },
+ {
+  "n": 5,
+  "texto": "Então você passa a água por uma caixinha, encostando num fio enrolado em mola.",
+  "inicio": 14.814,
+  "fim": 19.771
+ },
+ {
+  "n": 6,
+  "texto": "Quando a eletricidade passa, esse fio esquenta, igual a boca de um fogão elétrico.",
+  "inicio": 20.468,
+  "fim": 25.414
+ },
+ {
+  "n": 7,
+  "texto": "Essa é a resistência.",
+  "inicio": 25.739,
+  "fim": 27.132
+ },
+ {
+  "n": 8,
+  "texto": "Mas se o chuveiro ligar sem água, o fio fica vermelho e arrebenta em segundos.",
+  "inicio": 27.376,
+  "fim": 31.985
+ },
+ {
+  "n": 9,
+  "texto": "Então você coloca uma borrachinha que a própria água empurra.",
+  "inicio": 32.369,
+  "fim": 35.666
+ },
+ {
+  "n": 10,
+  "texto": "Só quando ela sobe, os contatos se encostam e a corrente passa.",
+  "inicio": 36.362,
+  "fim": 40.31
+ },
+ {
+  "n": 11,
+  "texto": "Esse é o diafragma.",
+  "inicio": 40.913,
+  "fim": 42.191
+ },
+ {
+  "n": 12,
+  "texto": "Mas o fio fica pelado dentro da água, e um defeito pode dar choque em quem está no banho.",
+  "inicio": 42.887,
+  "fim": 48.1
+ },
+ {
+  "n": 13,
+  "texto": "Então você liga a carcaça num fio que leva qualquer fuga pro chão.",
+  "inicio": 48.912,
+  "fim": 52.465
+ },
+ {
+  "n": 14,
+  "texto": "Esse é o fio terra.",
+  "inicio": 52.848,
+  "fim": 54.125
+ },
+ {
+  "n": 15,
+  "texto": "Mas no verão você quer menos calor.",
+  "inicio": 54.566,
+  "fim": 56.378
+ },
+ {
+  "n": 16,
+  "texto": "Então você coloca uma chave que muda o caminho da corrente.",
+  "inicio": 56.819,
+  "fim": 59.988
+ },
+ {
+  "n": 17,
+  "texto": "E aqui vem a parte estranha: no inverno, a corrente passa por um pedaço menor da resistência.",
+  "inicio": 60.429,
+  "fim": 66.42
+ },
+ {
+  "n": 18,
+  "texto": "Fio mais curto deixa passar mais corrente, e esquenta mais.",
+  "inicio": 67.117,
+  "fim": 70.681
+ },
+ {
+  "n": 19,
+  "texto": "Esse é o seletor.",
+  "inicio": 71.378,
+  "fim": 72.55
+ },
+ {
+  "n": 20,
+  "texto": "E é por isso que, quando você abre mais o registro, a água esfria.",
+  "inicio": 72.875,
+  "fim": 76.741
+ },
+ {
+  "n": 21,
+  "texto": "O calor é o mesmo, dividido por mais água.",
+  "inicio": 77.438,
+  "fim": 80.073
+ },
+ {
+  "n": 22,
+  "texto": "Pronto, você construiu um chuveiro elétrico.",
+  "inicio": 80.514,
+  "fim": 83.022
+ },
+ {
+  "n": 23,
+  "texto": "Na sua casa, ele fica no inverno ou no verão?",
+  "inicio": 83.405,
+  "fim": 86.157
+ },
+ {
+  "n": 24,
+  "texto": "Comente aí.",
+  "inicio": 86.436,
+  "fim": 87.399
+ }
+]

@@ -1,0 +1,146 @@
+[
+ {
+  "n": 1,
+  "texto": "Quase nenhuma casa nos Estados Unidos tem caixa d'água no telhado.",
+  "inicio": 0,
+  "fim": 4.133
+ },
+ {
+  "n": 2,
+  "texto": "Então por que a sua tem?",
+  "inicio": 4.516,
+  "fim": 6.014
+ },
+ {
+  "n": 3,
+  "texto": "Para descobrir, você vai levar água para dentro de casa sozinho.",
+  "inicio": 6.397,
+  "fim": 10.519
+ },
+ {
+  "n": 4,
+  "texto": "Primeiro, você cava um poço até encontrar água.",
+  "inicio": 10.902,
+  "fim": 13.677
+ },
+ {
+  "n": 5,
+  "texto": "Mas carregar balde todo dia é pesado demais.",
+  "inicio": 14.002,
+  "fim": 17.241
+ },
+ {
+  "n": 6,
+  "texto": "Então você instala uma bomba, que puxa a água por um cano até a torneira.",
+  "inicio": 17.566,
+  "fim": 22.268
+ },
+ {
+  "n": 7,
+  "texto": "Só que agora a bomba liga toda vez que alguém abre a torneira.",
+  "inicio": 22.709,
+  "fim": 25.948
+ },
+ {
+  "n": 8,
+  "texto": "E se a energia acaba, a casa inteira fica sem água.",
+  "inicio": 26.331,
+  "fim": 29.594
+ },
+ {
+  "n": 9,
+  "texto": "Então você usa um truque que os romanos já usavam.",
+  "inicio": 29.977,
+  "fim": 32.914
+ },
+ {
+  "n": 10,
+  "texto": "Você bombeia a água uma vez só, para um tanque lá no alto.",
+  "inicio": 33.297,
+  "fim": 36.745
+ },
+ {
+  "n": 11,
+  "texto": "Daí pra frente, quem empurra a água é a gravidade, de graça.",
+  "inicio": 37.07,
+  "fim": 41.134
+ },
+ {
+  "n": 12,
+  "texto": "E cada dez metros de altura empurram a água com a força de uma atmosfera inteira.",
+  "inicio": 41.517,
+  "fim": 45.882
+ },
+ {
+  "n": 13,
+  "texto": "Mas aí vem o problema.",
+  "inicio": 46.579,
+  "fim": 47.786
+ },
+ {
+  "n": 14,
+  "texto": "E num prédio de vinte andares?",
+  "inicio": 48.227,
+  "fim": 49.98
+ },
+ {
+  "n": 15,
+  "texto": "Lá embaixo, a pressão fica tão forte que pode estourar os canos.",
+  "inicio": 50.932,
+  "fim": 54.253
+ },
+ {
+  "n": 16,
+  "texto": "Então os engenheiros colocam válvulas que seguram a pressão nos andares de baixo.",
+  "inicio": 54.578,
+  "fim": 59.292
+ },
+ {
+  "n": 17,
+  "texto": "E nos arranha-céus, a água sobe por etapas, de tanque em tanque.",
+  "inicio": 59.988,
+  "fim": 65.074
+ },
+ {
+  "n": 18,
+  "texto": "Agora vem a parte mais estranha.",
+  "inicio": 65.771,
+  "fim": 67.558
+ },
+ {
+  "n": 19,
+  "texto": "Nos Estados Unidos, a água da rua quase nunca para, e chega com pressão o tempo todo.",
+  "inicio": 68.162,
+  "fim": 73.793
+ },
+ {
+  "n": 20,
+  "texto": "Aqui no Brasil, a água da rua pode faltar por horas, às vezes por dias.",
+  "inicio": 74.234,
+  "fim": 78.854
+ },
+ {
+  "n": 21,
+  "texto": "Por isso a sua caixa d'água não é só um tanque.",
+  "inicio": 79.667,
+  "fim": 82.198
+ },
+ {
+  "n": 22,
+  "texto": "Ela é um seguro contra a torneira seca.",
+  "inicio": 82.639,
+  "fim": 84.787
+ },
+ {
+  "n": 23,
+  "texto": "Agora me conta: na sua casa, a água já acabou alguma vez?",
+  "inicio": 85.484,
+  "fim": 89.768
+ },
+ {
+  "n": 24,
+  "texto": "Responde sim ou não aqui nos comentários.",
+  "inicio": 90.581,
+  "fim": 93.622
+ }
+]

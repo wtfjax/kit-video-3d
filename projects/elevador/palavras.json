@@ -1,0 +1,967 @@
+[
+ {
+  "palavra": "Você",
+  "inicio": 0,
+  "fim": 0.244
+ },
+ {
+  "palavra": "quer",
+  "inicio": 0.302,
+  "fim": 0.43
+ },
+ {
+  "palavra": "subir",
+  "inicio": 0.476,
+  "fim": 0.789
+ },
+ {
+  "palavra": "vinte",
+  "inicio": 0.848,
+  "fim": 1.103
+ },
+ {
+  "palavra": "andares",
+  "inicio": 1.138,
+  "fim": 1.474
+ },
+ {
+  "palavra": "sem",
+  "inicio": 1.498,
+  "fim": 1.66
+ },
+ {
+  "palavra": "escada.",
+  "inicio": 1.683,
+  "fim": 2.264
+ },
+ {
+  "palavra": "Você",
+  "inicio": 2.577,
+  "fim": 2.786
+ },
+ {
+  "palavra": "tenta",
+  "inicio": 2.833,
+  "fim": 3.03
+ },
+ {
+  "palavra": "puxar",
+  "inicio": 3.065,
+  "fim": 3.344
+ },
+ {
+  "palavra": "uma",
+  "inicio": 3.379,
+  "fim": 3.483
+ },
+ {
+  "palavra": "cabine",
+  "inicio": 3.529,
+  "fim": 3.913
+ },
+ {
+  "palavra": "com",
+  "inicio": 3.971,
+  "fim": 4.098
+ },
+ {
+  "palavra": "um",
+  "inicio": 4.122,
+  "fim": 4.214
+ },
+ {
+  "palavra": "motor",
+  "inicio": 4.238,
+  "fim": 4.632
+ },
+ {
+  "palavra": "e",
+  "inicio": 4.656,
+  "fim": 4.679
+ },
+ {
+  "palavra": "uma",
+  "inicio": 4.702,
+  "fim": 4.83
+ },
+ {
+  "palavra": "corda.",
+  "inicio": 4.899,
+  "fim": 5.41
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 5.77,
+  "fim": 5.933
+ },
+ {
+  "palavra": "o",
+  "inicio": 6.002,
+  "fim": 6.026
+ },
+ {
+  "palavra": "motor",
+  "inicio": 6.072,
+  "fim": 6.432
+ },
+ {
+  "palavra": "tem",
+  "inicio": 6.49,
+  "fim": 6.583
+ },
+ {
+  "palavra": "que",
+  "inicio": 6.606,
+  "fim": 6.676
+ },
+ {
+  "palavra": "levantar",
+  "inicio": 6.711,
+  "fim": 7.094
+ },
+ {
+  "palavra": "o",
+  "inicio": 7.14,
+  "fim": 7.163
+ },
+ {
+  "palavra": "peso",
+  "inicio": 7.21,
+  "fim": 7.477
+ },
+ {
+  "palavra": "inteiro,",
+  "inicio": 7.523,
+  "fim": 8.081
+ },
+ {
+  "palavra": "e",
+  "inicio": 8.173,
+  "fim": 8.29
+ },
+ {
+  "palavra": "gasta",
+  "inicio": 8.359,
+  "fim": 8.649
+ },
+ {
+  "palavra": "energia",
+  "inicio": 8.673,
+  "fim": 9.091
+ },
+ {
+  "palavra": "demais!",
+  "inicio": 9.137,
+  "fim": 9.764
+ },
+ {
+  "palavra": "Então",
+  "inicio": 10.344,
+  "fim": 10.67
+ },
+ {
+  "palavra": "você",
+  "inicio": 10.704,
+  "fim": 10.879
+ },
+ {
+  "palavra": "pendura",
+  "inicio": 10.948,
+  "fim": 11.389
+ },
+ {
+  "palavra": "do",
+  "inicio": 11.447,
+  "fim": 11.54
+ },
+ {
+  "palavra": "outro",
+  "inicio": 11.656,
+  "fim": 11.97
+ },
+ {
+  "palavra": "lado",
+  "inicio": 12.028,
+  "fim": 12.26
+ },
+ {
+  "palavra": "do",
+  "inicio": 12.295,
+  "fim": 12.365
+ },
+ {
+  "palavra": "cabo",
+  "inicio": 12.423,
+  "fim": 12.783
+ },
+ {
+  "palavra": "um",
+  "inicio": 12.841,
+  "fim": 12.922
+ },
+ {
+  "palavra": "peso",
+  "inicio": 12.98,
+  "fim": 13.259
+ },
+ {
+  "palavra": "que",
+  "inicio": 13.305,
+  "fim": 13.375
+ },
+ {
+  "palavra": "equilibra",
+  "inicio": 13.421,
+  "fim": 13.978
+ },
+ {
+  "palavra": "a",
+  "inicio": 14.013,
+  "fim": 14.048
+ },
+ {
+  "palavra": "cabine.",
+  "inicio": 14.082,
+  "fim": 14.663
+ },
+ {
+  "palavra": "O",
+  "inicio": 15.081,
+  "fim": 15.139
+ },
+ {
+  "palavra": "motor",
+  "inicio": 15.197,
+  "fim": 15.464
+ },
+ {
+  "palavra": "só",
+  "inicio": 15.522,
+  "fim": 15.638
+ },
+ {
+  "palavra": "vence",
+  "inicio": 15.754,
+  "fim": 16.091
+ },
+ {
+  "palavra": "a",
+  "inicio": 16.114,
+  "fim": 16.137
+ },
+ {
+  "palavra": "diferença.",
+  "inicio": 16.172,
+  "fim": 16.857
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 17.171,
+  "fim": 17.438
+ },
+ {
+  "palavra": "é",
+  "inicio": 17.461,
+  "fim": 17.484
+ },
+ {
+  "palavra": "o",
+  "inicio": 17.531,
+  "fim": 17.554
+ },
+ {
+  "palavra": "contrapeso.",
+  "inicio": 17.589,
+  "fim": 18.343
+ },
+ {
+  "palavra": "O",
+  "inicio": 18.761,
+  "fim": 18.854
+ },
+ {
+  "palavra": "cabo",
+  "inicio": 18.935,
+  "fim": 19.191
+ },
+ {
+  "palavra": "passa",
+  "inicio": 19.249,
+  "fim": 19.539
+ },
+ {
+  "palavra": "por",
+  "inicio": 19.586,
+  "fim": 19.702
+ },
+ {
+  "palavra": "uma",
+  "inicio": 19.748,
+  "fim": 19.887
+ },
+ {
+  "palavra": "roda",
+  "inicio": 19.946,
+  "fim": 20.236
+ },
+ {
+  "palavra": "com",
+  "inicio": 20.282,
+  "fim": 20.422
+ },
+ {
+  "palavra": "sulcos",
+  "inicio": 20.514,
+  "fim": 20.932
+ },
+ {
+  "palavra": "lá",
+  "inicio": 21.095,
+  "fim": 21.234
+ },
+ {
+  "palavra": "no",
+  "inicio": 21.304,
+  "fim": 21.374
+ },
+ {
+  "palavra": "topo,",
+  "inicio": 21.443,
+  "fim": 21.954
+ },
+ {
+  "palavra": "e",
+  "inicio": 22.117,
+  "fim": 22.233
+ },
+ {
+  "palavra": "o",
+  "inicio": 22.279,
+  "fim": 22.314
+ },
+ {
+  "palavra": "atrito",
+  "inicio": 22.36,
+  "fim": 22.755
+ },
+ {
+  "palavra": "puxa",
+  "inicio": 22.825,
+  "fim": 23.103
+ },
+ {
+  "palavra": "tudo.",
+  "inicio": 23.185,
+  "fim": 23.649
+ },
+ {
+  "palavra": "Essa",
+  "inicio": 24.555,
+  "fim": 24.903
+ },
+ {
+  "palavra": "é",
+  "inicio": 24.984,
+  "fim": 25.042
+ },
+ {
+  "palavra": "a",
+  "inicio": 25.1,
+  "fim": 25.124
+ },
+ {
+  "palavra": "polia",
+  "inicio": 25.17,
+  "fim": 25.553
+ },
+ {
+  "palavra": "de",
+  "inicio": 25.588,
+  "fim": 25.646
+ },
+ {
+  "palavra": "tração.",
+  "inicio": 25.692,
+  "fim": 26.25
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 26.61,
+  "fim": 26.784
+ },
+ {
+  "palavra": "e",
+  "inicio": 26.865,
+  "fim": 26.888
+ },
+ {
+  "palavra": "se",
+  "inicio": 26.958,
+  "fim": 27.028
+ },
+ {
+  "palavra": "o",
+  "inicio": 27.062,
+  "fim": 27.097
+ },
+ {
+  "palavra": "cabo",
+  "inicio": 27.144,
+  "fim": 27.434
+ },
+ {
+  "palavra": "arrebentar?",
+  "inicio": 27.515,
+  "fim": 28.2
+ },
+ {
+  "palavra": "Então",
+  "inicio": 28.688,
+  "fim": 28.99
+ },
+ {
+  "palavra": "você",
+  "inicio": 29.025,
+  "fim": 29.199
+ },
+ {
+  "palavra": "coloca",
+  "inicio": 29.257,
+  "fim": 29.559
+ },
+ {
+  "palavra": "garras",
+  "inicio": 29.628,
+  "fim": 29.977
+ },
+ {
+  "palavra": "nas",
+  "inicio": 30.023,
+  "fim": 30.127
+ },
+ {
+  "palavra": "laterais.",
+  "inicio": 30.186,
+  "fim": 30.836
+ },
+ {
+  "palavra": "Se",
+  "inicio": 31.254,
+  "fim": 31.381
+ },
+ {
+  "palavra": "a",
+  "inicio": 31.416,
+  "fim": 31.439
+ },
+ {
+  "palavra": "cabine",
+  "inicio": 31.474,
+  "fim": 31.834
+ },
+ {
+  "palavra": "desce",
+  "inicio": 31.892,
+  "fim": 32.194
+ },
+ {
+  "palavra": "rápido",
+  "inicio": 32.264,
+  "fim": 32.6
+ },
+ {
+  "palavra": "demais,",
+  "inicio": 32.659,
+  "fim": 33.169
+ },
+ {
+  "palavra": "elas",
+  "inicio": 33.436,
+  "fim": 33.703
+ },
+ {
+  "palavra": "apertam",
+  "inicio": 33.785,
+  "fim": 34.272
+ },
+ {
+  "palavra": "os",
+  "inicio": 34.319,
+  "fim": 34.377
+ },
+ {
+  "palavra": "trilhos",
+  "inicio": 34.446,
+  "fim": 34.76
+ },
+ {
+  "palavra": "e",
+  "inicio": 34.818,
+  "fim": 34.841
+ },
+ {
+  "palavra": "travam",
+  "inicio": 34.888,
+  "fim": 35.236
+ },
+ {
+  "palavra": "tudo.",
+  "inicio": 35.294,
+  "fim": 35.724
+ },
+ {
+  "palavra": "Esse",
+  "inicio": 36.304,
+  "fim": 36.641
+ },
+ {
+  "palavra": "é",
+  "inicio": 36.687,
+  "fim": 36.71
+ },
+ {
+  "palavra": "o",
+  "inicio": 36.768,
+  "fim": 36.803
+ },
+ {
+  "palavra": "freio",
+  "inicio": 36.919,
+  "fim": 37.244
+ },
+ {
+  "palavra": "de",
+  "inicio": 37.268,
+  "fim": 37.337
+ },
+ {
+  "palavra": "segurança.",
+  "inicio": 37.384,
+  "fim": 38.069
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 38.649,
+  "fim": 38.812
+ },
+ {
+  "palavra": "a",
+  "inicio": 38.881,
+  "fim": 38.905
+ },
+ {
+  "palavra": "porta",
+  "inicio": 38.974,
+  "fim": 39.23
+ },
+ {
+  "palavra": "poderia",
+  "inicio": 39.276,
+  "fim": 39.636
+ },
+ {
+  "palavra": "abrir",
+  "inicio": 39.659,
+  "fim": 39.938
+ },
+ {
+  "palavra": "entre",
+  "inicio": 39.984,
+  "fim": 40.182
+ },
+ {
+  "palavra": "dois",
+  "inicio": 40.275,
+  "fim": 40.577
+ },
+ {
+  "palavra": "andares!",
+  "inicio": 40.635,
+  "fim": 41.331
+ },
+ {
+  "palavra": "Então",
+  "inicio": 41.819,
+  "fim": 42.272
+ },
+ {
+  "palavra": "a",
+  "inicio": 42.504,
+  "fim": 42.585
+ },
+ {
+  "palavra": "porta",
+  "inicio": 42.666,
+  "fim": 42.933
+ },
+ {
+  "palavra": "do",
+  "inicio": 42.98,
+  "fim": 43.049
+ },
+ {
+  "palavra": "andar",
+  "inicio": 43.096,
+  "fim": 43.351
+ },
+ {
+  "palavra": "só",
+  "inicio": 43.444,
+  "fim": 43.642
+ },
+ {
+  "palavra": "destrava",
+  "inicio": 43.7,
+  "fim": 44.187
+ },
+ {
+  "palavra": "quando",
+  "inicio": 44.222,
+  "fim": 44.408
+ },
+ {
+  "palavra": "a",
+  "inicio": 44.431,
+  "fim": 44.454
+ },
+ {
+  "palavra": "cabine",
+  "inicio": 44.489,
+  "fim": 44.942
+ },
+ {
+  "palavra": "está",
+  "inicio": 44.988,
+  "fim": 45.255
+ },
+ {
+  "palavra": "ali.",
+  "inicio": 45.279,
+  "fim": 45.65
+ },
+ {
+  "palavra": "Essa",
+  "inicio": 46.01,
+  "fim": 46.44
+ },
+ {
+  "palavra": "é",
+  "inicio": 46.556,
+  "fim": 46.614
+ },
+ {
+  "palavra": "a",
+  "inicio": 46.683,
+  "fim": 46.707
+ },
+ {
+  "palavra": "trava",
+  "inicio": 46.776,
+  "fim": 47.09
+ },
+ {
+  "palavra": "da",
+  "inicio": 47.125,
+  "fim": 47.205
+ },
+ {
+  "palavra": "porta.",
+  "inicio": 47.252,
+  "fim": 47.739
+ },
+ {
+  "palavra": "Mas",
+  "inicio": 48.157,
+  "fim": 48.308
+ },
+ {
+  "palavra": "a",
+  "inicio": 48.378,
+  "fim": 48.401
+ },
+ {
+  "palavra": "cabine",
+  "inicio": 48.436,
+  "fim": 48.773
+ },
+ {
+  "palavra": "pode",
+  "inicio": 48.819,
+  "fim": 49.028
+ },
+ {
+  "palavra": "passar",
+  "inicio": 49.075,
+  "fim": 49.4
+ },
+ {
+  "palavra": "do",
+  "inicio": 49.469,
+  "fim": 49.539
+ },
+ {
+  "palavra": "ponto",
+  "inicio": 49.62,
+  "fim": 49.864
+ },
+ {
+  "palavra": "e",
+  "inicio": 49.887,
+  "fim": 49.911
+ },
+ {
+  "palavra": "bater",
+  "inicio": 49.945,
+  "fim": 50.189
+ },
+ {
+  "palavra": "lá",
+  "inicio": 50.259,
+  "fim": 50.34
+ },
+ {
+  "palavra": "embaixo.",
+  "inicio": 50.375,
+  "fim": 50.967
+ },
+ {
+  "palavra": "Então",
+  "inicio": 51.455,
+  "fim": 51.745
+ },
+ {
+  "palavra": "você",
+  "inicio": 51.768,
+  "fim": 51.931
+ },
+ {
+  "palavra": "coloca",
+  "inicio": 51.989,
+  "fim": 52.337
+ },
+ {
+  "palavra": "molas",
+  "inicio": 52.407,
+  "fim": 52.79
+ },
+ {
+  "palavra": "gigantes",
+  "inicio": 52.848,
+  "fim": 53.568
+ },
+ {
+  "palavra": "no",
+  "inicio": 53.626,
+  "fim": 53.707
+ },
+ {
+  "palavra": "fundo",
+  "inicio": 53.8,
+  "fim": 54.067
+ },
+ {
+  "palavra": "do",
+  "inicio": 54.113,
+  "fim": 54.171
+ },
+ {
+  "palavra": "poço.",
+  "inicio": 54.229,
+  "fim": 54.717
+ },
+ {
+  "palavra": "Esses",
+  "inicio": 55.298,
+  "fim": 55.646
+ },
+ {
+  "palavra": "são",
+  "inicio": 55.669,
+  "fim": 55.832
+ },
+ {
+  "palavra": "os",
+  "inicio": 55.855,
+  "fim": 55.925
+ },
+ {
+  "palavra": "amortecedores.",
+  "inicio": 56.006,
+  "fim": 57.039
+ },
+ {
+  "palavra": "E",
+  "inicio": 57.701,
+  "fim": 57.817
+ },
+ {
+  "palavra": "o",
+  "inicio": 57.875,
+  "fim": 57.898
+ },
+ {
+  "palavra": "mais",
+  "inicio": 57.945,
+  "fim": 58.154
+ },
+ {
+  "palavra": "estranho:",
+  "inicio": 58.223,
+  "fim": 58.839
+ },
+ {
+  "palavra": "elevador",
+  "inicio": 59.199,
+  "fim": 59.686
+ },
+ {
+  "palavra": "quase",
+  "inicio": 59.802,
+  "fim": 60.104
+ },
+ {
+  "palavra": "nunca",
+  "inicio": 60.162,
+  "fim": 60.406
+ },
+ {
+  "palavra": "tem",
+  "inicio": 60.452,
+  "fim": 60.569
+ },
+ {
+  "palavra": "um",
+  "inicio": 60.627,
+  "fim": 60.685
+ },
+ {
+  "palavra": "cabo",
+  "inicio": 60.754,
+  "fim": 61.033
+ },
+ {
+  "palavra": "só.",
+  "inicio": 61.103,
+  "fim": 61.486
+ },
+ {
+  "palavra": "São",
+  "inicio": 61.718,
+  "fim": 61.938
+ },
+ {
+  "palavra": "vários,",
+  "inicio": 62.008,
+  "fim": 62.658
+ },
+ {
+  "palavra": "e",
+  "inicio": 62.856,
+  "fim": 62.972
+ },
+ {
+  "palavra": "cada",
+  "inicio": 63.065,
+  "fim": 63.378
+ },
+ {
+  "palavra": "um",
+  "inicio": 63.413,
+  "fim": 63.459
+ },
+ {
+  "palavra": "sozinho",
+  "inicio": 63.529,
+  "fim": 63.935
+ },
+ {
+  "palavra": "já",
+  "inicio": 63.982,
+  "fim": 64.051
+ },
+ {
+  "palavra": "aguentaria",
+  "inicio": 64.074,
+  "fim": 64.516
+ },
+ {
+  "palavra": "a",
+  "inicio": 64.539,
+  "fim": 64.562
+ },
+ {
+  "palavra": "cabine.",
+  "inicio": 64.597,
+  "fim": 65.154
+ },
+ {
+  "palavra": "Pronto!",
+  "inicio": 65.352,
+  "fim": 65.955
+ },
+ {
+  "palavra": "Você",
+  "inicio": 66.269,
+  "fim": 66.478
+ },
+ {
+  "palavra": "construiu",
+  "inicio": 66.536,
+  "fim": 66.977
+ },
+ {
+  "palavra": "um",
+  "inicio": 67.058,
+  "fim": 67.139
+ },
+ {
+  "palavra": "elevador.",
+  "inicio": 67.209,
+  "fim": 67.883
+ },
+ {
+  "palavra": "Você",
+  "inicio": 68.463,
+  "fim": 68.672
+ },
+ {
+  "palavra": "tem",
+  "inicio": 68.718,
+  "fim": 68.846
+ },
+ {
+  "palavra": "medo",
+  "inicio": 68.893,
+  "fim": 69.09
+ },
+ {
+  "palavra": "de",
+  "inicio": 69.136,
+  "fim": 69.194
+ },
+ {
+  "palavra": "elevador?",
+  "inicio": 69.218,
+  "fim": 69.891
+ },
+ {
+  "palavra": "Comente",
+  "inicio": 70.309,
+  "fim": 70.739
+ },
+ {
+  "palavra": "sim",
+  "inicio": 70.797,
+  "fim": 71.075
+ },
+ {
+  "palavra": "ou",
+  "inicio": 71.238,
+  "fim": 71.377
+ },
+ {
+  "palavra": "não!",
+  "inicio": 71.435,
+  "fim": 71.934
+ }
+]

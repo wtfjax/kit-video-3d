@@ -1,0 +1,164 @@
+[
+ {
+  "n": 1,
+  "texto": "Você quer deixar a comida gelada num calor de quarenta graus.",
+  "inicio": 0,
+  "fim": 3.309
+ },
+ {
+  "n": 2,
+  "texto": "Você tenta encher uma caixa de gelo.",
+  "inicio": 3.971,
+  "fim": 5.886
+ },
+ {
+  "n": 3,
+  "texto": "Mas o gelo derrete, e você tem que comprar mais todo dia!",
+  "inicio": 6.246,
+  "fim": 9.683
+ },
+ {
+  "n": 4,
+  "texto": "Então você usa um truque: líquido que evapora rouba calor, igual álcool na mão deixa a pele gelada.",
+  "inicio": 10.588,
+  "fim": 18.17
+ },
+ {
+  "n": 5,
+  "texto": "Você passa um gás especial por canos dentro da geladeira.",
+  "inicio": 18.831,
+  "fim": 21.978
+ },
+ {
+  "n": 6,
+  "texto": "Ele evapora e puxa o calor da comida.",
+  "inicio": 22.465,
+  "fim": 25.205
+ },
+ {
+  "n": 7,
+  "texto": "Esse é o evaporador.",
+  "inicio": 25.867,
+  "fim": 27.539
+ },
+ {
+  "n": 8,
+  "texto": "Mas agora o gás está morno, e não puxa mais nada.",
+  "inicio": 28.201,
+  "fim": 31.219
+ },
+ {
+  "n": 9,
+  "texto": "Então você aperta ele com uma bomba.",
+  "inicio": 31.579,
+  "fim": 33.634
+ },
+ {
+  "n": 10,
+  "texto": "Esse é o compressor.",
+  "inicio": 33.901,
+  "fim": 35.12
+ },
+ {
+  "n": 11,
+  "texto": "Mas o gás apertado fica muito quente!",
+  "inicio": 35.434,
+  "fim": 37.849
+ },
+ {
+  "n": 12,
+  "texto": "Então você passa ele numa grade atrás da geladeira, e o calor vai pro ar da cozinha.",
+  "inicio": 38.429,
+  "fim": 43.108
+ },
+ {
+  "n": 13,
+  "texto": "Ele esfria e vira líquido de novo.",
+  "inicio": 43.526,
+  "fim": 45.476
+ },
+ {
+  "n": 14,
+  "texto": "Esse é o condensador.",
+  "inicio": 45.964,
+  "fim": 47.438
+ },
+ {
+  "n": 15,
+  "texto": "Mas líquido apertado não evapora.",
+  "inicio": 48.1,
+  "fim": 50.073
+ },
+ {
+  "n": 16,
+  "texto": "Então você força ele por um cano fininho.",
+  "inicio": 50.34,
+  "fim": 52.871
+ },
+ {
+  "n": 17,
+  "texto": "A pressão cai de repente, e ele evapora gelado de novo.",
+  "inicio": 53.185,
+  "fim": 56.54
+ },
+ {
+  "n": 18,
+  "texto": "Esse é o tubo capilar.",
+  "inicio": 56.854,
+  "fim": 58.27
+ },
+ {
+  "n": 19,
+  "texto": "Mas se ficar ligado sempre, congela tudo!",
+  "inicio": 58.932,
+  "fim": 61.834
+ },
+ {
+  "n": 20,
+  "texto": "Então um sensor desliga o compressor quando chega no frio certo.",
+  "inicio": 62.194,
+  "fim": 65.956
+ },
+ {
+  "n": 21,
+  "texto": "Esse é o termostato.",
+  "inicio": 66.223,
+  "fim": 67.651
+ },
+ {
+  "n": 22,
+  "texto": "E é por isso que atrás da geladeira é quente: ela não cria frio.",
+  "inicio": 67.918,
+  "fim": 71.355
+ },
+ {
+  "n": 23,
+  "texto": "Ela tira o calor de dentro e joga pra fora.",
+  "inicio": 71.773,
+  "fim": 74.269
+ },
+ {
+  "n": 24,
+  "texto": "Pronto!",
+  "inicio": 74.629,
+  "fim": 75.186
+ },
+ {
+  "n": 25,
+  "texto": "Você construiu uma geladeira.",
+  "inicio": 75.767,
+  "fim": 77.52
+ },
+ {
+  "n": 26,
+  "texto": "Você já abriu a geladeira só pra se refrescar?",
+  "inicio": 78.1,
+  "fim": 80.457
+ },
+ {
+  "n": 27,
+  "texto": "Comente sim ou não!",
+  "inicio": 80.77,
+  "fim": 82.245
+ }
+]
