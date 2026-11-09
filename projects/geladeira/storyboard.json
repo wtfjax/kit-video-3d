@@ -1,146 +1,7143 @@
 {
-  "versao": 1,
-  "titulo": "Geladeira",
-  "formato": {
-    "largura": 1080,
-    "altura": 1920,
-    "fps": 30
-  },
-  "duracao": 10,
-  "audio": "narracao.wav",
-  "palavras": "palavras.json",
-  "legendas": {
-    "ativo": true,
-    "palavrasPorBloco": 3
-  },
-  "ambiente": {
-    "horario": "dia",
-    "chao": "grama"
-  },
-  "cenas": [
+ "versao": 1,
+ "titulo": "Geladeira",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30
+ },
+ "duracao": 82.7,
+ "audio": "narracao.mp3",
+ "palavras": "palavras.json",
+ "legendas": {
+  "ativo": true,
+  "palavrasPorBloco": 1
+ },
+ "ambiente": {
+  "fundo": "interior",
+  "chao": "piso",
+  "horario": "dia"
+ },
+ "cenas": [
+  {
+   "inicio": 0,
+   "fim": 3.65,
+   "transicao": "corte",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "tarde"
+   },
+   "objetos": [
     {
-      "inicio": 0,
-      "fim": 5,
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "id": "arvore",
-          "asset": "arvore_redonda",
-          "pos": [
-            -8,
-            0,
-            -3
-          ]
-        }
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
       ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            3.5,
-            0,
-            6.5
-          ],
-          "viraPara": [
-            {
-              "em": 0,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 0,
-              "ate": 5,
-              "fala": true
-            }
-          ]
-        }
-      ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "casa",
-        "plano": "geral",
-        "angulo": 25,
-        "elevacao": 14,
-        "deriva": -18
-      },
-      "textos": [
-        {
-          "texto": "A PERGUNTA DO GANCHO?",
-          "de": 0.2,
-          "ate": 4.8,
-          "estilo": "titulo"
-        }
-      ]
+      "cor": "#a9743f"
+     }
     },
     {
-      "inicio": 5,
-      "fim": 10,
-      "transicao": "flash",
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        }
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
       ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            0,
-            0,
-            7
-          ],
-          "giro": 0,
-          "viraPara": [
-            {
-              "em": 5,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 5,
-              "ate": 10,
-              "fala": true,
-              "expressao": "happy"
-            }
-          ]
-        }
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "mesa",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       0.8,
+       0.8
       ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "guia",
-        "plano": "medio",
-        "angulo": 0,
-        "elevacao": 6,
-        "aproxima": 0.85
-      },
-      "textos": [
-        {
-          "texto": "E VOCÊ, O QUE ACHA? COMENTA!",
-          "de": 5.3,
-          "ate": 10,
-          "estilo": "pergunta"
-        }
-      ]
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "frango",
+     "asset": "forma",
+     "pos": [
+      -0.2,
+      0.8,
+      0.3
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.4,
+       0.3,
+       0.35
+      ],
+      "cor": "#e8a03a"
+     }
+    },
+    {
+     "id": "sol",
+     "asset": "forma",
+     "pos": [
+      -1.6,
+      2.6,
+      -1.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.6,
+       0.6,
+       0.6
+      ],
+      "cor": "#ffd60a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.08
+     }
     }
-  ]
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.9,
+      0,
+      1.2
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 0.1,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "look_around",
+       "de": 0,
+       "ate": 3.65,
+       "expressao": "worried"
+      },
+      {
+       "clip": "talk",
+       "de": 0,
+       "ate": 3.65,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      -0.2,
+      1,
+      0.3
+     ],
+     "taxa": 10,
+     "dispersao": 0.3,
+     "subida": 0.5,
+     "tamanho": 0.1
+    },
+    {
+     "material": "agua",
+     "origem": [
+      0.9,
+      1.8,
+      1.2
+     ],
+     "destino": [
+      0.9,
+      0,
+      1.3
+     ],
+     "taxa": 4,
+     "tamanho": 0.03
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.6,
+     1.8,
+     4.6
+    ],
+    "olha": [
+     0.2,
+     1,
+     0.3
+    ],
+    "fov": 44
+   },
+   "textos": [
+    {
+     "texto": "COMIDA GELADA A 40 GRAUS",
+     "de": 0.1,
+     "ate": 3.6,
+     "estilo": "titulo"
+    }
+   ]
+  },
+  {
+   "inicio": 3.65,
+   "fim": 10.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "mesa",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       0.8,
+       0.8
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "caixaG",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1,
+       0.7,
+       0.7
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.35
+    },
+    {
+     "id": "gelo0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      0.82,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.25,
+       0.25,
+       0.25
+      ],
+      "cor": "#bfe3ff"
+     },
+     "anim": {
+      "escala": [
+       [
+        4,
+        1
+       ],
+       [
+        9.6,
+        0.35
+       ]
+      ]
+     }
+    },
+    {
+     "id": "gelo1",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      0.82,
+      0.15
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.25,
+       0.25,
+       0.25
+      ],
+      "cor": "#bfe3ff"
+     },
+     "anim": {
+      "escala": [
+       [
+        4,
+        1
+       ],
+       [
+        9.6,
+        0.35
+       ]
+      ]
+     }
+    },
+    {
+     "id": "gelo2",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.82,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.25,
+       0.25,
+       0.25
+      ],
+      "cor": "#bfe3ff"
+     },
+     "anim": {
+      "escala": [
+       [
+        4,
+        1
+       ],
+       [
+        9.6,
+        0.35
+       ]
+      ]
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.9,
+      0,
+      1.2
+     ],
+     "giro": -25,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 4,
+       "ate": 6,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "shrug",
+       "de": 6.3,
+       "ate": 10.15,
+       "expressao": "sad"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      0.45,
+      0.85,
+      0.5
+     ],
+     "destino": [
+      0.6,
+      0,
+      0.8
+     ],
+     "taxa": 10,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.6,
+     1.8,
+     4.6
+    ],
+    "olha": [
+     0.2,
+     1,
+     0.3
+    ],
+    "fov": 44
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 6.2,
+     "ate": 10.1,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 6.4,
+     "ate": 10
+    }
+   ]
+  },
+  {
+   "inicio": 10.15,
+   "fim": 14.5,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "mesa",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       0.8,
+       0.8
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "frasco",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0.8,
+      0.4
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.2,
+       0.4,
+       0.2
+      ],
+      "cor": "#3d8ee0"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.9,
+      0,
+      1.2
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 10.2,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 10.4,
+       "ate": 12.4,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "surprised",
+       "de": 12.6,
+       "ate": 14.5,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      0.75,
+      1.25,
+      1.45
+     ],
+     "taxa": 10,
+     "dispersao": 0.1,
+     "subida": 0.5,
+     "tamanho": 0.06
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0.75,
+      1.25,
+      1.45
+     ],
+     "taxa": 8,
+     "dispersao": 0.15,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.2,
+     1.6,
+     3.4
+    ],
+    "olha": [
+     0.8,
+     1.3,
+     1.2
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "álcool na mão: gelado",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#3d8ee0",
+     "de": 11,
+     "ate": 14.3
+    }
+   ]
+  },
+  {
+   "inicio": 14.5,
+   "fim": 18.5,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "mesa",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       0.8,
+       0.8
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "poca",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.3
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.6,
+       0.02,
+       0.6
+      ],
+      "cor": "#9fd3f0"
+     },
+     "anim": {
+      "escala": [
+       [
+        14.6,
+        1
+       ],
+       [
+        18.4,
+        0.5
+       ]
+      ]
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0.9,
+      0,
+      1.2
+     ],
+     "giro": -25,
+     "acoes": [
+      {
+       "clip": "think",
+       "de": 14.6,
+       "ate": 18.5
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      0,
+      0.85,
+      0.3
+     ],
+     "taxa": 14,
+     "dispersao": 0.25,
+     "subida": 0.5,
+     "tamanho": 0.06
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      0.9,
+      0.3
+     ],
+     "taxa": 10,
+     "dispersao": 0.3,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     0.6,
+     1.8,
+     4.6
+    ],
+    "olha": [
+     0.2,
+     1,
+     0.3
+    ],
+    "fov": 44
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "evaporar rouba calor",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#9fd3f0",
+     "de": 14.8,
+     "ate": 18.3
+    }
+   ]
+  },
+  {
+   "inicio": 18.5,
+   "fim": 22.25,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28,
+     "aparece": 18.8
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     },
+     "aparece": 19.4
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     },
+     "aparece": 19.4
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     },
+     "aparece": 19.4
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 19.4
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     },
+     "aparece": 20.4
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 18.8,
+       "ate": 22.25
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     0,
+     1.5,
+     -0.3
+    ],
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 22.25,
+   "fim": 27.85,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 22.5,
+       "ate": 27.85,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 14,
+     "velocidade": 0.8,
+     "tamanho": 0.04
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 14,
+     "dispersao": 0.5,
+     "tamanho": 0.035,
+     "de": 23
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.8,
+     2.6,
+     3.2
+    ],
+    "olha": [
+     0,
+     2,
+     -0.2
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "evaporador",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#9fd3f0",
+     "de": 25.9,
+     "ate": 27.7
+    }
+   ]
+  },
+  {
+   "inicio": 27.85,
+   "fim": 31.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 27.9,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 28.1,
+       "ate": 31.4
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 4,
+     "velocidade": 0.3,
+     "tamanho": 0.04
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     0,
+     1.5,
+     -0.3
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 28.4,
+     "ate": 31.3
+    }
+   ]
+  },
+  {
+   "inicio": 31.4,
+   "fim": 35.25,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     },
+     "aparece": 31.6
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     },
+     "aparece": 32.2
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.5,
+      0,
+      -1.9
+     ],
+     "giro": 100,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 31.6,
+       "ate": 33.6
+      },
+      {
+       "clip": "point",
+       "de": 33.8,
+       "ate": 35.25,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.2,
+     "tamanho": 0.04,
+     "de": 32.6
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.6,
+     2,
+     -4
+    ],
+    "olha": [
+     0,
+     1.4,
+     -0.8
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "compressor",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#2f3338",
+     "de": 33.9,
+     "ate": 35.1
+    }
+   ]
+  },
+  {
+   "inicio": 35.25,
+   "fim": 38.1,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.5,
+      0,
+      -1.9
+     ],
+     "giro": 100,
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 35.6,
+       "ate": 38.1,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fogo",
+     "origem": [
+      0.4,
+      0.6,
+      -1.05
+     ],
+     "taxa": 16,
+     "dispersao": 0.12,
+     "vida": 0.3,
+     "tamanho": 0.05
+    },
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.2,
+     "tamanho": 0.04
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.6,
+     1.3,
+     -2.8
+    ],
+    "olha": [
+     0.4,
+     0.5,
+     -1
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "de": 35.6,
+     "ate": 38
+    }
+   ]
+  },
+  {
+   "inicio": 38.1,
+   "fim": 43.3,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     },
+     "aparece": 38.6
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.5,
+      0,
+      -1.9
+     ],
+     "giro": 100,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 38.4,
+       "ate": 41.5
+      },
+      {
+       "clip": "point",
+       "de": 41.7,
+       "ate": 43.3,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "vapor",
+     "origem": [
+      0,
+      1.4,
+      -1.1
+     ],
+     "taxa": 12,
+     "dispersao": 0.5,
+     "subida": 0.8,
+     "tamanho": 0.09,
+     "de": 40
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.6,
+     2,
+     -4
+    ],
+    "olha": [
+     0,
+     1.4,
+     -0.8
+    ],
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 43.3,
+   "fim": 47.75,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.5,
+      0,
+      -1.9
+     ],
+     "giro": 100,
+     "acoes": [
+      {
+       "clip": "nod",
+       "de": 45.8,
+       "ate": 47.75,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       0.4,
+       0.55,
+       -1.05
+      ],
+      [
+       0.55,
+       0.6,
+       -0.85
+      ],
+      [
+       0.55,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ]
+     ],
+     "taxa": 14,
+     "velocidade": 1.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "vapor",
+     "origem": [
+      0,
+      1.4,
+      -1.1
+     ],
+     "taxa": 12,
+     "dispersao": 0.5,
+     "subida": 0.8,
+     "tamanho": 0.09
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.6,
+     2,
+     -4
+    ],
+    "olha": [
+     0,
+     1.4,
+     -0.8
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "condensador",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#2f3338",
+     "de": 46,
+     "ate": 47.6
+    }
+   ]
+  },
+  {
+   "inicio": 47.75,
+   "fim": 50.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 47.8,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "think",
+       "de": 47.9,
+       "ate": 50.2
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "origem": [
+      -0.6,
+      0.6,
+      -0.85
+     ],
+     "taxa": 4,
+     "dispersao": 0.05,
+     "tamanho": 0.05
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     0,
+     1.5,
+     -0.3
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "interrogacao",
+     "pos": [
+      0.3,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 48,
+     "ate": 50.1
+    }
+   ]
+  },
+  {
+   "inicio": 50.2,
+   "fim": 54.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     },
+     "aparece": 50.6
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.6,
+      0,
+      -1.6
+     ],
+     "giro": 110,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 50.4,
+       "ate": 52.8
+      },
+      {
+       "clip": "point",
+       "de": 53,
+       "ate": 54.8,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       2.3,
+       -0.85
+      ],
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.2,
+     "tamanho": 0.025,
+     "de": 51.2
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -2.6,
+     2,
+     -3.4
+    ],
+    "olha": [
+     -0.4,
+     1.5,
+     -0.7
+    ],
+    "fov": 44
+   }
+  },
+  {
+   "inicio": 54.8,
+   "fim": 58.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 55,
+       "ate": 58.6,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 0.8,
+     "tamanho": 0.04
+    },
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.04
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       0.4,
+       0.55,
+       -1.05
+      ],
+      [
+       0.55,
+       0.6,
+       -0.85
+      ],
+      [
+       0.55,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       2.3,
+       -0.85
+      ],
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.025
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 14,
+     "dispersao": 0.5,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     0,
+     1.5,
+     -0.3
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "tubo capilar",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#c97b3a",
+     "de": 56.9,
+     "ate": 58.5
+    }
+   ]
+  },
+  {
+   "inicio": 58.6,
+   "fim": 62,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    },
+    {
+     "id": "gel0",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.53,
+      0.2
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.4,
+       0.65,
+       0.35
+      ],
+      "cor": "#f2f2f2"
+     },
+     "opacidade": 0.7,
+     "aparece": 59.4
+    },
+    {
+     "id": "gel1",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.53,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.4,
+       0.65,
+       0.35
+      ],
+      "cor": "#f2f2f2"
+     },
+     "opacidade": 0.7,
+     "aparece": 59.9
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 58.7,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 59,
+       "ate": 62,
+       "expressao": "worried"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 0.8,
+     "tamanho": 0.04
+    },
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.04
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       0.4,
+       0.55,
+       -1.05
+      ],
+      [
+       0.55,
+       0.6,
+       -0.85
+      ],
+      [
+       0.55,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       2.3,
+       -0.85
+      ],
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.025
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 40,
+     "dispersao": 0.5,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3.4,
+     2.4,
+     4.6
+    ],
+    "olha": [
+     0,
+     1.5,
+     -0.3
+    ],
+    "fov": 46
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 59.2,
+     "ate": 61.9,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "de": 59.3,
+     "ate": 61.8
+    }
+   ]
+  },
+  {
+   "inicio": 62,
+   "fim": 67.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    },
+    {
+     "id": "termo",
+     "asset": "forma",
+     "pos": [
+      0.55,
+      2.85,
+      0.55
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.22,
+       0.12,
+       0.08
+      ],
+      "cor": "#d9473a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.2
+     },
+     "aparece": 62.6
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 62.3,
+       "ate": 64.6
+      },
+      {
+       "clip": "nod",
+       "de": 64.8,
+       "ate": 67.8,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 8,
+     "dispersao": 0.5,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.6,
+     2.9,
+     2.8
+    ],
+    "olha": [
+     0.3,
+     2.5,
+     0.2
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "termostato",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 66.2,
+     "ate": 67.7
+    }
+   ]
+  },
+  {
+   "inicio": 67.8,
+   "fim": 74.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    },
+    {
+     "id": "termo",
+     "asset": "forma",
+     "pos": [
+      0.55,
+      2.85,
+      0.55
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.22,
+       0.12,
+       0.08
+      ],
+      "cor": "#d9473a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.2
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.4,
+      0,
+      -1.9
+     ],
+     "giro": 100,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 68,
+       "ate": 71.5,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "surprised",
+       "de": 71.7,
+       "ate": 74.45,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 0.8,
+     "tamanho": 0.04
+    },
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.04
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       0.4,
+       0.55,
+       -1.05
+      ],
+      [
+       0.55,
+       0.6,
+       -0.85
+      ],
+      [
+       0.55,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       2.3,
+       -0.85
+      ],
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.025
+    },
+    {
+     "material": "vapor",
+     "origem": [
+      0,
+      1.4,
+      -1.1
+     ],
+     "taxa": 20,
+     "dispersao": 0.5,
+     "subida": 0.8,
+     "tamanho": 0.09
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.6,
+     2,
+     -4
+    ],
+    "olha": [
+     0,
+     1.4,
+     -0.8
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "cima",
+     "pos": [
+      0.42,
+      0.42
+     ],
+     "tamanho": 0.12,
+     "pulsa": true,
+     "de": 68.2,
+     "ate": 74.3
+    }
+   ]
+  },
+  {
+   "inicio": 74.45,
+   "fim": 77.8,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    },
+    {
+     "id": "termo",
+     "asset": "forma",
+     "pos": [
+      0.55,
+      2.85,
+      0.55
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.22,
+       0.12,
+       0.08
+      ],
+      "cor": "#d9473a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.2
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.25,
+      0,
+      1.3
+     ],
+     "giro": -25,
+     "viraPara": [
+      {
+       "em": 74.5,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 74.6,
+       "ate": 77.8,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.3,
+       -0.5
+      ],
+      [
+       0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.5,
+       -0.5
+      ],
+      [
+       -0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.6,
+       2.7,
+       -0.5
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 0.8,
+     "tamanho": 0.04
+    },
+    {
+     "material": "ar",
+     "caminho": [
+      [
+       0.6,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       2.7,
+       -0.5
+      ],
+      [
+       0.75,
+       0.3,
+       -1.05
+      ],
+      [
+       0.4,
+       0.3,
+       -1.05
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.04
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       0.4,
+       0.55,
+       -1.05
+      ],
+      [
+       0.55,
+       0.6,
+       -0.85
+      ],
+      [
+       0.55,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       2.6,
+       -0.85
+      ],
+      [
+       0.25,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.05,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       2.6,
+       -0.85
+      ],
+      [
+       -0.35,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ]
+     ],
+     "taxa": 12,
+     "velocidade": 1.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "agua",
+     "caminho": [
+      [
+       -0.6,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       0.6,
+       -0.85
+      ],
+      [
+       -0.75,
+       2.3,
+       -0.85
+      ],
+      [
+       -0.6,
+       2.3,
+       -0.5
+      ]
+     ],
+     "taxa": 10,
+     "velocidade": 1.2,
+     "tamanho": 0.025
+    },
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 14,
+     "dispersao": 0.5,
+     "tamanho": 0.035
+    },
+    {
+     "material": "vapor",
+     "origem": [
+      0,
+      1.4,
+      -1.1
+     ],
+     "taxa": 12,
+     "dispersao": 0.5,
+     "subida": 0.8,
+     "tamanho": 0.09
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      -3.4,
+      2.4,
+      4.4
+     ],
+     "olha": [
+      0,
+      1.5,
+      -0.3
+     ]
+    },
+    "para": {
+     "pos": [
+      3.6,
+      2.4,
+      4.2
+     ],
+     "olha": [
+      0,
+      1.5,
+      -0.3
+     ]
+    },
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 77.8,
+   "fim": 82.7,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "interior",
+    "chao": "piso",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "armario",
+     "asset": "forma",
+     "pos": [
+      -2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.4,
+       2.2,
+       0.6
+      ],
+      "cor": "#a9743f"
+     }
+    },
+    {
+     "id": "pia",
+     "asset": "forma",
+     "pos": [
+      2.6,
+      0,
+      -1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.2,
+       0.9,
+       0.6
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "corpo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       3,
+       1.4
+      ],
+      "cor": "#e8eef5"
+     },
+     "opacidade": 0.28
+    },
+    {
+     "id": "prat",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.5,
+       0.05,
+       1.3
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "garrafa",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      1.55,
+      0.2
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.25,
+       0.6,
+       0.25
+      ],
+      "cor": "#4f9d4a"
+     }
+    },
+    {
+     "id": "leite",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      1.55,
+      0.1
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.3,
+       0.5,
+       0.25
+      ],
+      "cor": "#3d8ee0"
+     }
+    },
+    {
+     "id": "fruta",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.8,
+      0.2
+     ],
+     "params": {
+      "tipo": "esfera",
+      "tamanho": [
+       0.35,
+       0.35,
+       0.35
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "evap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.3,
+        -0.5
+       ],
+       [
+        0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.5,
+        -0.5
+       ],
+       [
+        -0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.6,
+        2.7,
+        -0.5
+       ]
+      ],
+      "raio": 0.04,
+      "cor": "#9fd3f0"
+     }
+    },
+    {
+     "id": "suc",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.6,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        2.7,
+        -0.5
+       ],
+       [
+        0.75,
+        0.3,
+        -1.05
+       ],
+       [
+        0.4,
+        0.3,
+        -1.05
+       ]
+      ],
+      "raio": 0.03,
+      "cor": "#9aa7b5"
+     }
+    },
+    {
+     "id": "comp",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      -1.05
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.5,
+       0.55,
+       0.5
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.01,
+       "freq": 12
+      }
+     }
+    },
+    {
+     "id": "cond",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        0.4,
+        0.55,
+        -1.05
+       ],
+       [
+        0.55,
+        0.6,
+        -0.85
+       ],
+       [
+        0.55,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        2.6,
+        -0.85
+       ],
+       [
+        0.25,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.05,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        2.6,
+        -0.85
+       ],
+       [
+        -0.35,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ]
+      ],
+      "raio": 0.035,
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "cap",
+     "asset": "tubo",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "pontos": [
+       [
+        -0.6,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        0.6,
+        -0.85
+       ],
+       [
+        -0.75,
+        2.3,
+        -0.85
+       ],
+       [
+        -0.6,
+        2.3,
+        -0.5
+       ]
+      ],
+      "raio": 0.015,
+      "cor": "#c97b3a"
+     }
+    },
+    {
+     "id": "termo",
+     "asset": "forma",
+     "pos": [
+      0.55,
+      2.85,
+      0.55
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.22,
+       0.12,
+       0.08
+      ],
+      "cor": "#d9473a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.2
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.2,
+      0,
+      1.8
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 77.9,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 78,
+       "ate": 80.3
+      },
+      {
+       "clip": "point",
+       "de": 80.5,
+       "ate": 82.7,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 77.8,
+       "ate": 82.7,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "neve",
+     "origem": [
+      0,
+      1.9,
+      0.1
+     ],
+     "taxa": 14,
+     "dispersao": 0.5,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     1.7,
+     5.6
+    ],
+    "olha": [
+     1,
+     1.5,
+     1.4
+    ],
+    "fov": 44
+   },
+   "textos": [
+    {
+     "texto": "JÁ ABRIU SÓ PRA SE REFRESCAR?",
+     "de": 77.9,
+     "ate": 82.7,
+     "estilo": "pergunta"
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "som": "erro",
+   "de": 6.4,
+   "volume": 0.12
+  },
+  {
+   "som": "agua",
+   "de": 6.5,
+   "ate": 8.3,
+   "volume": 0.06
+  },
+  {
+   "som": "martelo",
+   "de": 18.9,
+   "volume": 0.1
+  },
+  {
+   "som": "sucesso",
+   "de": 26,
+   "volume": 0.14
+  },
+  {
+   "som": "bomba",
+   "de": 32.3,
+   "ate": 34.6,
+   "volume": 0.1
+  },
+  {
+   "som": "alerta",
+   "de": 35.6,
+   "ate": 37.4,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 46.1,
+   "volume": 0.14
+  },
+  {
+   "som": "sucesso",
+   "de": 57,
+   "volume": 0.14
+  },
+  {
+   "som": "erro",
+   "de": 59.4,
+   "volume": 0.12
+  },
+  {
+   "som": "sucesso",
+   "de": 66.3,
+   "volume": 0.14
+  },
+  {
+   "som": "sucesso",
+   "de": 74.7,
+   "volume": 0.2
+  }
+ ]
 }

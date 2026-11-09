@@ -1,2 +1,7 @@
 # Projetos para renderizar na nuvem (um por linha). Ao enviar esta lista, o GitHub renderiza.
-bateria-de-celular
+wifi
+turbina-eolica
+micro-ondas
+geladeira
+usina-hidreletrica
+elevador

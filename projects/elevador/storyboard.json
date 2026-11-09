@@ -1,146 +1,7038 @@
 {
-  "versao": 1,
-  "titulo": "Elevador",
-  "formato": {
-    "largura": 1080,
-    "altura": 1920,
-    "fps": 30
-  },
-  "duracao": 10,
-  "audio": "narracao.wav",
-  "palavras": "palavras.json",
-  "legendas": {
-    "ativo": true,
-    "palavrasPorBloco": 3
-  },
-  "ambiente": {
-    "horario": "dia",
-    "chao": "grama"
-  },
-  "cenas": [
+ "versao": 1,
+ "titulo": "Elevador",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30
+ },
+ "duracao": 72.4,
+ "audio": "narracao.mp3",
+ "palavras": "palavras.json",
+ "legendas": {
+  "ativo": true,
+  "palavrasPorBloco": 1
+ },
+ "ambiente": {
+  "fundo": "cidade",
+  "chao": "concreto",
+  "horario": "dia"
+ },
+ "cenas": [
+  {
+   "inicio": 0,
+   "fim": 2.45,
+   "transicao": "corte",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
     {
-      "inicio": 0,
-      "fim": 5,
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "id": "arvore",
-          "asset": "arvore_redonda",
-          "pos": [
-            -8,
-            0,
-            -3
-          ]
-        }
-      ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            3.5,
-            0,
-            6.5
-          ],
-          "viraPara": [
-            {
-              "em": 0,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 0,
-              "ate": 5,
-              "fala": true
-            }
-          ]
-        }
-      ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "casa",
-        "plano": "geral",
-        "angulo": 25,
-        "elevacao": 14,
-        "deriva": -18
-      },
-      "textos": [
-        {
-          "texto": "A PERGUNTA DO GANCHO?",
-          "de": 0.2,
-          "ate": 4.8,
-          "estilo": "titulo"
-        }
-      ]
+     "id": "predio",
+     "asset": "predio_apartamentos",
+     "variante": "alto",
+     "pos": [
+      0,
+      0,
+      -10
+     ],
+     "params": {
+      "floors": 20
+     }
     },
     {
-      "inicio": 5,
-      "fim": 10,
-      "transicao": "flash",
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        }
-      ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            0,
-            0,
-            7
-          ],
-          "giro": 0,
-          "viraPara": [
-            {
-              "em": 5,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 5,
-              "ate": 10,
-              "fala": true,
-              "expressao": "happy"
-            }
-          ]
-        }
-      ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "guia",
-        "plano": "medio",
-        "angulo": 0,
-        "elevacao": 6,
-        "aproxima": 0.85
-      },
-      "textos": [
-        {
-          "texto": "E VOCÊ, O QUE ACHA? COMENTA!",
-          "de": 5.3,
-          "ate": 10,
-          "estilo": "pergunta"
-        }
-      ]
+     "id": "carro",
+     "asset": "carro_sedan",
+     "variante": "azul",
+     "pos": [
+      -20,
+      0,
+      6
+     ],
+     "giro": 90,
+     "movimentos": [
+      {
+       "de": 0,
+       "ate": 2.45,
+       "para": [
+        20,
+        6
+       ]
+      }
+     ]
     }
-  ]
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      2,
+      0,
+      2
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 0.1,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 0.2,
+       "ate": 2.45,
+       "params": {
+        "dir": "forwardUp"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 0,
+       "ate": 2.45,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4,
+     1.6,
+     14
+    ],
+    "olha": [
+     0,
+     14,
+     -10
+    ],
+    "fov": 60
+   },
+   "textos": [
+    {
+     "texto": "VINTE ANDARES SEM ESCADA",
+     "de": 0.1,
+     "ate": 2.4,
+     "estilo": "titulo"
+    }
+   ]
+  },
+  {
+   "inicio": 2.45,
+   "fim": 5.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        2.6,
+        [
+         0,
+         0,
+         0
+        ]
+       ],
+       [
+        5.6,
+        [
+         0,
+         0.4,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.7,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        2.6,
+        [
+         -0.25,
+         2.3,
+         0
+        ]
+       ],
+       [
+        5.6,
+        [
+         -0.25,
+         2.7,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 60,
+      "dentes": 20
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 2.6,
+       "ate": 5.6,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     2.1,
+     9
+    ],
+    "olha": [
+     0,
+     1.6,
+     0
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 5.6,
+   "fim": 10.05,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.6999999999999997,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.3,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 20,
+      "dentes": 20
+     }
+    },
+    {
+     "id": "motor",
+     "asset": "forma",
+     "pos": [
+      -0.9,
+      15.8,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.7,
+       0.9,
+       0.7
+      ],
+      "cor": "#3d6fb6"
+     },
+     "anim": {
+      "oscila": {
+       "eixo": "x",
+       "amp": 0.03,
+       "freq": 14
+      }
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fumaca",
+     "origem": [
+      -0.9,
+      16.8,
+      0
+     ],
+     "taxa": 14,
+     "tamanho": 0.14
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.6,
+     17,
+     6
+    ],
+    "olha": [
+     0,
+     15.4,
+     0
+    ],
+    "fov": 46
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 6.3,
+     "ate": 10,
+     "zoom": 1.1
+    },
+    {
+     "tipo": "tremor",
+     "de": 6.3,
+     "ate": 7,
+     "intensidade": 0.4
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 6.5,
+     "ate": 9.9
+    }
+   ]
+  },
+  {
+   "inicio": 10.05,
+   "fim": 15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.7,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 0,
+      "dentes": 20
+     }
+    },
+    {
+     "id": "contra",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.5,
+       1.6,
+       0.35
+      ],
+      "cor": "#5b5f66"
+     },
+     "aparece": 10.6
+    },
+    {
+     "id": "caboP",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      10.6,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       4.4,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 10.6
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 10.2,
+       "ate": 15
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.4,
+     6,
+     14
+    ],
+    "olha": [
+     0.3,
+     6,
+     0
+    ],
+    "fov": 54
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "vertical",
+     "pos": [
+      0.66,
+      0.42
+     ],
+     "tamanho": 0.13,
+     "pulsa": true,
+     "de": 11.5,
+     "ate": 14.8
+    }
+   ]
+  },
+  {
+   "inicio": 15,
+   "fim": 18.55,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        15.2,
+        [
+         0,
+         0,
+         0
+        ]
+       ],
+       [
+        18.4,
+        [
+         0,
+         1.6,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.7,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        15.2,
+        [
+         -0.25,
+         2.3,
+         0
+        ]
+       ],
+       [
+        18.4,
+        [
+         -0.25,
+         3.9,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "contra",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.5,
+       1.6,
+       0.35
+      ],
+      "cor": "#5b5f66"
+     },
+     "anim": {
+      "pos": [
+       [
+        15.2,
+        [
+         1.45,
+         9,
+         -0.8
+        ]
+       ],
+       [
+        18.4,
+        [
+         1.45,
+         7.4,
+         -0.8
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboP",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       6,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        15.2,
+        [
+         1.45,
+         10.6,
+         -0.8
+        ]
+       ],
+       [
+        18.4,
+        [
+         1.45,
+         9,
+         -0.8
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 90,
+      "dentes": 20
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 16,
+       "ate": 18.55,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.4,
+     6,
+     14
+    ],
+    "olha": [
+     0.3,
+     6,
+     0
+    ],
+    "fov": 54
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "contrapeso",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#5b5f66",
+     "de": 17.2,
+     "ate": 18.4
+    }
+   ]
+  },
+  {
+   "inicio": 18.55,
+   "fim": 24.3,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.6,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      3.9,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       11.1,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "contra",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      7.4,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.5,
+       1.6,
+       0.35
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "caboP",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       6,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 120,
+      "dentes": 20
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      0.7,
+      14.9,
+      1.5
+     ],
+     "taxa": 6,
+     "dispersao": 0.2,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2.4,
+     15.6,
+     4.4
+    ],
+    "olha": [
+     0.6,
+     14.9,
+     1.2
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "baixo",
+     "pos": [
+      0.42,
+      0.5
+     ],
+     "tamanho": 0.12,
+     "pulsa": true,
+     "de": 19,
+     "ate": 24
+    }
+   ]
+  },
+  {
+   "inicio": 24.3,
+   "fim": 26.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.6,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      3.9,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       11.1,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "contra",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      7.4,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.5,
+       1.6,
+       0.35
+      ],
+      "cor": "#5b5f66"
+     }
+    },
+    {
+     "id": "caboP",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       6,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 120,
+      "dentes": 20
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      0.7,
+      14.9,
+      1.5
+     ],
+     "taxa": 6,
+     "dispersao": 0.2,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1.6,
+     15.2,
+     4.6
+    ],
+    "olha": [
+     0.5,
+     14.9,
+     1.2
+    ],
+    "fov": 42
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "polia de tração",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#9aa7b5",
+     "de": 24.6,
+     "ate": 26.3
+    }
+   ]
+  },
+  {
+   "inicio": 26.45,
+   "fim": 28.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "some": 27.3
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 0,
+      "dentes": 20
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 26.5,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 27.3,
+       "ate": 28.45,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      -0.25,
+      9.6,
+      0
+     ],
+     "taxa": 60,
+     "dispersao": 0.3,
+     "de": 27.3,
+     "ate": 27.9,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     8.6,
+     7
+    ],
+    "olha": [
+     0,
+     8.1,
+     0
+    ],
+    "fov": 46
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 27.3,
+     "ate": 28.4,
+     "zoom": 1.1
+    },
+    {
+     "tipo": "tremor",
+     "de": 27.3,
+     "ate": 28,
+     "intensidade": 0.6
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "de": 27.4,
+     "ate": 28.4
+    }
+   ]
+  },
+  {
+   "inicio": 28.45,
+   "fim": 31.05,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "garra0",
+     "asset": "forma",
+     "pos": [
+      -0.82,
+      7.2,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 29
+    },
+    {
+     "id": "garra1",
+     "asset": "forma",
+     "pos": [
+      0.82,
+      7.2,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 29
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 28.6,
+       "ate": 31.05,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "luz",
+     "origem": [
+      -0.82,
+      7.3,
+      0
+     ],
+     "taxa": 8,
+     "dispersao": 0.1,
+     "tamanho": 0.025
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     8.6,
+     6.5
+    ],
+    "olha": [
+     0,
+     8.1,
+     0
+    ],
+    "fov": 46
+   }
+  },
+  {
+   "inicio": 31.05,
+   "fim": 36,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        31.2,
+        [
+         0,
+         7,
+         0
+        ]
+       ],
+       [
+        32.6,
+        [
+         0,
+         5.4,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "garra0",
+     "asset": "forma",
+     "pos": [
+      -0.82,
+      7.2,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "anim": {
+      "pos": [
+       [
+        31.2,
+        [
+         -0.82,
+         7.2,
+         0
+        ]
+       ],
+       [
+        32.6,
+        [
+         -0.82,
+         5.6,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "garra1",
+     "asset": "forma",
+     "pos": [
+      0.82,
+      7.2,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "anim": {
+      "pos": [
+       [
+        31.2,
+        [
+         0.82,
+         7.2,
+         0
+        ]
+       ],
+       [
+        32.6,
+        [
+         0.82,
+         5.6,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fagulha",
+     "origem": [
+      -0.95,
+      5.7,
+      0
+     ],
+     "taxa": 50,
+     "dispersao": 0.15,
+     "de": 32.4,
+     "ate": 33.4,
+     "tamanho": 0.035
+    },
+    {
+     "material": "fagulha",
+     "origem": [
+      0.95,
+      5.7,
+      0
+     ],
+     "taxa": 50,
+     "dispersao": 0.15,
+     "de": 32.4,
+     "ate": 33.4,
+     "tamanho": 0.035
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     7.199999999999999,
+     8
+    ],
+    "olha": [
+     0,
+     6.699999999999999,
+     0
+    ],
+    "fov": 50
+   },
+   "efeitos": [
+    {
+     "tipo": "tremor",
+     "de": 32.5,
+     "ate": 33.2,
+     "intensidade": 0.5
+    }
+   ]
+  },
+  {
+   "inicio": 36,
+   "fim": 38.35,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      5.4,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "garra0",
+     "asset": "forma",
+     "pos": [
+      -0.82,
+      5.6000000000000005,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "garra1",
+     "asset": "forma",
+     "pos": [
+      0.82,
+      5.6000000000000005,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.2,
+       0.3,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0,
+      5.4,
+      0
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 36,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 36.1,
+       "ate": 38.35,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "fumaca",
+     "origem": [
+      -0.95,
+      5.6,
+      0
+     ],
+     "taxa": 6,
+     "tamanho": 0.14
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     7,
+     6.5
+    ],
+    "olha": [
+     0,
+     6.5,
+     0
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "freio de segurança",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 36.3,
+     "ate": 38.2
+    }
+   ]
+  },
+  {
+   "inicio": 38.35,
+   "fim": 41.55,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.9,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      4.199999999999999,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       10.8,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "viraPara": [
+      {
+       "em": 38.4,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 38.8,
+       "ate": 41.55,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": [
+      -1.2,
+      0.3,
+      0
+     ],
+     "taxa": 5,
+     "tamanho": 0.12
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     2.6,
+     7
+    ],
+    "olha": [
+     0,
+     2.1,
+     0
+    ],
+    "fov": 50
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 39,
+     "ate": 41.5,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 39.2,
+     "ate": 41.4
+    }
+   ]
+  },
+  {
+   "inicio": 41.55,
+   "fim": 48,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      1.9,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        41.8,
+        [
+         0,
+         1.9,
+         0
+        ]
+       ],
+       [
+        44.2,
+        [
+         0,
+         3.5,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      4.199999999999999,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       10.8,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        41.8,
+        [
+         -0.25,
+         4.2,
+         0
+        ]
+       ],
+       [
+        44.2,
+        [
+         -0.25,
+         5.8,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "trava",
+     "asset": "forma",
+     "pos": [
+      -1.38,
+      5.6,
+      0.45
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       0.2,
+       0.12
+      ],
+      "cor": "#d9473a",
+      "emissivo": true
+     },
+     "anim": {
+      "pulsa": 0.2
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     },
+     "movimentos": [
+      {
+       "de": 45,
+       "ate": 46,
+       "para": [
+        -1.3,
+        1.3
+       ]
+      }
+     ]
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      3.75,
+      0.5
+     ],
+     "giro": 60,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 42,
+       "ate": 45,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "nod",
+       "de": 46,
+       "ate": 48,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     5.2,
+     7.5
+    ],
+    "olha": [
+     0,
+     4.7,
+     0
+    ],
+    "fov": 50
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "trava da porta",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 46,
+     "ate": 47.9
+    }
+   ]
+  },
+  {
+   "inicio": 48,
+   "fim": 51.25,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        48.1,
+        [
+         0,
+         3.5,
+         0
+        ]
+       ],
+       [
+        50.8,
+        [
+         0,
+         0.1,
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "viraPara": [
+      {
+       "em": 48.2,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 49.5,
+       "ate": 51.25,
+       "expressao": "worried"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     2.4000000000000004,
+     8
+    ],
+    "olha": [
+     0,
+     1.9000000000000001,
+     0
+    ],
+    "fov": 54
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 50,
+     "ate": 51.2,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "de": 49.6,
+     "ate": 51.1
+    }
+   ]
+  },
+  {
+   "inicio": 51.25,
+   "fim": 57.35,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "mola0",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 51.6,
+     "anim": {
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.03,
+       "freq": 2
+      }
+     }
+    },
+    {
+     "id": "mola1",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     },
+     "aparece": 51.6,
+     "anim": {
+      "oscila": {
+       "eixo": "y",
+       "amp": 0.03,
+       "freq": 2
+      }
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0.6,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "aparece": 53
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "overrides": {
+      "held": {
+       "R": "hammer"
+      }
+     },
+     "acoes": [
+      {
+       "clip": "hammer",
+       "de": 51.4,
+       "ate": 54
+      },
+      {
+       "clip": "point",
+       "de": 54.2,
+       "ate": 57.35,
+       "params": {
+        "dir": "forward"
+       }
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     1.8,
+     6.5
+    ],
+    "olha": [
+     0,
+     1.3,
+     0
+    ],
+    "fov": 48
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "amortecedores",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 55.3,
+     "ate": 57.2
+    }
+   ]
+  },
+  {
+   "inicio": 57.35,
+   "fim": 61.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboN0",
+     "asset": "forma",
+     "pos": [
+      -0.3,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 57.6
+    },
+    {
+     "id": "caboN1",
+     "asset": "forma",
+     "pos": [
+      -0.18,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 58.1
+    },
+    {
+     "id": "caboN2",
+     "asset": "forma",
+     "pos": [
+      -0.06,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 58.6
+    },
+    {
+     "id": "caboN3",
+     "asset": "forma",
+     "pos": [
+      0.06,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 59.1
+    },
+    {
+     "id": "caboN4",
+     "asset": "forma",
+     "pos": [
+      0.18,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 59.6
+    },
+    {
+     "id": "caboN5",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "aparece": 60.1
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 60,
+      "dentes": 20
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 57.4,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 57.6,
+       "ate": 61.6,
+       "expressao": "surprised"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     10.2,
+     6
+    ],
+    "olha": [
+     0,
+     9.4,
+     0
+    ],
+    "fov": 44
+   }
+  },
+  {
+   "inicio": 61.6,
+   "fim": 65.3,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboN0",
+     "asset": "forma",
+     "pos": [
+      -0.3,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caboN1",
+     "asset": "forma",
+     "pos": [
+      -0.18,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caboN2",
+     "asset": "forma",
+     "pos": [
+      -0.06,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caboN3",
+     "asset": "forma",
+     "pos": [
+      0.06,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caboN4",
+     "asset": "forma",
+     "pos": [
+      0.18,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "caboN5",
+     "asset": "forma",
+     "pos": [
+      0.3,
+      9.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       5.699999999999999,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 60,
+      "dentes": 20
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      0,
+      7,
+      0
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 61.7,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 61.8,
+       "ate": 65.3,
+       "params": {
+        "dir": "forwardUp"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "luz",
+     "origem": [
+      0,
+      10.5,
+      0.1
+     ],
+     "taxa": 10,
+     "dispersao": 0.3,
+     "tamanho": 0.025
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     1.4,
+     9,
+     7
+    ],
+    "olha": [
+     0,
+     8.5,
+     0
+    ],
+    "fov": 46
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "cada cabo aguenta sozinho",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#2f3338",
+     "de": 62,
+     "ate": 65.1
+    }
+   ]
+  },
+  {
+   "inicio": 65.3,
+   "fim": 68.2,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55,
+     "anim": {
+      "pos": [
+       [
+        65.4,
+        [
+         0,
+         0,
+         0
+        ]
+       ],
+       [
+        68.1,
+        [
+         0,
+         1.6,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.7,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        65.4,
+        [
+         -0.25,
+         2.3,
+         0
+        ]
+       ],
+       [
+        68.1,
+        [
+         -0.25,
+         3.9,
+         0
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "contra",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.5,
+       1.6,
+       0.35
+      ],
+      "cor": "#5b5f66"
+     },
+     "anim": {
+      "pos": [
+       [
+        65.4,
+        [
+         1.45,
+         9,
+         -0.8
+        ]
+       ],
+       [
+        68.1,
+        [
+         1.45,
+         7.4,
+         -0.8
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "caboP",
+     "asset": "forma",
+     "pos": [
+      1.45,
+      9,
+      -0.8
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       6,
+       0.04
+      ],
+      "cor": "#2f3338"
+     },
+     "anim": {
+      "pos": [
+       [
+        65.4,
+        [
+         1.45,
+         10.6,
+         -0.8
+        ]
+       ],
+       [
+        68.1,
+        [
+         1.45,
+         9,
+         -0.8
+        ]
+       ]
+      ]
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 90,
+      "dentes": 20
+     }
+    },
+    {
+     "id": "mola0",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "mola1",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -2.2,
+      0.25,
+      0.5
+     ],
+     "giro": 60,
+     "viraPara": [
+      {
+       "em": 65.4,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 65.5,
+       "ate": 68.2,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      -1,
+      5,
+      14
+     ],
+     "olha": [
+      0,
+      5,
+      0
+     ]
+    },
+    "para": {
+     "pos": [
+      3,
+      7,
+      13
+     ],
+     "olha": [
+      0,
+      6,
+      0
+     ]
+    },
+    "fov": 56
+   }
+  },
+  {
+   "inicio": 68.2,
+   "fim": 72.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "cidade",
+    "chao": "concreto",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "fundo",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      -1.3
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       4.4,
+       16,
+       0.2
+      ],
+      "cor": "#e8dcc4"
+     }
+    },
+    {
+     "id": "trilhoE",
+     "asset": "forma",
+     "pos": [
+      -0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "trilhoD",
+     "asset": "forma",
+     "pos": [
+      0.95,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.12,
+       14,
+       0.12
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "maquinas",
+     "asset": "forma",
+     "pos": [
+      0.2,
+      14,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.6,
+       1.8,
+       2.6
+      ],
+      "cor": "#9aa3ad"
+     }
+    },
+    {
+     "id": "laje0",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje1",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      3.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje2",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      7,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "laje3",
+     "asset": "forma",
+     "pos": [
+      -2.1,
+      10.5,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       0.25,
+       2.4
+      ],
+      "cor": "#c9cdd2"
+     }
+    },
+    {
+     "id": "porta0",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      0.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta1",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      3.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta2",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      7.25,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "porta3",
+     "asset": "forma",
+     "pos": [
+      -1.3,
+      10.75,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.08,
+       2.1,
+       1.2
+      ],
+      "cor": "#7b8794"
+     }
+    },
+    {
+     "id": "cabine",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       1.6,
+       2.3,
+       1.6
+      ],
+      "cor": "#d9a441"
+     },
+     "opacidade": 0.55
+    },
+    {
+     "id": "caboC0",
+     "asset": "forma",
+     "pos": [
+      -0.25,
+      2.3,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.04,
+       12.7,
+       0.04
+      ],
+      "cor": "#2f3338"
+     }
+    },
+    {
+     "id": "polia",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 0.45,
+     "pos": [
+      0.7,
+      14.4,
+      1.35
+     ],
+     "params": {
+      "velocidade": 0,
+      "dentes": 20
+     }
+    },
+    {
+     "id": "mola0",
+     "asset": "forma",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    },
+    {
+     "id": "mola1",
+     "asset": "forma",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.3,
+       0.55,
+       0.3
+      ],
+      "cor": "#d9473a"
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      -1.6,
+      0.25,
+      1.4
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 68.3,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 68.4,
+       "ate": 70.3
+      },
+      {
+       "clip": "point",
+       "de": 70.5,
+       "ate": 72.4,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 68.2,
+       "ate": 72.4,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "luz",
+     "origem": [
+      0,
+      1.2,
+      0.3
+     ],
+     "taxa": 6,
+     "dispersao": 0.4,
+     "tamanho": 0.025
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -1.2,
+     1.9,
+     5.6
+    ],
+    "olha": [
+     -1.2,
+     1.7,
+     1.2
+    ],
+    "fov": 46
+   },
+   "textos": [
+    {
+     "texto": "VOCÊ TEM MEDO DE ELEVADOR?",
+     "de": 68.3,
+     "ate": 72.4,
+     "estilo": "pergunta"
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "som": "carro",
+   "de": 0,
+   "ate": 2.3,
+   "volume": 0.1
+  },
+  {
+   "som": "maquina",
+   "de": 6.2,
+   "ate": 8.6,
+   "volume": 0.1
+  },
+  {
+   "som": "erro",
+   "de": 6.5,
+   "volume": 0.12
+  },
+  {
+   "som": "martelo",
+   "de": 10.3,
+   "volume": 0.1
+  },
+  {
+   "som": "sucesso",
+   "de": 17.3,
+   "volume": 0.14
+  },
+  {
+   "som": "sucesso",
+   "de": 24.7,
+   "volume": 0.12
+  },
+  {
+   "som": "estouro",
+   "de": 27.3,
+   "volume": 0.2
+  },
+  {
+   "som": "martelo",
+   "de": 32.5,
+   "ate": 33.3,
+   "volume": 0.12
+  },
+  {
+   "som": "sucesso",
+   "de": 36.4,
+   "volume": 0.14
+  },
+  {
+   "som": "erro",
+   "de": 39.2,
+   "volume": 0.12
+  },
+  {
+   "som": "sucesso",
+   "de": 46.1,
+   "volume": 0.14
+  },
+  {
+   "som": "alerta",
+   "de": 49.6,
+   "ate": 51,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 55.4,
+   "volume": 0.14
+  },
+  {
+   "som": "sucesso",
+   "de": 65.6,
+   "volume": 0.2
+  }
+ ]
 }

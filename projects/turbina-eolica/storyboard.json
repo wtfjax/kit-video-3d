@@ -1,146 +1,3146 @@
 {
-  "versao": 1,
-  "titulo": "Turbina eolica",
-  "formato": {
-    "largura": 1080,
-    "altura": 1920,
-    "fps": 30
-  },
-  "duracao": 10,
-  "audio": "narracao.wav",
-  "palavras": "palavras.json",
-  "legendas": {
-    "ativo": true,
-    "palavrasPorBloco": 3
-  },
-  "ambiente": {
-    "horario": "dia",
-    "chao": "grama"
-  },
-  "cenas": [
+ "versao": 1,
+ "titulo": "Turbina eólica",
+ "formato": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30
+ },
+ "duracao": 76.7,
+ "audio": "narracao.mp3",
+ "palavras": "palavras.json",
+ "legendas": {
+  "ativo": true,
+  "palavrasPorBloco": 1
+ },
+ "ambiente": {
+  "fundo": "campo",
+  "chao": "grama",
+  "horario": "dia"
+ },
+ "cenas": [
+  {
+   "inicio": 0,
+   "fim": 2.15,
+   "transicao": "corte",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
     {
-      "inicio": 0,
-      "fim": 5,
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        },
-        {
-          "id": "arvore",
-          "asset": "arvore_redonda",
-          "pos": [
-            -8,
-            0,
-            -3
-          ]
-        }
-      ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            3.5,
-            0,
-            6.5
-          ],
-          "viraPara": [
-            {
-              "em": 0,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 0,
-              "ate": 5,
-              "fala": true
-            }
-          ]
-        }
-      ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "casa",
-        "plano": "geral",
-        "angulo": 25,
-        "elevacao": 14,
-        "deriva": -18
-      },
-      "textos": [
-        {
-          "texto": "A PERGUNTA DO GANCHO?",
-          "de": 0.2,
-          "ate": 4.8,
-          "estilo": "titulo"
-        }
-      ]
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
     },
     {
-      "inicio": 5,
-      "fim": 10,
-      "transicao": "flash",
-      "objetos": [
-        {
-          "id": "casa",
-          "asset": "casa_simples",
-          "pos": [
-            0,
-            0,
-            0
-          ]
-        }
-      ],
-      "personagens": [
-        {
-          "id": "guia",
-          "preset": "construtor",
-          "pos": [
-            0,
-            0,
-            7
-          ],
-          "giro": 0,
-          "viraPara": [
-            {
-              "em": 5,
-              "alvo": "camera"
-            }
-          ],
-          "acoes": [
-            {
-              "clip": "talk",
-              "de": 5,
-              "ate": 10,
-              "fala": true,
-              "expressao": "happy"
-            }
-          ]
-        }
-      ],
-      "camera": {
-        "tipo": "enquadrar",
-        "alvo": "guia",
-        "plano": "medio",
-        "angulo": 0,
-        "elevacao": 6,
-        "aproxima": 0.85
-      },
-      "textos": [
-        {
-          "texto": "E VOCÊ, O QUE ACHA? COMENTA!",
-          "de": 5.3,
-          "ate": 10,
-          "estilo": "pergunta"
-        }
-      ]
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
     }
-  ]
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1,
+      0,
+      8
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 0.1,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "look_around",
+       "de": 0,
+       "ate": 2.15
+      },
+      {
+       "clip": "talk",
+       "de": 0,
+       "ate": 2.15,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -12,
+      2,
+      6
+     ],
+     "destino": [
+      12,
+      2,
+      6
+     ],
+     "taxa": 30,
+     "dispersao": 2,
+     "espalha": 2,
+     "tamanho": 0.15
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     2,
+     1.7,
+     14
+    ],
+    "olha": [
+     0.5,
+     1.6,
+     6
+    ],
+    "fov": 46
+   },
+   "textos": [
+    {
+     "texto": "ENERGIA DO VENTO",
+     "de": 0.1,
+     "ate": 2.1,
+     "estilo": "titulo"
+    }
+   ]
+  },
+  {
+   "inicio": 2.15,
+   "fim": 8.85,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torreF",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       0.35,
+       6,
+       0.35
+      ],
+      "cor": "#8a5a34"
+     }
+    },
+    {
+     "id": "cata",
+     "asset": "helice",
+     "variante": "ventilador",
+     "pos": [
+      0,
+      4.6,
+      0.4
+     ],
+     "params": {
+      "pas": 12,
+      "raio": 1.6,
+      "cor": "#c9cdd2",
+      "velocidade": 40
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      1.8,
+      0,
+      3
+     ],
+     "giro": -20,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 2.4,
+       "ate": 6,
+       "params": {
+        "dir": "forwardUp"
+       }
+      },
+      {
+       "clip": "shrug",
+       "de": 6.2,
+       "ate": 8.85,
+       "expressao": "sad"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -10,
+      6,
+      3
+     ],
+     "destino": [
+      10,
+      6,
+      3
+     ],
+     "taxa": 20,
+     "dispersao": 2,
+     "espalha": 2,
+     "tamanho": 0.15
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3,
+     3,
+     13
+    ],
+    "olha": [
+     0.5,
+     4,
+     0
+    ],
+    "fov": 50
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 6.1,
+     "ate": 8.8,
+     "zoom": 1.1
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 6.3,
+     "ate": 8.8
+    }
+   ]
+  },
+  {
+   "inicio": 8.85,
+   "fim": 13.75,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     },
+     "aparece": 9.2
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0,
+     "aparece": 9.799999999999999
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     },
+     "aparece": 10.399999999999999
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 9.2,
+       "ate": 13.75,
+       "params": {
+        "dir": "forwardUp"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 50,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     16,
+     14,
+     70
+    ],
+    "olha": [
+     0,
+     25,
+     0
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 13.75,
+   "fim": 19.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -14,
+      46,
+      6
+     ],
+     "destino": [
+      14,
+      44,
+      6
+     ],
+     "taxa": 50,
+     "dispersao": 2,
+     "espalha": 2,
+     "tamanho": 0.3
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     12,
+     44,
+     26
+    ],
+    "olha": [
+     0,
+     41.5,
+     3
+    ],
+    "fov": 44
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "cima",
+     "pos": [
+      0.3,
+      0.42
+     ],
+     "tamanho": 0.12,
+     "pulsa": true,
+     "de": 14.5,
+     "ate": 17.4
+    },
+    {
+     "tipo": "etiqueta",
+     "texto": "pás",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#f2f2f2",
+     "de": 17.6,
+     "ate": 19
+    }
+   ]
+  },
+  {
+   "inicio": 19.15,
+   "fim": 24.15,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0,
+     "opacidade": 0.3
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    },
+    {
+     "id": "engG",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 1,
+     "pos": [
+      0,
+      40.4,
+      1.4
+     ],
+     "params": {
+      "velocidade": 25,
+      "dentes": 24
+     }
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     5.5,
+     42.4,
+     5
+    ],
+    "olha": [
+     0,
+     41.2,
+     0
+    ],
+    "fov": 46
+   },
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -8,
+      42,
+      6
+     ],
+     "destino": [
+      8,
+      42,
+      6
+     ],
+     "taxa": 20,
+     "dispersao": 1,
+     "tamanho": 0.2
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "15 voltas por minuto",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#9aa7b5",
+     "de": 19.5,
+     "ate": 22.4
+    },
+    {
+     "tipo": "icone",
+     "icone": "x",
+     "pos": [
+      0.78,
+      0.34
+     ],
+     "tamanho": 0.15,
+     "de": 22.5,
+     "ate": 24
+    }
+   ]
+  },
+  {
+   "inicio": 24.15,
+   "fim": 29.9,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0,
+     "opacidade": 0.3
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    },
+    {
+     "id": "engG",
+     "asset": "engrenagem",
+     "variante": "prata",
+     "escala": 1,
+     "pos": [
+      0,
+      40.4,
+      1.4
+     ],
+     "params": {
+      "velocidade": 25,
+      "dentes": 24
+     }
+    },
+    {
+     "id": "engP",
+     "asset": "engrenagem",
+     "variante": "vermelha",
+     "escala": 0.4,
+     "pos": [
+      0,
+      41.2,
+      -0.4
+     ],
+     "params": {
+      "velocidade": -300,
+      "dentes": 10
+     },
+     "aparece": 24.6
+    },
+    {
+     "id": "gerador",
+     "asset": "forma",
+     "pos": [
+      0,
+      40.8,
+      -2.6
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       1.4,
+       1.4,
+       1.4
+      ],
+      "cor": "#3d6fb6"
+     },
+     "aparece": 25
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     5.5,
+     42.4,
+     5
+    ],
+    "olha": [
+     0,
+     41.2,
+     0
+    ],
+    "fov": 46
+   },
+   "fluxos": [
+    {
+     "material": "eletricidade",
+     "caminho": [
+      [
+       0,
+       41.5,
+       -2.6
+      ],
+      [
+       0,
+       41.5,
+       -3.6
+      ],
+      [
+       0,
+       2,
+       -1
+      ]
+     ],
+     "taxa": 20,
+     "velocidade": 8,
+     "de": 26,
+     "tamanho": 0.04
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "caixa multiplicadora",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 28,
+     "ate": 29.8
+    }
+   ]
+  },
+  {
+   "inicio": 29.9,
+   "fim": 32.6,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 15
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 30,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "surprised",
+       "de": 30.2,
+       "ate": 32.6,
+       "expressao": "worried"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      40,
+      40,
+      0
+     ],
+     "destino": [
+      -40,
+      40,
+      0
+     ],
+     "taxa": 50,
+     "dispersao": 8,
+     "espalha": 8,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     16,
+     14,
+     70
+    ],
+    "olha": [
+     0,
+     25,
+     0
+    ],
+    "fov": 50
+   },
+   "elementos": [
+    {
+     "tipo": "seta",
+     "direcao": "esquerda",
+     "pos": [
+      0.5,
+      0.4
+     ],
+     "tamanho": 0.14,
+     "pulsa": true
+    }
+   ]
+  },
+  {
+   "inicio": 32.6,
+   "fim": 36,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 15
+     }
+    },
+    {
+     "id": "poste",
+     "asset": "forma",
+     "pos": [
+      0,
+      43.2,
+      -3.3
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.2,
+       1.4,
+       0.2
+      ],
+      "cor": "#5b5f66"
+     },
+     "aparece": 33
+    },
+    {
+     "id": "anemo",
+     "asset": "helice",
+     "variante": "ventilador",
+     "pos": [
+      0,
+      44.199999999999996,
+      -3
+     ],
+     "params": {
+      "pas": 3,
+      "raio": 0.6,
+      "cor": "#3d6fb6",
+      "velocidade": 500
+     },
+     "aparece": 33.4
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      20,
+      44.5,
+      -3
+     ],
+     "destino": [
+      -20,
+      44.5,
+      -3
+     ],
+     "taxa": 30,
+     "dispersao": 1,
+     "tamanho": 0.25
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     8,
+     47,
+     6
+    ],
+    "olha": [
+     0,
+     43.5,
+     -2.5
+    ],
+    "fov": 44
+   }
+  },
+  {
+   "inicio": 36,
+   "fim": 40.4,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      -0.5,
+      40,
+      -3.061616997868383e-17
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 90
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      3.4,
+      24.6,
+      2.0818995585505003e-16
+     ],
+     "giro": 90,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    },
+    {
+     "id": "yaw",
+     "asset": "engrenagem",
+     "variante": "vermelha",
+     "escala": 0.6,
+     "pos": [
+      0,
+      38.6,
+      1.2
+     ],
+     "params": {
+      "velocidade": 120
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 37,
+       "ate": 40.4,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      40,
+      40,
+      0
+     ],
+     "destino": [
+      -40,
+      40,
+      0
+     ],
+     "taxa": 50,
+     "dispersao": 8,
+     "espalha": 8,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     48,
+     16,
+     46
+    ],
+    "olha": [
+     0,
+     26,
+     0
+    ],
+    "fov": 50
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "sistema de giro",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 39.1,
+     "ate": 40.3
+    }
+   ]
+  },
+  {
+   "inicio": 40.4,
+   "fim": 44.25,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torreB",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       0.4,
+       5,
+       0.4
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "rotorB",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      3.2,
+      0.4
+     ],
+     "params": {
+      "pas": 3,
+      "raio": 2,
+      "cor": "#f2f2f2",
+      "velocidade": 30
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      2.2,
+      0,
+      3
+     ],
+     "giro": -20,
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 40.6,
+       "ate": 44.25,
+       "expressao": "sad"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "poeira",
+     "origem": [
+      -3,
+      0.5,
+      2
+     ],
+     "taxa": 14,
+     "dispersao": 2,
+     "subida": 0.6,
+     "tamanho": 0.2
+    },
+    {
+     "material": "ar",
+     "origem": [
+      -8,
+      2,
+      2
+     ],
+     "destino": [
+      8,
+      3,
+      2
+     ],
+     "taxa": 14,
+     "dispersao": 2,
+     "tamanho": 0.12
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     3,
+     2.6,
+     12
+    ],
+    "olha": [
+     0.6,
+     3,
+     0
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 44.25,
+   "fim": 49.05,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    },
+    {
+     "id": "predio",
+     "asset": "predio_apartamentos",
+     "variante": "alto",
+     "pos": [
+      -26,
+      0,
+      -6
+     ],
+     "params": {
+      "floors": 14
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "acoes": [
+      {
+       "clip": "point",
+       "de": 44.5,
+       "ate": 49.05,
+       "params": {
+        "dir": "forwardUp"
+       }
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 50,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     -4,
+     14,
+     78
+    ],
+    "olha": [
+     -10,
+     24,
+     0
+    ],
+    "fov": 50
+   }
+  },
+  {
+   "inicio": 49.05,
+   "fim": 53.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "nublado",
+    "clima": "chuva"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 420
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 90,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     16,
+     14,
+     70
+    ],
+    "olha": [
+     0,
+     25,
+     0
+    ],
+    "fov": 50
+   },
+   "efeitos": [
+    {
+     "tipo": "pretoebranco",
+     "de": 50.5,
+     "ate": 53.4,
+     "zoom": 1.1
+    },
+    {
+     "tipo": "tremor",
+     "de": 50.5,
+     "ate": 51.4,
+     "intensidade": 0.5
+    }
+   ],
+   "elementos": [
+    {
+     "tipo": "icone",
+     "icone": "alerta",
+     "pos": [
+      0.25,
+      0.33
+     ],
+     "tamanho": 0.15,
+     "de": 50.6,
+     "ate": 53.3
+    }
+   ]
+  },
+  {
+   "inicio": 53.45,
+   "fim": 58.1,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "nublado",
+    "clima": "chuva"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 160
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -14,
+      44,
+      6
+     ],
+     "destino": [
+      14,
+      42,
+      6
+     ],
+     "taxa": 60,
+     "dispersao": 3,
+     "tamanho": 0.3
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     12,
+     44,
+     26
+    ],
+    "olha": [
+     0,
+     41.5,
+     3
+    ],
+    "fov": 44
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "pás viradas de lado",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#f2f2f2",
+     "de": 54.2,
+     "ate": 58
+    }
+   ]
+  },
+  {
+   "inicio": 58.1,
+   "fim": 63,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "nublado",
+    "clima": "chuva"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 12
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 58.2,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "nod",
+       "de": 58.4,
+       "ate": 63,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 80,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     16,
+     14,
+     70
+    ],
+    "olha": [
+     0,
+     25,
+     0
+    ],
+    "fov": 50
+   },
+   "elementos": [
+    {
+     "tipo": "etiqueta",
+     "texto": "controle de passo",
+     "pos": [
+      0.5,
+      0.3
+     ],
+     "ponto": "#d9473a",
+     "de": 61.3,
+     "ate": 62.9
+    }
+   ]
+  },
+  {
+   "inicio": 63,
+   "fim": 68.45,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "dia"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 120
+     }
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      0,
+      41.6,
+      6
+     ],
+     "taxa": 30,
+     "dispersao": 13,
+     "tamanho": 0.25
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     20,
+     46,
+     34
+    ],
+    "olha": [
+     0,
+     41,
+     3
+    ],
+    "fov": 52
+   },
+   "textos": [
+    {
+     "texto": "300 KM/H NA PONTA",
+     "de": 63.6,
+     "ate": 68.3,
+     "estilo": "destaque"
+    }
+   ]
+  },
+  {
+   "inicio": 68.45,
+   "fim": 72,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "tarde"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    },
+    {
+     "id": "torreb",
+     "asset": "forma",
+     "pos": [
+      -45,
+      0,
+      -40
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "naceleb",
+     "asset": "forma",
+     "pos": [
+      -45,
+      40,
+      -40.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotorb",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      -45,
+      24.6,
+      -36.6
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 80
+     }
+    },
+    {
+     "id": "torrec",
+     "asset": "forma",
+     "pos": [
+      45,
+      0,
+      -30
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacelec",
+     "asset": "forma",
+     "pos": [
+      45,
+      40,
+      -30.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotorc",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      45,
+      24.6,
+      -26.6
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 100
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 68.5,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "cheer",
+       "de": 68.6,
+       "ate": 72,
+       "expressao": "happy"
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 50,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "travelling",
+    "de": {
+     "pos": [
+      -20,
+      8,
+      80
+     ],
+     "olha": [
+      0,
+      24,
+      -10
+     ]
+    },
+    "para": {
+     "pos": [
+      20,
+      8,
+      80
+     ],
+     "olha": [
+      0,
+      24,
+      -10
+     ]
+    },
+    "fov": 54
+   }
+  },
+  {
+   "inicio": 72,
+   "fim": 76.7,
+   "transicao": "flash",
+   "ambiente": {
+    "fundo": "campo",
+    "chao": "grama",
+    "horario": "tarde"
+   },
+   "objetos": [
+    {
+     "id": "casa",
+     "asset": "casa_simples",
+     "variante": "verde",
+     "pos": [
+      -14,
+      0,
+      -12
+     ]
+    },
+    {
+     "id": "a1",
+     "asset": "arvore_redonda",
+     "pos": [
+      9,
+      0,
+      14
+     ],
+     "params": {
+      "seed": 2
+     }
+    },
+    {
+     "id": "a2",
+     "asset": "arvore_pinheiro",
+     "pos": [
+      -9,
+      0,
+      18
+     ]
+    },
+    {
+     "id": "a3",
+     "asset": "arvore_redonda",
+     "variante": "grande",
+     "pos": [
+      16,
+      0,
+      -10
+     ],
+     "params": {
+      "seed": 5
+     }
+    },
+    {
+     "id": "torre",
+     "asset": "forma",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "params": {
+      "tipo": "cilindro",
+      "tamanho": [
+       2.2,
+       40,
+       2.2
+      ],
+      "cor": "#f2f2f2"
+     }
+    },
+    {
+     "id": "nacele",
+     "asset": "forma",
+     "pos": [
+      0,
+      40,
+      -0.5
+     ],
+     "params": {
+      "tipo": "caixa",
+      "tamanho": [
+       3.2,
+       3.2,
+       7
+      ],
+      "cor": "#e8eef5"
+     },
+     "giro": 0
+    },
+    {
+     "id": "rotor",
+     "asset": "helice",
+     "variante": "turbina",
+     "pos": [
+      0,
+      24.6,
+      3.4
+     ],
+     "giro": 0,
+     "params": {
+      "pas": 3,
+      "raio": 15,
+      "cor": "#f2f2f2",
+      "velocidade": 90
+     }
+    }
+   ],
+   "personagens": [
+    {
+     "id": "guia",
+     "preset": "construtor",
+     "pos": [
+      3.5,
+      0,
+      22
+     ],
+     "giro": 0,
+     "viraPara": [
+      {
+       "em": 72.1,
+       "alvo": "camera"
+      }
+     ],
+     "acoes": [
+      {
+       "clip": "shrug",
+       "de": 72.2,
+       "ate": 74.3
+      },
+      {
+       "clip": "point",
+       "de": 74.5,
+       "ate": 76.7,
+       "params": {
+        "dir": "forward"
+       }
+      },
+      {
+       "clip": "talk",
+       "de": 72,
+       "ate": 76.7,
+       "fala": true,
+       "camada": 1,
+       "mascara": [
+        "head",
+        "face",
+        "armL"
+       ]
+      }
+     ]
+    }
+   ],
+   "fluxos": [
+    {
+     "material": "ar",
+     "origem": [
+      -40,
+      40,
+      12
+     ],
+     "destino": [
+      40,
+      40,
+      12
+     ],
+     "taxa": 50,
+     "dispersao": 10,
+     "espalha": 10,
+     "tamanho": 0.45
+    }
+   ],
+   "camera": {
+    "tipo": "fixa",
+    "pos": [
+     4.6,
+     1.8,
+     26.6
+    ],
+    "olha": [
+     3.2,
+     3,
+     20
+    ],
+    "fov": 50
+   },
+   "textos": [
+    {
+     "texto": "JÁ VIU UMA DE PERTO?",
+     "de": 72.1,
+     "ate": 76.7,
+     "estilo": "pergunta"
+    }
+   ]
+  }
+ ],
+ "sons": [
+  {
+   "som": "vento",
+   "de": 0,
+   "ate": 2,
+   "volume": 0.1
+  },
+  {
+   "som": "erro",
+   "de": 6.3,
+   "volume": 0.12
+  },
+  {
+   "som": "sucesso",
+   "de": 17.7,
+   "volume": 0.14
+  },
+  {
+   "som": "maquina",
+   "de": 24.6,
+   "ate": 26.8,
+   "volume": 0.1
+  },
+  {
+   "som": "sucesso",
+   "de": 28.1,
+   "volume": 0.14
+  },
+  {
+   "som": "bomba",
+   "de": 37,
+   "ate": 38.8,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 39.2,
+   "volume": 0.14
+  },
+  {
+   "som": "vento",
+   "de": 49.2,
+   "ate": 51.4,
+   "volume": 0.12
+  },
+  {
+   "som": "alerta",
+   "de": 50.6,
+   "ate": 52.6,
+   "volume": 0.08
+  },
+  {
+   "som": "sucesso",
+   "de": 61.4,
+   "volume": 0.14
+  },
+  {
+   "som": "sucesso",
+   "de": 68.7,
+   "volume": 0.2
+  }
+ ]
 }
